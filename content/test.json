@@ -1,6 +1,13 @@
 {
-  "_nota": "Borrador por validar con Juan Pablo. Es una orientación, no un diagnóstico.",
+  "_nota": "Borrador por validar con Juan Pablo. Es una orientación, no un diagnóstico. No se guardan las respuestas.",
   "es": {
+    "ui": {
+      "pregunta": "Pregunta",
+      "de": "de",
+      "atras": "Atrás",
+      "cerrar": "Cerrar",
+      "servicioSugerido": "Servicio sugerido"
+    },
     "entrada": {
       "texto": "¿No sabes por dónde empezar? Responde 4 preguntas (1 minuto) y te mostramos en qué área te conviene trabajar.",
       "empezar": "Empezar",
@@ -71,5 +78,84 @@
       "recursos": "Ver recursos para esta área"
     },
     "aviso": "Este resultado es orientativo y no reemplaza una valoración profesional."
+  },
+  "en": {
+    "ui": {
+      "pregunta": "Question",
+      "de": "of",
+      "atras": "Back",
+      "cerrar": "Close",
+      "servicioSugerido": "Suggested service"
+    },
+    "entrada": {
+      "texto": "Not sure where to start? Answer 4 questions (1 minute) and we'll show you which area is best to work on.",
+      "empezar": "Start",
+      "ahoraNo": "Not now"
+    },
+    "preguntas": [
+      {
+        "id": "pesa",
+        "texto": "What weighs on you the most today?",
+        "opciones": [
+          { "texto": "My mind won't stop, I feel exhausted or anxious", "area": "A" },
+          { "texto": "A relationship, a breakup or a loss", "area": "B" },
+          { "texto": "Life at home or with my children", "area": "C" },
+          { "texto": "Living far from home or starting over somewhere new", "area": "D" }
+        ]
+      },
+      {
+        "id": "con-quien",
+        "texto": "Who would you like to work on it with?",
+        "opciones": [
+          { "texto": "On my own", "servicio": "individual" },
+          { "texto": "As a couple", "servicio": "pareja" },
+          { "texto": "As a family", "servicio": "familiar" },
+          { "texto": "With my teenage son or daughter", "servicio": "familiar" }
+        ]
+      },
+      {
+        "id": "desde-cuando",
+        "texto": "How long have you felt this way?",
+        "opciones": [
+          { "texto": "Less than a month" },
+          { "texto": "Between one and six months" },
+          { "texto": "More than six months" }
+        ]
+      },
+      {
+        "id": "afecta",
+        "texto": "How much does it affect your day to day?",
+        "opciones": [
+          { "texto": "A little" },
+          { "texto": "Quite a lot" },
+          { "texto": "A lot", "alerta": true }
+        ]
+      }
+    ],
+    "resultados": {
+      "A": {
+        "titulo": "Calm what you feel",
+        "texto": "When the mind won't stop, everything weighs more. You don't need to be at your limit to ask for help: we can learn to observe it together, step by step."
+      },
+      "B": {
+        "titulo": "When something broke",
+        "texto": "Closing a chapter can be learned, and so can rebuilding. We'll go at your pace."
+      },
+      "C": {
+        "titulo": "Understanding each other at home",
+        "texto": "Nobody gave us a manual for understanding each other. We can build one together."
+      },
+      "D": {
+        "titulo": "Starting from scratch far from home",
+        "texto": "Missing the life you left behind is real, and it can be worked on. Here you'll find someone who lived it too."
+      }
+    },
+    "avisoAlerta": "What you feel matters. If at any point you feel you can't go on, use the help button.",
+    "botones": {
+      "primeraCita": "Book your first session",
+      "escucha": "Book a free listening session",
+      "recursos": "See resources for this area"
+    },
+    "aviso": "This result is for guidance only and does not replace a professional assessment."
   }
 }

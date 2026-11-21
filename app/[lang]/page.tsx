@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getDictionary, isLocale } from "@/lib/i18n";
 import Button from "@/components/Button";
+import AbrirTestButton from "@/components/AbrirTestButton";
 import Relleno from "@/components/Relleno";
 
 // Página de inicio (esquema 6.1). Las fotos las sube Juan Pablo a
@@ -58,10 +59,9 @@ export default async function Home({
             <Button href={`${base}/agenda`} variante="acento">
               {i.hero.botonPrincipal}
             </Button>
-            {/* El test emergente se conecta en el paso 3 */}
-            <Button href={`${base}/recursos`} variante="contornoClaro">
+            <AbrirTestButton variante="contornoClaro">
               {i.hero.botonSecundario}
-            </Button>
+            </AbrirTestButton>
           </div>
         </div>
       </section>
@@ -173,7 +173,7 @@ export default async function Home({
       {/* 7. Recursos gratuitos */}
       <Seccion titulo={i.recursos.titulo} fondo="suave">
         <ul className="grid gap-4 md:grid-cols-3">
-          {i.recursos.items.map((item) => (
+          {i.recursos.items.map((item, n) => (
             <li
               key={item.titulo}
               className="flex flex-col gap-3 rounded-2xl bg-white p-6 shadow-sm"
@@ -184,9 +184,15 @@ export default async function Home({
               <h3 className="text-lg font-bold text-oscuro">{item.titulo}</h3>
               {item.linea && <p className="text-sm text-texto/80">{item.linea}</p>}
               <div className="mt-auto pt-2">
-                <Button href={`${base}/recursos`} variante="contorno" className="w-full">
-                  {item.boton}
-                </Button>
+                {n === 0 ? (
+                  <AbrirTestButton variante="contorno" className="w-full">
+                    {item.boton}
+                  </AbrirTestButton>
+                ) : (
+                  <Button href={`${base}/recursos`} variante="contorno" className="w-full">
+                    {item.boton}
+                  </Button>
+                )}
               </div>
             </li>
           ))}

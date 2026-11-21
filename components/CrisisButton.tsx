@@ -1,7 +1,8 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { site } from "@/config/site";
+import { EVENTO_ABRIR_CRISIS } from "@/lib/eventos";
 import { isPlaceholder, type Dictionary } from "@/lib/i18n";
 
 type Pais = keyof typeof site.crisisLines;
@@ -11,6 +12,15 @@ export default function CrisisButton({ t }: { t: Dictionary["crisis"] }) {
   const dialogRef = useRef<HTMLDialogElement>(null);
   const [pais, setPais] = useState<Pais>("AU");
   const linea: string = site.crisisLines[pais];
+
+  // Otros botones (por ejemplo, el del test) pueden abrir esta misma ventana.
+  useEffect(() => {
+    const abrir = () => {
+      if (dialogRef.current && !dialogRef.current.open) dialogRef.current.showModal();
+    };
+    window.addEventListener(EVENTO_ABRIR_CRISIS, abrir);
+    return () => window.removeEventListener(EVENTO_ABRIR_CRISIS, abrir);
+  }, []);
 
   return (
     <>
