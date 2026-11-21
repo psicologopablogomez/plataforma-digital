@@ -6,6 +6,69 @@
     "lema": "Wherever you are, one step at a time.",
     "etapas": ["Recognize", "Transform", "Move forward"]
   },
+  "nav": {
+    "inicio": "Home",
+    "nosotros": "About us",
+    "servicios": "Services",
+    "recursos": "Resources",
+    "eventos": "Events",
+    "preguntas": "FAQ",
+    "contacto": "Contact"
+  },
+  "encabezado": {
+    "agenda": "Book your first session",
+    "miEspacio": "My space",
+    "abrirMenu": "Open menu",
+    "cerrarMenu": "Close menu",
+    "idioma": "Language",
+    "irInicio": "Go to home"
+  },
+  "crisis": {
+    "boton": "Need help now?",
+    "titulo": "You are not alone",
+    "texto": "If you are in danger or thinking about hurting yourself, contact a helpline in your country now. You are not alone.",
+    "elegirPais": "Choose your country",
+    "linea": "Helpline",
+    "cerrar": "Close",
+    "paises": { "AU": "Australia", "CO": "Colombia", "ES": "Spain" }
+  },
+  "pie": {
+    "menu": "Menu",
+    "redes": "Social media",
+    "contacto": "Contact",
+    "legal": "Legal information",
+    "correo": "Email",
+    "whatsapp": "WhatsApp",
+    "aviso": "This site is not an emergency service. If you are in crisis, use the help button."
+  },
+  "legales": {
+    "privacidad": "Privacy notice",
+    "terminos": "Terms and conditions",
+    "cancelacion": "Cancellation policy",
+    "consentimiento": "Informed consent"
+  },
+  "whatsapp": {
+    "etiqueta": "Message us on WhatsApp",
+    "mensaje": "Hi, I'd like information about the sessions."
+  },
+  "paginas": {
+    "nosotros": "About us",
+    "servicios": "Services",
+    "recursos": "Resources for your everyday life",
+    "eventos": "Events and workshops",
+    "preguntas-frecuentes": "Frequently asked questions",
+    "contacto": "Shall we talk?",
+    "agenda": "Book your first session",
+    "mi-espacio": "My space",
+    "aviso-de-privacidad": "Privacy notice",
+    "terminos-y-condiciones": "Terms and conditions",
+    "politica-de-cancelacion": "Cancellation policy",
+    "consentimiento-informado": "Informed consent"
+  },
+  "pendiente": {
+    "enConstruccion": "This page will be built in an upcoming step of Phase 0.",
+    "textoLegal": "[[POR DEFINIR: texto revisado]]"
+  },
   "inicio": {
     "hero": {
       "apoyo": "[[POR ADAPTAR: línea de apoyo en inglés]]",

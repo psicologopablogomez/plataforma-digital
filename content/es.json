@@ -6,6 +6,69 @@
     "lema": "Desde donde estés, un paso a la vez.",
     "etapas": ["Reconocer", "Transformar", "Avanzar"]
   },
+  "nav": {
+    "inicio": "Inicio",
+    "nosotros": "Nosotros",
+    "servicios": "Servicios",
+    "recursos": "Recursos",
+    "eventos": "Eventos",
+    "preguntas": "Preguntas frecuentes",
+    "contacto": "Contacto"
+  },
+  "encabezado": {
+    "agenda": "Agenda tu primera cita",
+    "miEspacio": "Mi espacio",
+    "abrirMenu": "Abrir menú",
+    "cerrarMenu": "Cerrar menú",
+    "idioma": "Idioma",
+    "irInicio": "Ir al inicio"
+  },
+  "crisis": {
+    "boton": "¿Necesitas ayuda ahora?",
+    "titulo": "No estás solo",
+    "texto": "Si estás en peligro o piensas en hacerte daño, contacta ahora una línea de atención de tu país. No estás solo.",
+    "elegirPais": "Elige tu país",
+    "linea": "Línea de atención",
+    "cerrar": "Cerrar",
+    "paises": { "AU": "Australia", "CO": "Colombia", "ES": "España" }
+  },
+  "pie": {
+    "menu": "Menú",
+    "redes": "Redes",
+    "contacto": "Contacto",
+    "legal": "Información legal",
+    "correo": "Correo",
+    "whatsapp": "WhatsApp",
+    "aviso": "Este sitio no es un servicio de emergencias. Si estás en crisis, usa el botón de ayuda."
+  },
+  "legales": {
+    "privacidad": "Aviso de privacidad",
+    "terminos": "Términos y condiciones",
+    "cancelacion": "Política de cancelación",
+    "consentimiento": "Consentimiento informado"
+  },
+  "whatsapp": {
+    "etiqueta": "Escríbenos por WhatsApp",
+    "mensaje": "Hola, quiero información sobre las sesiones."
+  },
+  "paginas": {
+    "nosotros": "Nosotros",
+    "servicios": "Servicios",
+    "recursos": "Recursos para tu día a día",
+    "eventos": "Eventos y talleres",
+    "preguntas-frecuentes": "Preguntas frecuentes",
+    "contacto": "¿Hablamos?",
+    "agenda": "Agenda tu primera cita",
+    "mi-espacio": "Mi espacio",
+    "aviso-de-privacidad": "Aviso de privacidad",
+    "terminos-y-condiciones": "Términos y condiciones",
+    "politica-de-cancelacion": "Política de cancelación",
+    "consentimiento-informado": "Consentimiento informado"
+  },
+  "pendiente": {
+    "enConstruccion": "Esta página se construye en un paso próximo de la Fase 0.",
+    "textoLegal": "[[POR DEFINIR: texto revisado]]"
+  },
   "inicio": {
     "hero": {
       "apoyo": "Terapia psicológica online, desde donde estés.",
