@@ -4,35 +4,15 @@ import { getDictionary, isLocale } from "@/lib/i18n";
 import Button from "@/components/Button";
 import AbrirTestButton from "@/components/AbrirTestButton";
 import Relleno from "@/components/Relleno";
+import Seccion from "@/components/Seccion";
+import ProfessionalCard from "@/components/ProfessionalCard";
+import { profesionales } from "@/config/profesionales";
 
 // Página de inicio (esquema 6.1). Las fotos las sube Juan Pablo a
 // /public/images/inicio/: mientras tanto se usan fondos de color.
 
 // A qué parte de Servicios lleva cada frase (en el mismo orden del texto).
 const anclasServicios = ["individual", "pareja", "familiar", "migrantes"];
-
-function Seccion({
-  titulo,
-  children,
-  fondo = "blanco",
-}: {
-  titulo?: string;
-  children: React.ReactNode;
-  fondo?: "blanco" | "suave";
-}) {
-  return (
-    <section className={fondo === "suave" ? "bg-turquesa/10" : "bg-white"}>
-      <div className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
-        {titulo && (
-          <h2 className="mb-8 text-center text-2xl font-bold text-oscuro sm:text-3xl">
-            {titulo}
-          </h2>
-        )}
-        {children}
-      </div>
-    </section>
-  );
-}
 
 export default async function Home({
   params,
@@ -144,30 +124,12 @@ export default async function Home({
 
       {/* 6. Quién te acompaña */}
       <Seccion titulo={i.quien.titulo}>
-        <div className="mx-auto flex max-w-2xl flex-col items-center gap-6 rounded-2xl border border-oscuro/10 p-8 text-center shadow-sm">
-          {/* Aquí va la foto: /public/images/nosotros/juan-pablo.jpg */}
-          <div
-            className="flex h-28 w-28 items-center justify-center rounded-full bg-gradient-to-br from-azul to-turquesa text-3xl font-bold text-white"
-            aria-hidden="true"
-          >
-            JP
-          </div>
-          <div>
-            <h3 className="text-xl font-bold text-oscuro">{i.quien.nombre}</h3>
-            <p className="mt-1 text-sm font-medium text-azul">{i.quien.cargo}</p>
-            <p className="mt-1 text-sm text-texto/70">
-              <Relleno texto={i.quien.estudios} />
-            </p>
-          </div>
-          <p className="font-editorial text-xl text-oscuro">“{i.quien.frase}”</p>
-          <div className="flex flex-col gap-3 sm:flex-row">
-            {/* El perfil completo se crea en el paso 4 */}
-            <Button href={`${base}/nosotros`} variante="contorno">
-              {i.quien.perfil}
-            </Button>
-            <Button href={`${base}/agenda`}>{i.quien.agendar}</Button>
-          </div>
-        </div>
+        <ProfessionalCard
+          lang={lang}
+          t={t}
+          profesional={profesionales[0]}
+          frase={i.quien.frase}
+        />
       </Seccion>
 
       {/* 7. Recursos gratuitos */}

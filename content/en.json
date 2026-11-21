@@ -69,6 +69,84 @@
     "enConstruccion": "This page will be built in an upcoming step of Phase 0.",
     "textoLegal": "[[POR DEFINIR: texto revisado]]"
   },
+  "etiquetas": {
+    "ansiedad": "Anxiety",
+    "depresion": "Depression",
+    "panico": "Panic attacks",
+    "fobias": "Phobias",
+    "duelo": "Grief",
+    "dependencia": "Emotional dependence",
+    "ira": "Managing anger and emotions",
+    "sentido": "Sense of purpose",
+    "vocacional": "Career guidance"
+  },
+  "tarjeta": {
+    "perfil": "Profile",
+    "agendar": "Book a session"
+  },
+  "profesionales": {
+    "juan-pablo": {
+      "nombre": "Juan Pablo Gómez",
+      "cargo": "Psychologist · registered in Colombia (COLPSIC)",
+      "estudios": "[[POR DEFINIR: iniciales de estudios]]"
+    }
+  },
+  "nosotros": {
+    "quienes": {
+      "titulo": "A path to look at yourself calmly",
+      "texto": "We believe no one should face the big questions alone: whether their life has meaning, whether they're using their time well, whether they're free to choose and whether they're truly accompanied. We exist to walk with you as you turn what weighs on you today into clarity, from your everyday life."
+    },
+    "manifiesto": {
+      "titulo": "Manifesto",
+      "texto": "We believe we all carry something we haven't told anyone. We believe looking at it is not sinking: it's the first step to transforming it. We believe you don't need to be at your limit to ask for help, or to have it all clear to begin. We believe the extraordinary begins on any ordinary Tuesday, with a small decision. We don't have magic answers and we won't tell you who you should be. We will listen without judging, tell you things straight and walk with you step by step. You decide, you act and you transform. We walk with you, today, from wherever you are."
+    },
+    "como": {
+      "titulo": "How we work",
+      "pilares": [
+        {
+          "titulo": "Understand what you feel.",
+          "texto": "Put a name to what you live, without judgment."
+        },
+        {
+          "titulo": "Observe what you do.",
+          "texto": "Calmly look at your routines, your reactions and your relationships."
+        },
+        {
+          "titulo": "Review what you think.",
+          "texto": "Learn to look differently at what your mind tells you."
+        }
+      ],
+      "nota": "We work with cognitive-behavioral therapy, explained in simple words and step by step."
+    },
+    "proceso": {
+      "titulo": "Your process in 3 stages",
+      "etapas": [
+        { "titulo": "Recognize.", "texto": "Realizing it is already beginning." },
+        { "titulo": "Transform.", "texto": "It's not magic: it's a process, and we do it together." },
+        { "titulo": "Move forward.", "texto": "What you built is yours." }
+      ]
+    },
+    "valores": {
+      "titulo": "Our values",
+      "items": ["Authenticity", "Courage", "Connection", "Clarity", "Freedom", "Acceptance"]
+    },
+    "acompana": {
+      "titulo": "Who is by your side"
+    }
+  },
+  "perfil": {
+    "volver": "About us",
+    "estudiosTitulo": "Education",
+    "estudios": "Master's degree in Family Educational Counseling · [[POR DEFINIR: títulos completos, universidades e iniciales para la tarjeta]]",
+    "sobreTitulo": "About me",
+    "sobre": "I'm Juan Pablo Gómez, a Colombian psychologist with a master's degree in family educational counseling. Before psychology I studied philosophy and theology, and that taught me to look at human beings in an integral way. I have worked in teaching, rehabilitation and public health, and I designed an intervention protocol for families that continues today at the Fundación Génesis. I live in Australia, so I know what it's like to start from scratch far from home. My way of working is close and direct: I listen to you without judging, I tell you things straight and I give you clear tools. You decide, you act and you transform. I walk with you.",
+    "temasTitulo": "Topics I work on",
+    "idiomasTitulo": "Languages",
+    "idiomas": "Spanish [[POR CONFIRMAR: inglés]]",
+    "registroTitulo": "Professional registration",
+    "registro": "Psychologist registered in Colombia (COLPSIC). [[POR DEFINIR: cómo presentar el servicio a personas en Australia (consulta legal pendiente)]]",
+    "agendar": "Book your first session"
+  },
   "inicio": {
     "hero": {
       "apoyo": "Online psychological therapy, from wherever you are.",
@@ -143,12 +221,7 @@
     },
     "quien": {
       "titulo": "Who is by your side",
-      "nombre": "Juan Pablo Gómez",
-      "cargo": "Psychologist · registered in Colombia (COLPSIC)",
-      "estudios": "[[POR DEFINIR: iniciales de estudios]]",
-      "frase": "I know what it is to start from scratch far from home, because I lived it too.",
-      "perfil": "Profile",
-      "agendar": "Book a session"
+      "frase": "I know what it is to start from scratch far from home, because I lived it too."
     },
     "recursos": {
       "titulo": "Free resources",

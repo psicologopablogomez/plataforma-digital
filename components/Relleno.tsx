@@ -1,11 +1,21 @@
-import { isPlaceholder } from "@/lib/i18n";
-
-// Muestra un texto normal, o un dato pendiente ([[POR DEFINIR]]) como relleno visible.
+// Muestra un texto normal. Los datos pendientes ([[POR DEFINIR: ...]]) se resaltan
+// como relleno visible, aunque estén en medio de una frase.
 export default function Relleno({ texto }: { texto: string }) {
-  if (!isPlaceholder(texto)) return <>{texto}</>;
+  const partes = texto.split(/(\[\[[^\]]*\]\])/g).filter(Boolean);
   return (
-    <span className="rounded bg-naranja/15 px-1.5 py-0.5 font-mono text-xs text-naranja">
-      {texto}
-    </span>
+    <>
+      {partes.map((parte, n) =>
+        parte.startsWith("[[") ? (
+          <span
+            key={n}
+            className="rounded bg-naranja/15 px-1.5 py-0.5 font-mono text-xs text-naranja"
+          >
+            {parte}
+          </span>
+        ) : (
+          <span key={n}>{parte}</span>
+        ),
+      )}
+    </>
   );
 }

@@ -69,6 +69,84 @@
     "enConstruccion": "Esta página se construye en un paso próximo de la Fase 0.",
     "textoLegal": "[[POR DEFINIR: texto revisado]]"
   },
+  "etiquetas": {
+    "ansiedad": "Ansiedad",
+    "depresion": "Depresión",
+    "panico": "Ataques de pánico",
+    "fobias": "Fobias",
+    "duelo": "Duelo",
+    "dependencia": "Dependencia emocional",
+    "ira": "Manejo de la ira y las emociones",
+    "sentido": "Sentido de vida",
+    "vocacional": "Orientación vocacional"
+  },
+  "tarjeta": {
+    "perfil": "Perfil",
+    "agendar": "Agendar cita"
+  },
+  "profesionales": {
+    "juan-pablo": {
+      "nombre": "Juan Pablo Gómez",
+      "cargo": "Psicólogo · registrado en Colombia (COLPSIC)",
+      "estudios": "[[POR DEFINIR: iniciales de estudios]]"
+    }
+  },
+  "nosotros": {
+    "quienes": {
+      "titulo": "Un sendero para mirarte con calma",
+      "texto": "Creemos que nadie debería enfrentar solo las grandes preguntas: si su vida tiene sentido, si está usando bien su tiempo, si es libre de elegir y si de verdad está acompañado. Existimos para acompañarte a transformar lo que hoy te pesa en claridad, desde tu día a día."
+    },
+    "manifiesto": {
+      "titulo": "Manifiesto",
+      "texto": "Creemos que todos cargamos algo que no le hemos contado a nadie. Creemos que mirarlo no es hundirse: es el primer paso para transformarlo. Creemos que no necesitas estar al límite para pedir ayuda, ni tenerlo todo claro para empezar. Creemos que lo extraordinario empieza un martes cualquiera, con una decisión pequeña. No tenemos respuestas mágicas ni vamos a decirte quién debes ser. Vamos a escucharte sin juzgarte, a decirte las cosas de frente y a acompañarte paso a paso. Tú decides, actúas y te transformas. Nosotros te acompañamos, hoy, desde donde estés."
+    },
+    "como": {
+      "titulo": "Cómo trabajamos",
+      "pilares": [
+        {
+          "titulo": "Comprender lo que sientes.",
+          "texto": "Ponerle nombre a lo que vives, sin juicio."
+        },
+        {
+          "titulo": "Observar lo que haces.",
+          "texto": "Ver con calma tus rutinas, tus reacciones y tus relaciones."
+        },
+        {
+          "titulo": "Revisar lo que piensas.",
+          "texto": "Aprender a mirar distinto lo que tu mente te dice."
+        }
+      ],
+      "nota": "Trabajamos con la terapia cognitivo-conductual, explicada en palabras sencillas y paso a paso."
+    },
+    "proceso": {
+      "titulo": "Tu proceso en 3 etapas",
+      "etapas": [
+        { "titulo": "Reconocer.", "texto": "Darte cuenta ya es empezar." },
+        { "titulo": "Transformar.", "texto": "No es magia: es un proceso, y lo hacemos juntos." },
+        { "titulo": "Avanzar.", "texto": "Lo que construiste es tuyo." }
+      ]
+    },
+    "valores": {
+      "titulo": "Nuestros valores",
+      "items": ["Autenticidad", "Valentía", "Conexión", "Claridad", "Libertad", "Aceptación"]
+    },
+    "acompana": {
+      "titulo": "Quién te acompaña"
+    }
+  },
+  "perfil": {
+    "volver": "Nosotros",
+    "estudiosTitulo": "Estudios",
+    "estudios": "Maestría en Orientación Educativa Familiar · [[POR DEFINIR: títulos completos, universidades e iniciales para la tarjeta]]",
+    "sobreTitulo": "Sobre mí",
+    "sobre": "Soy Juan Pablo Gómez, psicólogo colombiano con maestría en orientación educativa familiar. Antes de la psicología estudié filosofía y teología, y eso me enseñó a mirar al ser humano de forma integral. He trabajado en docencia, rehabilitación y salud pública, y diseñé un protocolo de intervención para familias que hoy continúa en la Fundación Génesis. Vivo en Australia, así que sé lo que es empezar de cero lejos de casa. Mi forma de trabajar es cercana y directa: te escucho sin juzgarte, te digo las cosas de frente y te doy herramientas claras. Tú decides, actúas y te transformas. Yo te acompaño.",
+    "temasTitulo": "Temas que atiendo",
+    "idiomasTitulo": "Idiomas",
+    "idiomas": "Español [[POR CONFIRMAR: inglés]]",
+    "registroTitulo": "Registro profesional",
+    "registro": "Psicólogo registrado en Colombia (COLPSIC). [[POR DEFINIR: cómo presentar el servicio a personas en Australia (consulta legal pendiente)]]",
+    "agendar": "Agenda tu primera cita"
+  },
   "inicio": {
     "hero": {
       "apoyo": "Terapia psicológica online, desde donde estés.",
@@ -143,12 +221,7 @@
     },
     "quien": {
       "titulo": "Quién te acompaña",
-      "nombre": "Juan Pablo Gómez",
-      "cargo": "Psicólogo · registrado en Colombia (COLPSIC)",
-      "estudios": "[[POR DEFINIR: iniciales de estudios]]",
-      "frase": "Sé lo que es empezar de cero lejos de casa, porque también lo viví.",
-      "perfil": "Perfil",
-      "agendar": "Agendar cita"
+      "frase": "Sé lo que es empezar de cero lejos de casa, porque también lo viví."
     },
     "recursos": {
       "titulo": "Recursos gratuitos",
