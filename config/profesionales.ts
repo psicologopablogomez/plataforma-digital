@@ -11,7 +11,10 @@ export type EtiquetaId =
   | "dependencia"
   | "ira"
   | "sentido"
-  | "vocacional";
+  | "vocacional"
+  | "pareja"
+  | "familia"
+  | "migracion";
 
 export type Profesional = {
   id: "juan-pablo";

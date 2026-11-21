@@ -4,7 +4,11 @@
     "promesa": "A safe space to see yourself without masks, and someone by your side, today, as you transform.",
     "cierre": "The extraordinary starts with an everyday decision.",
     "lema": "Wherever you are, one step at a time.",
-    "etapas": ["Recognize", "Transform", "Move forward"]
+    "etapas": [
+      "Recognize",
+      "Transform",
+      "Move forward"
+    ]
   },
   "nav": {
     "inicio": "Home",
@@ -30,7 +34,11 @@
     "elegirPais": "Choose your country",
     "linea": "Helpline",
     "cerrar": "Close",
-    "paises": { "AU": "Australia", "CO": "Colombia", "ES": "Spain" }
+    "paises": {
+      "AU": "Australia",
+      "CO": "Colombia",
+      "ES": "Spain"
+    }
   },
   "pie": {
     "menu": "Menu",
@@ -78,7 +86,10 @@
     "dependencia": "Emotional dependence",
     "ira": "Managing anger and emotions",
     "sentido": "Sense of purpose",
-    "vocacional": "Career guidance"
+    "vocacional": "Career guidance",
+    "pareja": "Couples",
+    "familia": "Family",
+    "migracion": "Migration"
   },
   "tarjeta": {
     "perfil": "Profile",
@@ -121,14 +132,30 @@
     "proceso": {
       "titulo": "Your process in 3 stages",
       "etapas": [
-        { "titulo": "Recognize.", "texto": "Realizing it is already beginning." },
-        { "titulo": "Transform.", "texto": "It's not magic: it's a process, and we do it together." },
-        { "titulo": "Move forward.", "texto": "What you built is yours." }
+        {
+          "titulo": "Recognize.",
+          "texto": "Realizing it is already beginning."
+        },
+        {
+          "titulo": "Transform.",
+          "texto": "It's not magic: it's a process, and we do it together."
+        },
+        {
+          "titulo": "Move forward.",
+          "texto": "What you built is yours."
+        }
       ]
     },
     "valores": {
       "titulo": "Our values",
-      "items": ["Authenticity", "Courage", "Connection", "Clarity", "Freedom", "Acceptance"]
+      "items": [
+        "Authenticity",
+        "Courage",
+        "Connection",
+        "Clarity",
+        "Freedom",
+        "Acceptance"
+      ]
     },
     "acompana": {
       "titulo": "Who is by your side"
@@ -238,7 +265,11 @@
     "prueba": "Test version: for now no data is saved and no payment is taken.",
     "validar": "[[POR VALIDAR: orden de los pasos 2 y 3 (pagar y después agendar, o al revés)]]",
     "paso": "Step",
-    "pasos": ["Your details", "Pay for your first session", "Choose your time"],
+    "pasos": [
+      "Your details",
+      "Pay for your first session",
+      "Choose your time"
+    ],
     "atras": "Back",
     "form": {
       "nombre": "Name",
@@ -248,7 +279,10 @@
       "paisAyuda": "This sets your price and your time zone",
       "elige": "Choose your country",
       "idioma": "Language",
-      "idiomas": { "es": "Español", "en": "English" },
+      "idiomas": {
+        "es": "Español",
+        "en": "English"
+      },
       "paraQuien": "Who is it for?",
       "opcionesParaQuien": {
         "yo": "For me",
@@ -288,6 +322,139 @@
       "escucha": "Book a free listening session",
       "whatsapp": "Message us on WhatsApp"
     }
+  },
+  "recursos": {
+    "titulo": "Resources for your everyday life",
+    "texto": "Free tools to understand what you're living and take a first step.",
+    "filtros": {
+      "todos": "All",
+      "tests": "Tests",
+      "guias": "Guides"
+    },
+    "tipos": {
+      "test": "Test",
+      "guia": "Guide"
+    },
+    "descargar": "Download",
+    "pendiente": "[[POR DEFINIR: guías reales]]",
+    "items": {
+      "orientacion": {
+        "titulo": "Orientation test: where to start?",
+        "linea": "Answer 4 questions (1 minute) and we'll show you which area is best to work on.",
+        "boton": "Take the test"
+      },
+      "primera-sesion": {
+        "titulo": "Guide for your first session: what to share, what to ask and how it works",
+        "linea": "",
+        "boton": "Download"
+      },
+      "trampas": {
+        "titulo": "4 mind traps and how to rethink them",
+        "linea": "",
+        "boton": "Download"
+      },
+      "decir-no": {
+        "titulo": "How to say no in 10 steps",
+        "linea": "",
+        "boton": "Download"
+      }
+    },
+    "aviso": "This content is informational and does not replace a therapeutic process.",
+    "cierre": {
+      "texto": "When you're ready, we're here.",
+      "boton": "Book your first session"
+    }
+  },
+  "eventos": {
+    "titulo": "Events and workshops",
+    "texto": "Every month, a free workshop to look together at what we live.",
+    "primer": "First event",
+    "formatoEtiqueta": "Format",
+    "formato": "Live on Facebook Live (clips on Instagram and TikTok)",
+    "inscripcionTitulo": "Sign up",
+    "form": {
+      "nombre": "Name",
+      "correo": "Email",
+      "pais": "Country",
+      "whatsapp": "WhatsApp",
+      "opcional": "(optional)",
+      "boton": "Sign up",
+      "prueba": "Test version: for now no data is saved.",
+      "enviado": "Thank you. This is a test version: your sign-up has not been saved yet."
+    }
+  },
+  "contacto": {
+    "titulo": "Shall we talk?",
+    "texto": "Write to us calmly. We'll reply as soon as we can.",
+    "whatsapp": "Message us on WhatsApp",
+    "correo": "Email",
+    "redes": "Social media",
+    "form": {
+      "titulo": "Or leave us a message",
+      "nombre": "Name",
+      "correo": "Email",
+      "mensaje": "Message",
+      "opcional": "(optional)",
+      "boton": "Send message",
+      "prueba": "Test version: for now messages are not sent or saved.",
+      "enviado": "Thank you. This is a test version: your message has not been sent yet."
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "p": "Is therapy only for serious problems?",
+        "r": "You don't need to be at your limit to begin. Many people come because something weighs on them in their everyday life."
+      },
+      {
+        "p": "What are the sessions like?",
+        "r": "Online, by video call, 50 minutes long. The link arrives by email when you book."
+      },
+      {
+        "p": "What happens in the free listening session?",
+        "r": "It's 10 minutes to tell us what brings you here and guide you on the next step. It is not a therapy session."
+      },
+      {
+        "p": "What happens in the first session?",
+        "r": "We get to know each other, you tell us what you're going through and we set goals together. You don't need to have it all figured out."
+      },
+      {
+        "p": "How does the membership work?",
+        "r": "After your first session you choose 4 or 8 sessions a month. It includes 2 brief listening spaces each week."
+      },
+      {
+        "p": "My partner doesn't want to come. Can I start on my own?",
+        "r": "Yes. You can start."
+      },
+      {
+        "p": "My son is the one who needs therapy. Why come as a family?",
+        "r": "Because change at home starts with everyone. With teenagers, the family's participation is part of the process."
+      },
+      {
+        "p": "I don't have time, I work all day.",
+        "r": "Sessions are online and from wherever you are; you see the times in your local time."
+      },
+      {
+        "p": "Will I be judged?",
+        "r": "No. This is a space to speak without being judged."
+      },
+      {
+        "p": "Can I reschedule or cancel?",
+        "r": "Yes. [[POR DEFINIR: política de cancelación]]"
+      },
+      {
+        "p": "Is my data protected?",
+        "r": "The platform only stores your contact details and your appointments. Your session notes are not stored here."
+      },
+      {
+        "p": "Do you handle emergencies?",
+        "r": "No. If you are in crisis, use the help button to see the helplines for your country."
+      },
+      {
+        "p": "What language are the sessions in?",
+        "r": "In Spanish. [[POR CONFIRMAR: inglés]]"
+      }
+    ]
   },
   "inicio": {
     "hero": {
@@ -402,25 +569,7 @@
     },
     "faq": {
       "titulo": "Frequently asked questions",
-      "todas": "See all questions",
-      "items": [
-        {
-          "p": "Is therapy only for serious problems?",
-          "r": "You don't need to be at your limit to begin. Many people come because something weighs on them in their everyday life."
-        },
-        {
-          "p": "What are the sessions like?",
-          "r": "Online, by video call, 50 minutes long. The link arrives by email when you book."
-        },
-        {
-          "p": "What happens in the first session?",
-          "r": "We get to know each other, you tell us what you're going through and we set goals together. You don't need to have it all figured out."
-        },
-        {
-          "p": "Do you handle emergencies?",
-          "r": "No. If you are in crisis, use the help button to see the helplines for your country."
-        }
-      ]
+      "todas": "See all questions"
     },
     "cierre": {
       "boton": "Book your first session"

@@ -24,10 +24,6 @@ export function isPlaceholder(value: string): boolean {
 
 // Páginas del menú y páginas fuera del menú que ya existen como ruta.
 export const pageSlugs = [
-  "recursos",
-  "eventos",
-  "preguntas-frecuentes",
-  "contacto",
   "mi-espacio",
   "aviso-de-privacidad",
   "terminos-y-condiciones",

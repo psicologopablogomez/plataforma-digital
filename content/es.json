@@ -4,7 +4,11 @@
     "promesa": "Un espacio seguro para mirarte sin máscaras, y alguien que te acompaña hoy, mientras te transformas.",
     "cierre": "Lo extraordinario empieza con una decisión de todos los días.",
     "lema": "Desde donde estés, un paso a la vez.",
-    "etapas": ["Reconocer", "Transformar", "Avanzar"]
+    "etapas": [
+      "Reconocer",
+      "Transformar",
+      "Avanzar"
+    ]
   },
   "nav": {
     "inicio": "Inicio",
@@ -30,7 +34,11 @@
     "elegirPais": "Elige tu país",
     "linea": "Línea de atención",
     "cerrar": "Cerrar",
-    "paises": { "AU": "Australia", "CO": "Colombia", "ES": "España" }
+    "paises": {
+      "AU": "Australia",
+      "CO": "Colombia",
+      "ES": "España"
+    }
   },
   "pie": {
     "menu": "Menú",
@@ -78,7 +86,10 @@
     "dependencia": "Dependencia emocional",
     "ira": "Manejo de la ira y las emociones",
     "sentido": "Sentido de vida",
-    "vocacional": "Orientación vocacional"
+    "vocacional": "Orientación vocacional",
+    "pareja": "Pareja",
+    "familia": "Familia",
+    "migracion": "Migración"
   },
   "tarjeta": {
     "perfil": "Perfil",
@@ -121,14 +132,30 @@
     "proceso": {
       "titulo": "Tu proceso en 3 etapas",
       "etapas": [
-        { "titulo": "Reconocer.", "texto": "Darte cuenta ya es empezar." },
-        { "titulo": "Transformar.", "texto": "No es magia: es un proceso, y lo hacemos juntos." },
-        { "titulo": "Avanzar.", "texto": "Lo que construiste es tuyo." }
+        {
+          "titulo": "Reconocer.",
+          "texto": "Darte cuenta ya es empezar."
+        },
+        {
+          "titulo": "Transformar.",
+          "texto": "No es magia: es un proceso, y lo hacemos juntos."
+        },
+        {
+          "titulo": "Avanzar.",
+          "texto": "Lo que construiste es tuyo."
+        }
       ]
     },
     "valores": {
       "titulo": "Nuestros valores",
-      "items": ["Autenticidad", "Valentía", "Conexión", "Claridad", "Libertad", "Aceptación"]
+      "items": [
+        "Autenticidad",
+        "Valentía",
+        "Conexión",
+        "Claridad",
+        "Libertad",
+        "Aceptación"
+      ]
     },
     "acompana": {
       "titulo": "Quién te acompaña"
@@ -238,7 +265,11 @@
     "prueba": "Versión de prueba: por ahora no se guardan datos ni se cobra.",
     "validar": "[[POR VALIDAR: orden de los pasos 2 y 3 (pagar y después agendar, o al revés)]]",
     "paso": "Paso",
-    "pasos": ["Tus datos", "Paga tu primera cita", "Elige tu horario"],
+    "pasos": [
+      "Tus datos",
+      "Paga tu primera cita",
+      "Elige tu horario"
+    ],
     "atras": "Atrás",
     "form": {
       "nombre": "Nombre",
@@ -248,7 +279,10 @@
       "paisAyuda": "Define tu precio y tu zona horaria",
       "elige": "Elige tu país",
       "idioma": "Idioma",
-      "idiomas": { "es": "Español", "en": "English" },
+      "idiomas": {
+        "es": "Español",
+        "en": "English"
+      },
       "paraQuien": "¿Para quién es?",
       "opcionesParaQuien": {
         "yo": "Para mí",
@@ -288,6 +322,139 @@
       "escucha": "Agenda una escucha gratuita",
       "whatsapp": "Escríbenos por WhatsApp"
     }
+  },
+  "recursos": {
+    "titulo": "Recursos para tu día a día",
+    "texto": "Herramientas gratuitas para entender lo que vives y dar un primer paso.",
+    "filtros": {
+      "todos": "Todos",
+      "tests": "Tests",
+      "guias": "Guías"
+    },
+    "tipos": {
+      "test": "Test",
+      "guia": "Guía"
+    },
+    "descargar": "Descargar",
+    "pendiente": "[[POR DEFINIR: guías reales]]",
+    "items": {
+      "orientacion": {
+        "titulo": "Test de orientación: ¿por dónde empezar?",
+        "linea": "Responde 4 preguntas (1 minuto) y te mostramos en qué área te conviene trabajar.",
+        "boton": "Hacer test"
+      },
+      "primera-sesion": {
+        "titulo": "Guía para tu primera sesión: qué contar, qué preguntar y cómo funciona",
+        "linea": "",
+        "boton": "Descargar"
+      },
+      "trampas": {
+        "titulo": "4 trampas de la mente y cómo replantearlas",
+        "linea": "",
+        "boton": "Descargar"
+      },
+      "decir-no": {
+        "titulo": "Cómo decir no en 10 pasos",
+        "linea": "",
+        "boton": "Descargar"
+      }
+    },
+    "aviso": "Este contenido es informativo y no reemplaza un proceso terapéutico.",
+    "cierre": {
+      "texto": "Cuando estés listo, aquí estamos.",
+      "boton": "Agenda tu primera cita"
+    }
+  },
+  "eventos": {
+    "titulo": "Eventos y talleres",
+    "texto": "Cada mes, un taller gratuito para mirar juntos lo que vivimos.",
+    "primer": "Primer evento",
+    "formatoEtiqueta": "Formato",
+    "formato": "En vivo por Facebook Live (fragmentos en Instagram y TikTok)",
+    "inscripcionTitulo": "Inscríbete",
+    "form": {
+      "nombre": "Nombre",
+      "correo": "Correo",
+      "pais": "País",
+      "whatsapp": "WhatsApp",
+      "opcional": "(opcional)",
+      "boton": "Inscríbete",
+      "prueba": "Versión de prueba: por ahora no se guardan datos.",
+      "enviado": "Gracias. Esto es una versión de prueba: tu inscripción todavía no se guardó."
+    }
+  },
+  "contacto": {
+    "titulo": "¿Hablamos?",
+    "texto": "Escríbenos con calma. Te respondemos lo antes posible.",
+    "whatsapp": "Escríbenos por WhatsApp",
+    "correo": "Correo",
+    "redes": "Redes",
+    "form": {
+      "titulo": "O déjanos un mensaje",
+      "nombre": "Nombre",
+      "correo": "Correo",
+      "mensaje": "Mensaje",
+      "opcional": "(opcional)",
+      "boton": "Enviar mensaje",
+      "prueba": "Versión de prueba: por ahora no se envían ni se guardan mensajes.",
+      "enviado": "Gracias. Esto es una versión de prueba: tu mensaje todavía no se envió."
+    }
+  },
+  "faq": {
+    "items": [
+      {
+        "p": "¿La terapia es solo para problemas graves?",
+        "r": "No necesitas estar al límite para empezar. Muchas personas llegan porque algo les pesa en su día a día."
+      },
+      {
+        "p": "¿Cómo son las sesiones?",
+        "r": "Online, por videollamada, de 50 minutos. El enlace te llega por correo al agendar."
+      },
+      {
+        "p": "¿Qué pasa en la escucha gratuita?",
+        "r": "Son 10 minutos para contarnos qué te trae y orientarte sobre el siguiente paso. No es una sesión de terapia."
+      },
+      {
+        "p": "¿Qué pasa en la primera cita?",
+        "r": "Nos conocemos, nos cuentas qué estás viviendo y definimos juntos los objetivos. No tienes que tenerlo todo claro."
+      },
+      {
+        "p": "¿Cómo funciona la membresía?",
+        "r": "Después de tu primera cita eliges 4 u 8 sesiones al mes. Incluye 2 espacios de escucha breve por semana."
+      },
+      {
+        "p": "Mi pareja no quiere ir. ¿Puedo empezar yo?",
+        "r": "Sí. Puedes empezar tú."
+      },
+      {
+        "p": "El que necesita terapia es mi hijo. ¿Por qué ir en familia?",
+        "r": "Porque el cambio en casa empieza con todos. Con adolescentes, la participación de la familia es parte del proceso."
+      },
+      {
+        "p": "No tengo tiempo, trabajo todo el día.",
+        "r": "Las sesiones son online y desde donde estés; ves los horarios en tu hora local."
+      },
+      {
+        "p": "¿Me van a juzgar?",
+        "r": "No. Este es un espacio para hablar sin ser juzgado."
+      },
+      {
+        "p": "¿Puedo reprogramar o cancelar?",
+        "r": "Sí. [[POR DEFINIR: política de cancelación]]"
+      },
+      {
+        "p": "¿Mis datos están protegidos?",
+        "r": "En la plataforma solo se guardan tus datos de contacto y tus citas. Las notas de tus sesiones no se guardan aquí."
+      },
+      {
+        "p": "¿Atienden urgencias?",
+        "r": "No. Si estás en crisis, usa el botón de ayuda para ver las líneas de atención de tu país."
+      },
+      {
+        "p": "¿En qué idioma son las sesiones?",
+        "r": "En español. [[POR CONFIRMAR: inglés]]"
+      }
+    ]
   },
   "inicio": {
     "hero": {
@@ -402,25 +569,7 @@
     },
     "faq": {
       "titulo": "Preguntas frecuentes",
-      "todas": "Ver todas las preguntas",
-      "items": [
-        {
-          "p": "¿La terapia es solo para problemas graves?",
-          "r": "No necesitas estar al límite para empezar. Muchas personas llegan porque algo les pesa en su día a día."
-        },
-        {
-          "p": "¿Cómo son las sesiones?",
-          "r": "Online, por videollamada, de 50 minutos. El enlace te llega por correo al agendar."
-        },
-        {
-          "p": "¿Qué pasa en la primera cita?",
-          "r": "Nos conocemos, nos cuentas qué estás viviendo y definimos juntos los objetivos. No tienes que tenerlo todo claro."
-        },
-        {
-          "p": "¿Atienden urgencias?",
-          "r": "No. Si estás en crisis, usa el botón de ayuda para ver las líneas de atención de tu país."
-        }
-      ]
+      "todas": "Ver todas las preguntas"
     },
     "cierre": {
       "boton": "Agenda tu primera cita"

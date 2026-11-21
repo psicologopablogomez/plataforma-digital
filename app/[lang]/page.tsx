@@ -27,6 +27,9 @@ export default async function Home({
   const t = getDictionary(lang);
   const i = t.inicio;
   const base = `/${lang}`;
+  // Las 4 preguntas más importantes, tomadas de la lista completa (content "faq.items"):
+  // solo para problemas graves, cómo son las sesiones, primera cita y urgencias.
+  const faqDestacadas = [0, 1, 3, 11].map((n) => t.faq.items[n]);
 
   return (
     <main>
@@ -211,7 +214,7 @@ export default async function Home({
       {/* 9. Preguntas frecuentes (las 4 más importantes) */}
       <Seccion titulo={i.faq.titulo} fondo="suave">
         <div className="mx-auto flex max-w-3xl flex-col gap-3">
-          {i.faq.items.map((item) => (
+          {faqDestacadas.map((item) => (
             <details
               key={item.p}
               className="group rounded-xl bg-white p-5 shadow-sm open:shadow-md"

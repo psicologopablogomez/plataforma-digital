@@ -1,23 +1,7 @@
 import Link from "next/link";
 import { site } from "@/config/site";
-import { isPlaceholder, type Dictionary, type Locale } from "@/lib/i18n";
-
-// Un enlace real solo si el dato ya está definido; si no, se muestra el relleno.
-function Enlace({ nombre, url }: { nombre: string; url: string }) {
-  if (isPlaceholder(url)) {
-    return (
-      <span className="opacity-80">
-        {nombre}{" "}
-        <span className="font-mono text-xs text-naranja">{url}</span>
-      </span>
-    );
-  }
-  return (
-    <a href={url} className="hover:underline" rel="noopener noreferrer">
-      {nombre}
-    </a>
-  );
-}
+import type { Dictionary, Locale } from "@/lib/i18n";
+import Enlace from "./EnlaceExterno";
 
 export default function Footer({
   lang,
