@@ -232,6 +232,63 @@
       "whatsapp": "Message us on WhatsApp"
     }
   },
+  "agenda": {
+    "titulo": "Book your first session",
+    "texto": "Your first session is for getting to know each other: you tell us what you're going through and we decide together where to start. It's 50 minutes, online, from wherever you are.",
+    "prueba": "Test version: for now no data is saved and no payment is taken.",
+    "validar": "[[POR VALIDAR: orden de los pasos 2 y 3 (pagar y después agendar, o al revés)]]",
+    "paso": "Step",
+    "pasos": ["Your details", "Pay for your first session", "Choose your time"],
+    "atras": "Back",
+    "form": {
+      "nombre": "Name",
+      "correo": "Email",
+      "whatsapp": "WhatsApp",
+      "pais": "Country",
+      "paisAyuda": "This sets your price and your time zone",
+      "elige": "Choose your country",
+      "idioma": "Language",
+      "idiomas": { "es": "Español", "en": "English" },
+      "paraQuien": "Who is it for?",
+      "opcionesParaQuien": {
+        "yo": "For me",
+        "pareja": "As a couple",
+        "familia": "As a family",
+        "hijo": "For my teenage son or daughter"
+      },
+      "queTrae": "In a few words, what brings you here?",
+      "opcional": "(optional)",
+      "menor": "The person who will have the sessions is under 18",
+      "tutorTitulo": "Parent or guardian details",
+      "tutorNombre": "Parent or guardian name",
+      "tutorCorreo": "Parent or guardian email",
+      "tutorAutoriza": "As a parent or guardian, I authorize this person to have therapy sessions.",
+      "acepto": "I accept",
+      "privacidad": "the privacy notice",
+      "consentimiento": "the informed consent",
+      "cancelacion": "the cancellation policy",
+      "continuar": "Continue to payment"
+    },
+    "pago": {
+      "titulo": "Pay for your first session",
+      "precio": "Price of your first session",
+      "boton": "Pay with Stripe",
+      "nota": "When the payment is done you'll come back to this page, to step 3.",
+      "continuar": "Continue to scheduling"
+    },
+    "horario": {
+      "titulo": "Choose your time",
+      "texto": "You'll see the available times in your own time zone. When you book, you'll receive the Google Meet link by email.",
+      "zona": "Your time zone",
+      "calendario": "The Calendly calendar will appear here."
+    },
+    "lateral": {
+      "titulo": "Still have questions?",
+      "texto": "Book a free 10-minute listening session or message us on WhatsApp.",
+      "escucha": "Book a free listening session",
+      "whatsapp": "Message us on WhatsApp"
+    }
+  },
   "inicio": {
     "hero": {
       "apoyo": "Online psychological therapy, from wherever you are.",

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { formato } from "@/lib/formato";
 import Relleno from "./Relleno";
 
 type Region = "CO" | "AU" | "LATAM";
@@ -16,12 +17,6 @@ type Textos = {
   filas: { primera: string; member4: string; member8: string };
   nota: string;
 };
-
-// Separador de miles fijo (igual en el servidor y en el navegador): 100.000 en español, 100,000 en inglés.
-function formato(valor: number, lang: string): string {
-  const separador = lang === "es" ? "." : ",";
-  return valor.toString().replace(/\B(?=(\d{3})+(?!\d))/g, separador);
-}
 
 function Celda({ valor, moneda, lang }: { valor: Valor; moneda: string; lang: string }) {
   if (typeof valor === "number") return <>{`${moneda} ${formato(valor, lang)}`}</>;

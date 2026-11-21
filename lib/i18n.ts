@@ -28,7 +28,6 @@ export const pageSlugs = [
   "eventos",
   "preguntas-frecuentes",
   "contacto",
-  "agenda",
   "mi-espacio",
   "aviso-de-privacidad",
   "terminos-y-condiciones",

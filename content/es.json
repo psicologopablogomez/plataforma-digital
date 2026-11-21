@@ -232,6 +232,63 @@
       "whatsapp": "Escríbenos por WhatsApp"
     }
   },
+  "agenda": {
+    "titulo": "Agenda tu primera cita",
+    "texto": "Tu primera cita es para conocernos: nos cuentas qué estás viviendo y definimos juntos por dónde empezar. Son 50 minutos, online, desde donde estés.",
+    "prueba": "Versión de prueba: por ahora no se guardan datos ni se cobra.",
+    "validar": "[[POR VALIDAR: orden de los pasos 2 y 3 (pagar y después agendar, o al revés)]]",
+    "paso": "Paso",
+    "pasos": ["Tus datos", "Paga tu primera cita", "Elige tu horario"],
+    "atras": "Atrás",
+    "form": {
+      "nombre": "Nombre",
+      "correo": "Correo",
+      "whatsapp": "WhatsApp",
+      "pais": "País",
+      "paisAyuda": "Define tu precio y tu zona horaria",
+      "elige": "Elige tu país",
+      "idioma": "Idioma",
+      "idiomas": { "es": "Español", "en": "English" },
+      "paraQuien": "¿Para quién es?",
+      "opcionesParaQuien": {
+        "yo": "Para mí",
+        "pareja": "En pareja",
+        "familia": "En familia",
+        "hijo": "Para mi hijo o hija adolescente"
+      },
+      "queTrae": "En pocas palabras, ¿qué te trae?",
+      "opcional": "(opcional)",
+      "menor": "La persona que tendrá las sesiones es menor de 18 años",
+      "tutorTitulo": "Datos de la madre, padre o tutor",
+      "tutorNombre": "Nombre de la madre, padre o tutor",
+      "tutorCorreo": "Correo de la madre, padre o tutor",
+      "tutorAutoriza": "Como madre, padre o tutor, autorizo que esta persona tenga sesiones de terapia.",
+      "acepto": "Acepto",
+      "privacidad": "el aviso de privacidad",
+      "consentimiento": "el consentimiento informado",
+      "cancelacion": "la política de cancelación",
+      "continuar": "Continuar al pago"
+    },
+    "pago": {
+      "titulo": "Paga tu primera cita",
+      "precio": "Valor de tu primera cita",
+      "boton": "Pagar con Stripe",
+      "nota": "Al terminar el pago volverás a esta página, al paso 3.",
+      "continuar": "Continuar al horario"
+    },
+    "horario": {
+      "titulo": "Elige tu horario",
+      "texto": "Verás los horarios disponibles en tu zona horaria. Al agendar, recibirás por correo el enlace de Google Meet.",
+      "zona": "Tu zona horaria",
+      "calendario": "Aquí aparecerá el calendario de Calendly."
+    },
+    "lateral": {
+      "titulo": "¿Todavía tienes dudas?",
+      "texto": "Agenda una escucha gratuita de 10 minutos o escríbenos por WhatsApp.",
+      "escucha": "Agenda una escucha gratuita",
+      "whatsapp": "Escríbenos por WhatsApp"
+    }
+  },
   "inicio": {
     "hero": {
       "apoyo": "Terapia psicológica online, desde donde estés.",
