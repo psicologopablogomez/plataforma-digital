@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { site } from "@/config/site";
+import es from "@/content/es.json";
 
 export const metadata: Metadata = {
-  title: "Pablo Gómez",
-  description: "Bienvenido a la plataforma digital de Pablo Gómez",
+  title: site.name,
+  description: es.marca.promesa,
 };
 
 export default function RootLayout({

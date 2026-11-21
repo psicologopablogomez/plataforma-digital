@@ -1,0 +1,16 @@
+{
+  "marca": {
+    "filosofia": "Every light begins in the darkness you dare to look at.",
+    "promesa": "A safe space to see yourself without masks, and someone by your side, today, as you transform.",
+    "cierre": "The extraordinary starts with an everyday decision.",
+    "lema": "Wherever you are, one step at a time.",
+    "etapas": ["Recognize", "Transform", "Move forward"]
+  },
+  "inicio": {
+    "hero": {
+      "apoyo": "[[POR ADAPTAR: línea de apoyo en inglés]]",
+      "botonPrincipal": "[[POR ADAPTAR: botón principal en inglés]]",
+      "botonSecundario": "[[POR ADAPTAR: botón secundario en inglés]]"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "marca": {
+    "filosofia": "Toda luz empieza en la oscuridad que te atreves a mirar.",
+    "promesa": "Un espacio seguro para mirarte sin máscaras, y alguien que te acompaña hoy, mientras te transformas.",
+    "cierre": "Lo extraordinario empieza con una decisión de todos los días.",
+    "lema": "Desde donde estés, un paso a la vez.",
+    "etapas": ["Reconocer", "Transformar", "Avanzar"]
+  },
+  "inicio": {
+    "hero": {
+      "apoyo": "Terapia psicológica online, desde donde estés.",
+      "botonPrincipal": "Agenda tu primera cita",
+      "botonSecundario": "¿No sabes por dónde empezar? Haz el test"
+    }
+  }
+}

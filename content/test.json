@@ -1,0 +1,75 @@
+{
+  "_nota": "Borrador por validar con Juan Pablo. Es una orientación, no un diagnóstico.",
+  "es": {
+    "entrada": {
+      "texto": "¿No sabes por dónde empezar? Responde 4 preguntas (1 minuto) y te mostramos en qué área te conviene trabajar.",
+      "empezar": "Empezar",
+      "ahoraNo": "Ahora no"
+    },
+    "preguntas": [
+      {
+        "id": "pesa",
+        "texto": "¿Qué es lo que más te pesa hoy?",
+        "opciones": [
+          { "texto": "Mi mente no para, me siento agotado o con ansiedad", "area": "A" },
+          { "texto": "Una relación, una ruptura o una pérdida", "area": "B" },
+          { "texto": "La convivencia en casa o con mis hijos", "area": "C" },
+          { "texto": "Vivir lejos de casa o empezar de nuevo en otro lugar", "area": "D" }
+        ]
+      },
+      {
+        "id": "con-quien",
+        "texto": "¿Con quién te gustaría trabajarlo?",
+        "opciones": [
+          { "texto": "Solo/a", "servicio": "individual" },
+          { "texto": "En pareja", "servicio": "pareja" },
+          { "texto": "En familia", "servicio": "familiar" },
+          { "texto": "Con mi hijo o hija adolescente", "servicio": "familiar" }
+        ]
+      },
+      {
+        "id": "desde-cuando",
+        "texto": "¿Desde hace cuánto te sientes así?",
+        "opciones": [
+          { "texto": "Menos de un mes" },
+          { "texto": "Entre uno y seis meses" },
+          { "texto": "Más de seis meses" }
+        ]
+      },
+      {
+        "id": "afecta",
+        "texto": "¿Cuánto afecta tu día a día?",
+        "opciones": [
+          { "texto": "Poco" },
+          { "texto": "Bastante" },
+          { "texto": "Mucho", "alerta": true }
+        ]
+      }
+    ],
+    "resultados": {
+      "A": {
+        "titulo": "Calmar lo que sientes",
+        "texto": "Cuando la mente no para, todo pesa más. No necesitas estar al límite para pedir ayuda: podemos aprender a observarla juntos, paso a paso."
+      },
+      "B": {
+        "titulo": "Cuando algo se rompió",
+        "texto": "Cerrar también se aprende, y reconstruir también. Vamos a tu ritmo."
+      },
+      "C": {
+        "titulo": "Entenderse en casa",
+        "texto": "Nadie nos dio un manual para entendernos. Podemos construir uno juntos."
+      },
+      "D": {
+        "titulo": "Empezar de cero lejos de casa",
+        "texto": "Extrañar la vida que dejaste es real, y se puede trabajar. Aquí te acompaña alguien que también lo vivió."
+      }
+    },
+    "avisoAlerta": "Lo que sientes es importante. Si en algún momento sientes que no puedes más, usa el botón de ayuda.",
+    "botones": {
+      "primeraCita": "Agenda tu primera cita",
+      "escucha": "Agenda una escucha gratuita",
+      "recursos": "Ver recursos para esta área"
+    },
+    "aviso": "Este resultado es orientativo y no reemplaza una valoración profesional."
+  }
+}
