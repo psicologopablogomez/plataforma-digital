@@ -147,6 +147,91 @@
     "registro": "Psicólogo registrado en Colombia (COLPSIC). [[POR DEFINIR: cómo presentar el servicio a personas en Australia (consulta legal pendiente)]]",
     "agendar": "Agenda tu primera cita"
   },
+  "servicios": {
+    "intro": {
+      "titulo": "Servicios",
+      "texto": "Todas nuestras sesiones son online, duran 50 minutos y puedes tomarlas desde donde estés."
+    },
+    "tipos": {
+      "titulo": "Tipos de terapia",
+      "agendar": "Agenda tu primera cita",
+      "items": [
+        {
+          "titulo": "Terapia individual",
+          "subtitulo": "Adolescentes y adultos",
+          "tension": "Siento que voy tarde en todo y no paro de pensar.",
+          "texto": "Vamos a encontrar tu propio ritmo, sin máscaras."
+        },
+        {
+          "titulo": "Terapia de pareja",
+          "subtitulo": "",
+          "tension": "Discutimos por todo y estoy agotado.",
+          "texto": "Aprende a hablar de lo que importa sin terminar en la misma pelea. Si tu pareja no quiere venir, puedes empezar tú."
+        },
+        {
+          "titulo": "Terapia familiar",
+          "subtitulo": "",
+          "tension": "Mi hijo adolescente ya no me habla.",
+          "texto": "Nadie nos dio un manual para entendernos. Podemos construir uno juntos."
+        },
+        {
+          "titulo": "Acompañamiento a migrantes",
+          "subtitulo": "",
+          "tension": "Estoy cumpliendo mi sueño y aun así me siento solo.",
+          "texto": "Terapia en español con alguien que también empezó de cero lejos de casa."
+        }
+      ]
+    },
+    "avanzas": {
+      "titulo": "Cómo avanzas",
+      "items": [
+        {
+          "titulo": "Escucha gratuita · 10 min",
+          "texto": "Para contarnos qué te trae y resolver tus dudas antes de empezar. No es una sesión de terapia. Cupos limitados por semana.",
+          "boton": "Agenda tu escucha gratuita"
+        },
+        {
+          "titulo": "Primera cita · 50 min",
+          "texto": "Para conocernos y definir juntos los objetivos. Se toma una sola vez.",
+          "boton": "Agenda tu primera cita"
+        },
+        {
+          "titulo": "Membresía mensual",
+          "texto": "Después de tu primera cita, continúas tu proceso con 4 sesiones al mes o con 8 sesiones al mes. Incluye tu espacio de escucha breve (ver abajo) y el seguimiento en Mi espacio.",
+          "boton": ""
+        }
+      ]
+    },
+    "tarifas": {
+      "titulo": "Tarifas",
+      "region": "Elige tu región",
+      "regiones": {
+        "CO": "Colombia",
+        "AU": "Australia",
+        "LATAM": "Resto de Latinoamérica"
+      },
+      "filas": {
+        "primera": "Primera cita",
+        "member4": "Membresía · 4 sesiones al mes",
+        "member8": "Membresía · 8 sesiones al mes"
+      },
+      "nota": "El valor es el mismo para terapia individual, de pareja y familiar."
+    },
+    "escucha": {
+      "titulo": "Cuando necesitas hablar antes de tu próxima sesión",
+      "texto": "Si tienes una membresía activa, cuentas con 2 espacios de 10 minutos por semana, sin costo adicional, para comentar algo puntual o simplemente ser escuchado. No reemplazan tu sesión: son un apoyo entre sesiones. Los agendas desde Mi espacio. Si necesitas más, puedes adquirir espacios adicionales [[POR DEFINIR: precio]]."
+    },
+    "talleres": {
+      "titulo": "Talleres y eventos",
+      "texto": "Cada mes compartimos un taller gratuito y abierto a todos.",
+      "boton": "Ver eventos"
+    },
+    "cierre": {
+      "texto": "¿Tienes dudas? Agenda una escucha gratuita o escríbenos por WhatsApp.",
+      "escucha": "Agenda una escucha gratuita",
+      "whatsapp": "Escríbenos por WhatsApp"
+    }
+  },
   "inicio": {
     "hero": {
       "apoyo": "Terapia psicológica online, desde donde estés.",

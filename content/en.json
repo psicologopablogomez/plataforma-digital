@@ -147,6 +147,91 @@
     "registro": "Psychologist registered in Colombia (COLPSIC). [[POR DEFINIR: cómo presentar el servicio a personas en Australia (consulta legal pendiente)]]",
     "agendar": "Book your first session"
   },
+  "servicios": {
+    "intro": {
+      "titulo": "Services",
+      "texto": "All our sessions are online, last 50 minutes and you can take them from wherever you are."
+    },
+    "tipos": {
+      "titulo": "Types of therapy",
+      "agendar": "Book your first session",
+      "items": [
+        {
+          "titulo": "Individual therapy",
+          "subtitulo": "Teenagers and adults",
+          "tension": "I feel like I'm behind on everything and I can't stop thinking.",
+          "texto": "We'll find your own pace, without masks."
+        },
+        {
+          "titulo": "Couples therapy",
+          "subtitulo": "",
+          "tension": "We argue about everything and I'm exhausted.",
+          "texto": "Learn to talk about what matters without ending up in the same fight. If your partner doesn't want to come, you can start on your own."
+        },
+        {
+          "titulo": "Family therapy",
+          "subtitulo": "",
+          "tension": "My teenage son doesn't talk to me anymore.",
+          "texto": "Nobody gave us a manual for understanding each other. We can build one together."
+        },
+        {
+          "titulo": "Support for migrants",
+          "subtitulo": "",
+          "tension": "I'm living my dream and I still feel alone.",
+          "texto": "Therapy in Spanish with someone who also started from scratch far from home."
+        }
+      ]
+    },
+    "avanzas": {
+      "titulo": "How you move forward",
+      "items": [
+        {
+          "titulo": "Free listening session · 10 min",
+          "texto": "To tell us what brings you here and answer your questions before you begin. It is not a therapy session. Limited spots per week.",
+          "boton": "Book your free listening session"
+        },
+        {
+          "titulo": "First session · 50 min",
+          "texto": "To get to know each other and set goals together. You take it only once.",
+          "boton": "Book your first session"
+        },
+        {
+          "titulo": "Monthly membership",
+          "texto": "After your first session, you continue your process with 4 sessions a month or 8 sessions a month. It includes your brief listening space (see below) and progress tracking in My space.",
+          "boton": ""
+        }
+      ]
+    },
+    "tarifas": {
+      "titulo": "Rates",
+      "region": "Choose your region",
+      "regiones": {
+        "CO": "Colombia",
+        "AU": "Australia",
+        "LATAM": "Rest of Latin America"
+      },
+      "filas": {
+        "primera": "First session",
+        "member4": "Membership · 4 sessions a month",
+        "member8": "Membership · 8 sessions a month"
+      },
+      "nota": "The rate is the same for individual, couples and family therapy."
+    },
+    "escucha": {
+      "titulo": "When you need to talk before your next session",
+      "texto": "If you have an active membership, you get 2 listening spaces of 10 minutes each week, at no extra cost, to share something specific or simply be heard. They don't replace your session: they are support between sessions. You book them from My space. If you need more, you can buy additional spaces [[POR DEFINIR: precio]]."
+    },
+    "talleres": {
+      "titulo": "Workshops and events",
+      "texto": "Every month we share a free workshop open to everyone.",
+      "boton": "See events"
+    },
+    "cierre": {
+      "texto": "Have questions? Book a free listening session or message us on WhatsApp.",
+      "escucha": "Book a free listening session",
+      "whatsapp": "Message us on WhatsApp"
+    }
+  },
   "inicio": {
     "hero": {
       "apoyo": "Online psychological therapy, from wherever you are.",

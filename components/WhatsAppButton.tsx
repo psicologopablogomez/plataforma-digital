@@ -1,13 +1,11 @@
 import { site } from "@/config/site";
 import type { Dictionary } from "@/lib/i18n";
+import { whatsappHref } from "@/lib/whatsapp";
 
 // Botón flotante abajo a la derecha. Mientras no haya número real, no abre WhatsApp.
 export default function WhatsAppButton({ t }: { t: Dictionary["whatsapp"] }) {
-  const numero = site.whatsapp.replace(/\D/g, "");
-  const listo = numero.length >= 8;
-  const href = listo
-    ? `https://wa.me/${numero}?text=${encodeURIComponent(t.mensaje)}`
-    : undefined;
+  const href = whatsappHref(t.mensaje);
+  const listo = Boolean(href);
 
   return (
     <a

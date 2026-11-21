@@ -1,6 +1,9 @@
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { fotoExiste } from "@/lib/fotos";
 import { getDictionary, isLocale } from "@/lib/i18n";
+import Foto from "@/components/Foto";
 import Button from "@/components/Button";
 import AbrirTestButton from "@/components/AbrirTestButton";
 import Relleno from "@/components/Relleno";
@@ -28,8 +31,22 @@ export default async function Home({
   return (
     <main>
       {/* 1. Portada: abre con la filosofía y la promesa */}
-      <section className="bg-gradient-to-br from-oscuro via-azul to-turquesa text-white">
-        <div className="mx-auto flex min-h-[70vh] max-w-4xl flex-col items-center justify-center gap-6 px-4 py-20 text-center">
+      <section className="relative bg-gradient-to-br from-oscuro via-azul to-turquesa text-white">
+        {/* Si la foto /public/images/inicio/hero.jpg ya está subida, se usa de fondo */}
+        {fotoExiste("/images/inicio/hero.jpg") && (
+          <>
+            <Image
+              src="/images/inicio/hero.jpg"
+              alt=""
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-oscuro/85 via-azul/70 to-turquesa/60" />
+          </>
+        )}
+        <div className="relative mx-auto flex min-h-[70vh] max-w-4xl flex-col items-center justify-center gap-6 px-4 py-20 text-center">
           <h1 className="font-editorial text-4xl font-bold leading-tight sm:text-6xl">
             {t.marca.filosofia}
           </h1>
@@ -92,7 +109,11 @@ export default async function Home({
                 href={`${base}/servicios#${anclasServicios[n]}`}
                 className="group flex h-full flex-col overflow-hidden rounded-2xl border border-oscuro/10 bg-white shadow-sm hover:shadow-md"
               >
-                <div className="h-32 bg-gradient-to-br from-turquesa to-azul" aria-hidden="true" />
+                <Foto
+                  ruta={`/images/servicios/${anclasServicios[n]}.jpg`}
+                  alt={item.titulo}
+                  className="h-32"
+                />
                 <div className="flex flex-1 flex-col gap-1 p-5">
                   <h3 className="text-lg font-bold text-oscuro group-hover:text-azul">
                     {item.titulo}
