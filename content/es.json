@@ -74,6 +74,141 @@
       "apoyo": "Terapia psicológica online, desde donde estés.",
       "botonPrincipal": "Agenda tu primera cita",
       "botonSecundario": "¿No sabes por dónde empezar? Haz el test"
+    },
+    "frases": {
+      "titulo": "¿Te suena alguna de estas frases?",
+      "items": [
+        "Siento que ya no puedo más.",
+        "Algo se rompió.",
+        "En casa no nos entendemos.",
+        "Empecé de cero lejos de casa."
+      ],
+      "cierre": "No necesitas estar al límite para pedir ayuda, ni tenerlo todo claro para empezar."
+    },
+    "comoFunciona": {
+      "titulo": "Cómo funciona",
+      "pasos": [
+        {
+          "titulo": "Cuéntanos qué te trae.",
+          "texto": "Haz el test de orientación o agenda una escucha gratuita de 10 minutos."
+        },
+        {
+          "titulo": "Tu primera cita.",
+          "texto": "50 minutos online para conocernos y definir juntos por dónde empezar."
+        },
+        {
+          "titulo": "Tu proceso.",
+          "texto": "Continúa con una membresía de 4 u 8 sesiones al mes, a tu ritmo, y sigue tu avance en Mi espacio."
+        }
+      ]
+    },
+    "acompanamos": {
+      "titulo": "En qué te acompañamos",
+      "items": [
+        {
+          "titulo": "Terapia individual",
+          "subtitulo": "Para adolescentes y adultos",
+          "linea": "Siento que voy tarde en todo y no paro de pensar."
+        },
+        {
+          "titulo": "Terapia de pareja",
+          "subtitulo": "",
+          "linea": "Discutimos por todo y estoy agotado."
+        },
+        {
+          "titulo": "Terapia familiar",
+          "subtitulo": "",
+          "linea": "Mi hijo adolescente ya no me habla."
+        },
+        {
+          "titulo": "Acompañamiento a migrantes",
+          "subtitulo": "",
+          "linea": "Estoy cumpliendo mi sueño y aun así me siento solo."
+        }
+      ]
+    },
+    "temas": {
+      "titulo": "Temas que trabajamos",
+      "items": [
+        "Ansiedad",
+        "Depresión",
+        "Ataques de pánico",
+        "Fobias",
+        "Duelo",
+        "Dependencia emocional",
+        "Manejo de la ira y las emociones",
+        "Sentido de vida",
+        "Orientación vocacional"
+      ]
+    },
+    "quien": {
+      "titulo": "Quién te acompaña",
+      "nombre": "Juan Pablo Gómez",
+      "cargo": "Psicólogo · registrado en Colombia (COLPSIC)",
+      "estudios": "[[POR DEFINIR: iniciales de estudios]]",
+      "frase": "Sé lo que es empezar de cero lejos de casa, porque también lo viví.",
+      "perfil": "Perfil",
+      "agendar": "Agendar cita"
+    },
+    "recursos": {
+      "titulo": "Recursos gratuitos",
+      "todos": "Ver todos los recursos",
+      "pendiente": "[[POR DEFINIR: guías reales]]",
+      "items": [
+        {
+          "tipo": "Test",
+          "titulo": "Test de orientación: ¿por dónde empezar?",
+          "linea": "Responde 4 preguntas (1 minuto) y te mostramos en qué área te conviene trabajar.",
+          "boton": "Hacer test"
+        },
+        {
+          "tipo": "Guía",
+          "titulo": "Guía para tu primera sesión: qué contar, qué preguntar y cómo funciona",
+          "linea": "",
+          "boton": "Descargar"
+        },
+        {
+          "tipo": "Guía",
+          "titulo": "4 trampas de la mente y cómo replantearlas",
+          "linea": "",
+          "boton": "Descargar"
+        }
+      ]
+    },
+    "evento": {
+      "titulo": "Próximo evento",
+      "nombre": "La experiencia migrante en fin de año",
+      "texto": "Estar lejos de casa en estas fechas tiene su propia carga. Hablemos de eso, con calma.",
+      "etiquetaFecha": "Fecha",
+      "fecha": "[[POR DEFINIR: entre el 23 y el 26 de diciembre]]",
+      "etiquetaCosto": "Costo",
+      "costo": "Gratis",
+      "boton": "Inscríbete"
+    },
+    "faq": {
+      "titulo": "Preguntas frecuentes",
+      "todas": "Ver todas las preguntas",
+      "items": [
+        {
+          "p": "¿La terapia es solo para problemas graves?",
+          "r": "No necesitas estar al límite para empezar. Muchas personas llegan porque algo les pesa en su día a día."
+        },
+        {
+          "p": "¿Cómo son las sesiones?",
+          "r": "Online, por videollamada, de 50 minutos. El enlace te llega por correo al agendar."
+        },
+        {
+          "p": "¿Qué pasa en la primera cita?",
+          "r": "Nos conocemos, nos cuentas qué estás viviendo y definimos juntos los objetivos. No tienes que tenerlo todo claro."
+        },
+        {
+          "p": "¿Atienden urgencias?",
+          "r": "No. Si estás en crisis, usa el botón de ayuda para ver las líneas de atención de tu país."
+        }
+      ]
+    },
+    "cierre": {
+      "boton": "Agenda tu primera cita"
     }
   }
 }

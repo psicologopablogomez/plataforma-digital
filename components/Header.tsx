@@ -31,7 +31,7 @@ export default function Header({
 
   return (
     <header className="sticky top-0 z-40 border-b border-oscuro/10 bg-white/95 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3">
         <Link
           href={`/${lang}`}
           aria-label={t.encabezado.irInicio}
@@ -40,7 +40,7 @@ export default function Header({
           {site.name}
         </Link>
 
-        <nav className="hidden items-center gap-5 text-sm font-medium xl:flex">
+        <nav className="hidden items-center gap-4 text-sm font-medium xl:flex">
           {menu.map((item) => (
             <Link
               key={item.href}
@@ -59,13 +59,13 @@ export default function Header({
           </div>
           <Link
             href={`/${lang}/mi-espacio`}
-            className="hidden whitespace-nowrap rounded-full border border-azul px-4 py-2 text-sm font-semibold text-azul hover:bg-azul/10 xl:block"
+            className="hidden whitespace-nowrap rounded-full border border-azul px-3 py-2 text-sm font-semibold text-azul hover:bg-azul/10 xl:block"
           >
             {t.encabezado.miEspacio}
           </Link>
           <Link
             href={`/${lang}/agenda`}
-            className="hidden whitespace-nowrap rounded-full bg-azul px-4 py-2 text-sm font-semibold text-white hover:brightness-110 xl:block"
+            className="hidden whitespace-nowrap rounded-full bg-azul px-3 py-2 text-sm font-semibold text-white hover:brightness-110 xl:block"
           >
             {t.encabezado.agenda}
           </Link>

@@ -71,9 +71,144 @@
   },
   "inicio": {
     "hero": {
-      "apoyo": "[[POR ADAPTAR: línea de apoyo en inglés]]",
-      "botonPrincipal": "[[POR ADAPTAR: botón principal en inglés]]",
-      "botonSecundario": "[[POR ADAPTAR: botón secundario en inglés]]"
+      "apoyo": "Online psychological therapy, from wherever you are.",
+      "botonPrincipal": "Book your first session",
+      "botonSecundario": "Not sure where to start? Take the test"
+    },
+    "frases": {
+      "titulo": "Does any of this sound familiar?",
+      "items": [
+        "I feel like I can't take it anymore.",
+        "Something broke.",
+        "We don't understand each other at home.",
+        "I started from scratch far from home."
+      ],
+      "cierre": "You don't need to be at your limit to ask for help, or to have it all figured out to begin."
+    },
+    "comoFunciona": {
+      "titulo": "How it works",
+      "pasos": [
+        {
+          "titulo": "Tell us what brings you here.",
+          "texto": "Take the orientation test or book a free 10-minute listening session."
+        },
+        {
+          "titulo": "Your first session.",
+          "texto": "50 minutes online to get to know each other and decide together where to start."
+        },
+        {
+          "titulo": "Your process.",
+          "texto": "Continue with a monthly membership of 4 or 8 sessions, at your own pace, and follow your progress in My space."
+        }
+      ]
+    },
+    "acompanamos": {
+      "titulo": "How we support you",
+      "items": [
+        {
+          "titulo": "Individual therapy",
+          "subtitulo": "For teenagers and adults",
+          "linea": "I feel like I'm behind on everything and I can't stop thinking."
+        },
+        {
+          "titulo": "Couples therapy",
+          "subtitulo": "",
+          "linea": "We argue about everything and I'm exhausted."
+        },
+        {
+          "titulo": "Family therapy",
+          "subtitulo": "",
+          "linea": "My teenage son doesn't talk to me anymore."
+        },
+        {
+          "titulo": "Support for migrants",
+          "subtitulo": "",
+          "linea": "I'm living my dream and I still feel alone."
+        }
+      ]
+    },
+    "temas": {
+      "titulo": "Topics we work on",
+      "items": [
+        "Anxiety",
+        "Depression",
+        "Panic attacks",
+        "Phobias",
+        "Grief",
+        "Emotional dependence",
+        "Managing anger and emotions",
+        "Sense of purpose",
+        "Career guidance"
+      ]
+    },
+    "quien": {
+      "titulo": "Who is by your side",
+      "nombre": "Juan Pablo Gómez",
+      "cargo": "Psychologist · registered in Colombia (COLPSIC)",
+      "estudios": "[[POR DEFINIR: iniciales de estudios]]",
+      "frase": "I know what it is to start from scratch far from home, because I lived it too.",
+      "perfil": "Profile",
+      "agendar": "Book a session"
+    },
+    "recursos": {
+      "titulo": "Free resources",
+      "todos": "See all resources",
+      "pendiente": "[[POR DEFINIR: guías reales]]",
+      "items": [
+        {
+          "tipo": "Test",
+          "titulo": "Orientation test: where to start?",
+          "linea": "Answer 4 questions (1 minute) and we'll show you which area is best to work on.",
+          "boton": "Take the test"
+        },
+        {
+          "tipo": "Guide",
+          "titulo": "Guide for your first session: what to share, what to ask and how it works",
+          "linea": "",
+          "boton": "Download"
+        },
+        {
+          "tipo": "Guide",
+          "titulo": "4 mind traps and how to rethink them",
+          "linea": "",
+          "boton": "Download"
+        }
+      ]
+    },
+    "evento": {
+      "titulo": "Next event",
+      "nombre": "The migrant experience at year's end",
+      "texto": "Being far from home at this time of year carries its own weight. Let's talk about it, calmly.",
+      "etiquetaFecha": "Date",
+      "fecha": "[[POR DEFINIR: entre el 23 y el 26 de diciembre]]",
+      "etiquetaCosto": "Cost",
+      "costo": "Free",
+      "boton": "Sign up"
+    },
+    "faq": {
+      "titulo": "Frequently asked questions",
+      "todas": "See all questions",
+      "items": [
+        {
+          "p": "Is therapy only for serious problems?",
+          "r": "You don't need to be at your limit to begin. Many people come because something weighs on them in their everyday life."
+        },
+        {
+          "p": "What are the sessions like?",
+          "r": "Online, by video call, 50 minutes long. The link arrives by email when you book."
+        },
+        {
+          "p": "What happens in the first session?",
+          "r": "We get to know each other, you tell us what you're going through and we set goals together. You don't need to have it all figured out."
+        },
+        {
+          "p": "Do you handle emergencies?",
+          "r": "No. If you are in crisis, use the help button to see the helplines for your country."
+        }
+      ]
+    },
+    "cierre": {
+      "boton": "Book your first session"
     }
   }
 }
