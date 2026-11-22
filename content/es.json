@@ -456,6 +456,88 @@
       }
     ]
   },
+  "miEspacio": {
+    "titulo": "Mi espacio",
+    "banner": "Datos de ejemplo: así se verá tu espacio. Tu información real aparecerá cuando conectemos las cuentas.",
+    "acceso": {
+      "titulo": "Entra a tu espacio",
+      "texto": "Accede con tu correo para ver tus citas, tu proceso y tus materiales.",
+      "correo": "Correo",
+      "boton": "Entrar",
+      "demo": "Versión de prueba: no se envía ningún correo. Entras a una vista con datos de ejemplo."
+    },
+    "salir": "Salir",
+    "saludo": "Hola",
+    "nombreEjemplo": "Nombre de ejemplo",
+    "pestanas": {
+      "inicio": "Inicio",
+      "proceso": "Mi proceso",
+      "membresia": "Mi membresía",
+      "escucha": "Escucha breve",
+      "materiales": "Materiales",
+      "perfil": "Mi perfil"
+    },
+    "inicio": {
+      "proxima": "Tu próxima cita",
+      "calculando": "Calculando tu horario…",
+      "zona": "Hora en tu zona horaria",
+      "entrar": "Entrar a la sesión",
+      "meet": "[[POR DEFINIR: enlace de Google Meet]]",
+      "reprogramar": "Reprogramar"
+    },
+    "proceso": {
+      "titulo": "Mi proceso",
+      "tomadas": "Sesiones tomadas",
+      "fechas": "Fechas de tus sesiones",
+      "etapaActual": "Estás en la etapa",
+      "etapaIndice": 1,
+      "grafica": "Sesiones por semana (últimas 6 semanas)",
+      "semana": "Sem."
+    },
+    "membresia": {
+      "titulo": "Mi membresía",
+      "plan": "Plan",
+      "planValor": "4 sesiones al mes",
+      "usadas": "Sesiones usadas",
+      "disponibles": "Sesiones disponibles",
+      "renovacion": "Se renueva el",
+      "de": "de"
+    },
+    "escucha": {
+      "titulo": "Escucha breve",
+      "texto": "Son 10 minutos, sin costo adicional. No reemplazan tu sesión: son un apoyo entre sesiones.",
+      "quedan": "Te quedan {n} de {total} espacios esta semana",
+      "agendar": "Agendar espacio de escucha",
+      "sinEspacios": "Ya usaste tus 2 espacios de esta semana.",
+      "adicional": "Puedes adquirir un espacio adicional",
+      "demo": "Demostración: al tocar el botón, se descuenta un espacio.",
+      "reiniciar": "Reiniciar demostración"
+    },
+    "materiales": {
+      "titulo": "Materiales",
+      "texto": "Guías y tareas que te comparte tu profesional.",
+      "ejemplo": "Ejemplo",
+      "pendiente": "[[POR DEFINIR: materiales reales]]",
+      "descargar": "Descargar",
+      "items": [
+        { "tipo": "Guía", "titulo": "Material de ejemplo" },
+        { "tipo": "Tarea", "titulo": "Tarea de ejemplo" }
+      ]
+    },
+    "perfil": {
+      "titulo": "Mi perfil",
+      "nombre": "Nombre",
+      "correo": "Correo",
+      "pais": "País",
+      "zona": "Zona horaria",
+      "idioma": "Idioma",
+      "preferencias": "Preferencias",
+      "opcional": "(opcional)",
+      "guardar": "Guardar cambios",
+      "prueba": "Versión de prueba: los cambios no se guardan.",
+      "guardado": "Listo. En esta versión de prueba tus cambios no se guardaron."
+    }
+  },
   "inicio": {
     "hero": {
       "apoyo": "Terapia psicológica online, desde donde estés.",

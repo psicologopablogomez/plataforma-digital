@@ -456,6 +456,88 @@
       }
     ]
   },
+  "miEspacio": {
+    "titulo": "My space",
+    "banner": "Sample data: this is how your space will look. Your real information will appear once accounts are connected.",
+    "acceso": {
+      "titulo": "Enter your space",
+      "texto": "Sign in with your email to see your appointments, your process and your materials.",
+      "correo": "Email",
+      "boton": "Enter",
+      "demo": "Test version: no email is sent. You enter a view with sample data."
+    },
+    "salir": "Sign out",
+    "saludo": "Hello",
+    "nombreEjemplo": "Sample name",
+    "pestanas": {
+      "inicio": "Home",
+      "proceso": "My process",
+      "membresia": "My membership",
+      "escucha": "Brief listening",
+      "materiales": "Materials",
+      "perfil": "My profile"
+    },
+    "inicio": {
+      "proxima": "Your next session",
+      "calculando": "Calculating your time…",
+      "zona": "Time in your time zone",
+      "entrar": "Join the session",
+      "meet": "[[POR DEFINIR: enlace de Google Meet]]",
+      "reprogramar": "Reschedule"
+    },
+    "proceso": {
+      "titulo": "My process",
+      "tomadas": "Sessions taken",
+      "fechas": "Dates of your sessions",
+      "etapaActual": "You are in the stage",
+      "etapaIndice": 1,
+      "grafica": "Sessions per week (last 6 weeks)",
+      "semana": "Wk"
+    },
+    "membresia": {
+      "titulo": "My membership",
+      "plan": "Plan",
+      "planValor": "4 sessions a month",
+      "usadas": "Sessions used",
+      "disponibles": "Sessions available",
+      "renovacion": "Renews on",
+      "de": "of"
+    },
+    "escucha": {
+      "titulo": "Brief listening",
+      "texto": "They are 10 minutes, at no extra cost. They don't replace your session: they are support between sessions.",
+      "quedan": "You have {n} of {total} spaces left this week",
+      "agendar": "Book a listening space",
+      "sinEspacios": "You have already used your 2 spaces this week.",
+      "adicional": "You can buy an additional space",
+      "demo": "Demo: when you tap the button, one space is deducted.",
+      "reiniciar": "Reset demo"
+    },
+    "materiales": {
+      "titulo": "Materials",
+      "texto": "Guides and tasks your professional shares with you.",
+      "ejemplo": "Sample",
+      "pendiente": "[[POR DEFINIR: materiales reales]]",
+      "descargar": "Download",
+      "items": [
+        { "tipo": "Guide", "titulo": "Sample material" },
+        { "tipo": "Task", "titulo": "Sample task" }
+      ]
+    },
+    "perfil": {
+      "titulo": "My profile",
+      "nombre": "Name",
+      "correo": "Email",
+      "pais": "Country",
+      "zona": "Time zone",
+      "idioma": "Language",
+      "preferencias": "Preferences",
+      "opcional": "(optional)",
+      "guardar": "Save changes",
+      "prueba": "Test version: changes are not saved.",
+      "guardado": "Done. In this test version your changes were not saved."
+    }
+  },
   "inicio": {
     "hero": {
       "apoyo": "Online psychological therapy, from wherever you are.",
