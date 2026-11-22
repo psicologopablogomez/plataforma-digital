@@ -1,9 +1,14 @@
 import { notFound } from "next/navigation";
 import { getDictionary, isLocale } from "@/lib/i18n";
+import { tituloPagina } from "@/lib/metadata";
 import { estilosBoton } from "@/components/Button";
 import FormularioPrueba, { type CampoFormulario } from "@/components/FormularioPrueba";
 import Relleno from "@/components/Relleno";
 import Seccion from "@/components/Seccion";
+
+export function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  return tituloPagina(params, (t) => t.nav.eventos);
+}
 
 export default async function Eventos({
   params,

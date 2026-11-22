@@ -22,7 +22,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { lang } = await params;
   if (!isLocale(lang)) return {};
-  return { title: site.name, description: getDictionary(lang).marca.promesa };
+  return {
+    // Inicio: solo el nombre. Las demás páginas: "Página · Nombre".
+    title: { default: site.name, template: `%s · ${site.name}` },
+    description: getDictionary(lang).marca.promesa,
+  };
 }
 
 export default async function LangLayout({

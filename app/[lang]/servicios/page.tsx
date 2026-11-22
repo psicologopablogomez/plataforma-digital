@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { site } from "@/config/site";
 import { getDictionary, isLocale } from "@/lib/i18n";
+import { tituloPagina } from "@/lib/metadata";
 import { whatsappHref } from "@/lib/whatsapp";
 import Button, { estilosBoton } from "@/components/Button";
 import Foto from "@/components/Foto";
@@ -10,6 +11,10 @@ import Tarifas from "@/components/Tarifas";
 
 // Orden de los 4 tipos de terapia (también son los anclajes: /servicios#pareja).
 const ids = ["individual", "pareja", "familiar", "migrantes"];
+
+export function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  return tituloPagina(params, (t) => t.nav.servicios);
+}
 
 export default async function Servicios({
   params,

@@ -1,8 +1,13 @@
 import { notFound } from "next/navigation";
 import { getDictionary, isLocale } from "@/lib/i18n";
+import { tituloPagina } from "@/lib/metadata";
 import { whatsappHref } from "@/lib/whatsapp";
 import AgendaFlow from "@/components/AgendaFlow";
 import RecuadroAgenda from "@/components/RecuadroAgenda";
+
+export function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  return tituloPagina(params, (t) => t.paginas.agenda);
+}
 
 export default async function Agenda({
   params,

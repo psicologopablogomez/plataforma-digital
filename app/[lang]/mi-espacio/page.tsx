@@ -1,10 +1,15 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, isLocale } from "@/lib/i18n";
+import { tituloPagina } from "@/lib/metadata";
 import MiEspacio from "@/components/MiEspacio";
 
 // Es un área privada: no debe aparecer en los buscadores.
-export const metadata: Metadata = { robots: { index: false, follow: false } };
+export function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  return tituloPagina(params, (t) => t.miEspacio.titulo, {
+    robots: { index: false, follow: false },
+  } satisfies Metadata);
+}
 
 export default async function MiEspacioPagina({
   params,

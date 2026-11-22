@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { profesionales } from "@/config/profesionales";
 import { getDictionary, isLocale } from "@/lib/i18n";
+import { tituloPagina } from "@/lib/metadata";
 import ProfessionalCard from "@/components/ProfessionalCard";
 import Seccion from "@/components/Seccion";
 
@@ -16,6 +17,10 @@ const iconos = [
     <path d="M5 3v4h4M19 21v-4h-4" />
   </g>,
 ];
+
+export function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  return tituloPagina(params, (t) => t.nav.nosotros);
+}
 
 export default async function Nosotros({
   params,

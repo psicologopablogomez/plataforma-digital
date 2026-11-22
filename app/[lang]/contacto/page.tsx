@@ -1,12 +1,17 @@
 import { notFound } from "next/navigation";
 import { site } from "@/config/site";
 import { getDictionary, isLocale } from "@/lib/i18n";
+import { tituloPagina } from "@/lib/metadata";
 import { whatsappHref } from "@/lib/whatsapp";
 import { estilosBoton } from "@/components/Button";
 import EnlaceExterno from "@/components/EnlaceExterno";
 import FormularioPrueba, { type CampoFormulario } from "@/components/FormularioPrueba";
 import Relleno from "@/components/Relleno";
 import Seccion from "@/components/Seccion";
+
+export function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  return tituloPagina(params, (t) => t.nav.contacto);
+}
 
 export default async function Contacto({
   params,

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { profesionales } from "@/config/profesionales";
@@ -12,6 +13,17 @@ export function generateStaticParams() {
   return locales.flatMap((lang) =>
     profesionales.map((p) => ({ lang, profesional: p.id })),
   );
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string; profesional: string }>;
+}): Promise<Metadata> {
+  const { lang, profesional } = await params;
+  const p = profesionales.find((x) => x.id === profesional);
+  if (!isLocale(lang) || !p) return {};
+  return { title: getDictionary(lang).profesionales[p.id].nombre };
 }
 
 // Perfil del profesional (esquema 6.2): voz en "yo".

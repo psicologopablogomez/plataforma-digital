@@ -1,7 +1,12 @@
 import { notFound } from "next/navigation";
 import { getDictionary, isLocale } from "@/lib/i18n";
+import { tituloPagina } from "@/lib/metadata";
 import Relleno from "@/components/Relleno";
 import Seccion from "@/components/Seccion";
+
+export function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  return tituloPagina(params, (t) => t.nav.preguntas);
+}
 
 export default async function PreguntasFrecuentes({
   params,

@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, isLocale, locales, pageSlugs } from "@/lib/i18n";
 
@@ -13,6 +14,17 @@ const legales = [
   "politica-de-cancelacion",
   "consentimiento-informado",
 ];
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string; page: string }>;
+}): Promise<Metadata> {
+  const { lang, page } = await params;
+  if (!isLocale(lang)) return {};
+  const titulo = (getDictionary(lang).paginas as Record<string, string>)[page];
+  return titulo ? { title: titulo } : {};
+}
 
 // Página provisional: sirve para que todo el menú sea navegable.
 // Cada una se reemplaza por su versión completa en los pasos siguientes.

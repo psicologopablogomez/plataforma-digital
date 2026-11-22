@@ -2,9 +2,14 @@ import { notFound } from "next/navigation";
 import { recursos } from "@/config/recursos";
 import { fotoExiste } from "@/lib/fotos";
 import { getDictionary, isLocale } from "@/lib/i18n";
+import { tituloPagina } from "@/lib/metadata";
 import Button from "@/components/Button";
 import RecursosLista, { type TarjetaRecurso } from "@/components/RecursosLista";
 import Seccion from "@/components/Seccion";
+
+export function generateMetadata({ params }: { params: Promise<{ lang: string }> }) {
+  return tituloPagina(params, (t) => t.nav.recursos);
+}
 
 export default async function Recursos({
   params,
