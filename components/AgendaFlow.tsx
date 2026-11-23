@@ -64,6 +64,7 @@ export default function AgendaFlow({
     consentimiento: false,
     cancelacion: false,
   });
+  const [pagado, setPagado] = useState(false);
   const inicioRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -80,9 +81,10 @@ export default function AgendaFlow({
     } catch {
       // Sin cookies: volverá en español.
     }
-    // Si vuelve de pagar (/agenda?pago=ok), se abre directo el paso 3.
+    // Si vuelve de pagar (/agenda?pago=ok), se muestra la confirmación en el paso 3.
     if (new URLSearchParams(window.location.search).get("pago") === "ok") {
       setPaso(3);
+      setPagado(true);
     }
   }, [lang]);
 
@@ -138,10 +140,6 @@ export default function AgendaFlow({
           );
         })}
       </ol>
-      <p className="mb-6 text-center text-xs">
-        <Relleno texto={t.validar} />
-      </p>
-
       <p
         role="note"
         className="mb-6 rounded-xl bg-naranja/15 p-3 text-center text-sm font-medium text-oscuro"
@@ -360,51 +358,35 @@ export default function AgendaFlow({
         </form>
       )}
 
-      {/* PASO 2 · Paga tu primera cita */}
+      {/* PASO 2 · Elige tu horario */}
       {paso === 2 && (
         <div className="flex flex-col gap-5">
           <h2 className="text-xl font-bold text-oscuro">
             {t.paso} 2 · {t.pasos[1]}
           </h2>
-
-          <div className="rounded-2xl border border-oscuro/10 bg-white p-6 shadow-sm">
-            <p className="text-sm font-semibold text-oscuro">{t.pago.precio}</p>
-            <p className="mt-1 text-3xl font-bold text-oscuro">
-              {precios && primera !== undefined ? (
-                typeof primera === "number" ? (
-                  `${precios.currency} ${formato(primera, lang)}`
-                ) : (
-                  <Relleno texto={primera} />
-                )
-              ) : null}
+          <p className="text-texto/80">{t.horario.texto}</p>
+          {zona && (
+            <p className="text-sm">
+              <span className="font-semibold text-oscuro">{t.horario.zona}:</span> {zona}
             </p>
-            {nombrePais && <p className="mt-1 text-sm text-texto/70">{nombrePais}</p>}
+          )}
 
-            <div className="mt-5">
-              {enlacePago && esEnlace(enlacePago) ? (
-                // Se abre en la misma pestaña: al terminar, Stripe devuelve a /pago-ok y
-                // la persona sigue directo al paso 3 sin quedarse con dos pestañas.
-                <a href={enlacePago} className={estilosBoton("acento")}>
-                  {t.pago.boton}
-                </a>
-              ) : (
-                <>
-                  <span
-                    aria-disabled="true"
-                    className={estilosBoton("acento", "cursor-not-allowed opacity-60")}
-                  >
-                    {t.pago.boton}
-                  </span>
-                  {enlacePago && isPlaceholder(enlacePago) && (
-                    <p className="mt-2 text-xs">
-                      <Relleno texto={enlacePago} />
-                    </p>
-                  )}
-                </>
-              )}
+          {esEnlace(site.links.agendaPrimera) ? (
+            <iframe
+              src={`${site.links.agendaPrimera}?embed=true`}
+              title={t.pasos[1]}
+              className="h-[40rem] w-full rounded-2xl border border-oscuro/10"
+            />
+          ) : (
+            <div className="flex min-h-64 flex-col items-center justify-center gap-3 rounded-2xl border-2 border-dashed border-azul/40 bg-azul/5 p-6 text-center">
+              <p className="font-semibold text-oscuro">{t.horario.calendario}</p>
+              <p className="text-xs">
+                <Relleno texto={site.links.agendaPrimera} />
+              </p>
             </div>
-            <p className="mt-4 text-sm text-texto/70">{t.pago.nota}</p>
-          </div>
+          )}
+
+          <p className="text-sm text-texto/70">{t.horario.siguiente}</p>
 
           <div className="flex flex-wrap gap-3">
             <button
@@ -419,49 +401,79 @@ export default function AgendaFlow({
               onClick={() => irAPaso(3)}
               className={estilosBoton("principal")}
             >
-              {t.pago.continuar}
+              {t.horario.continuar}
             </button>
           </div>
         </div>
       )}
 
-      {/* PASO 3 · Elige tu horario */}
+      {/* PASO 3 · Realiza el pago (y confirmación al volver de Stripe) */}
       {paso === 3 && (
         <div className="flex flex-col gap-5">
           <h2 className="text-xl font-bold text-oscuro">
             {t.paso} 3 · {t.pasos[2]}
           </h2>
-          <p className="text-texto/80">{t.horario.texto}</p>
-          {zona && (
-            <p className="text-sm">
-              <span className="font-semibold text-oscuro">{t.horario.zona}:</span> {zona}
-            </p>
-          )}
 
-          {esEnlace(site.links.agendaPrimera) ? (
-            <iframe
-              src={`${site.links.agendaPrimera}?embed=true`}
-              title={t.pasos[2]}
-              className="h-[40rem] w-full rounded-2xl border border-oscuro/10"
-            />
-          ) : (
-            <div className="flex min-h-64 flex-col items-center justify-center gap-3 rounded-2xl border-2 border-dashed border-azul/40 bg-azul/5 p-6 text-center">
-              <p className="font-semibold text-oscuro">{t.horario.calendario}</p>
-              <p className="text-xs">
-                <Relleno texto={site.links.agendaPrimera} />
-              </p>
-            </div>
-          )}
-
-          <div>
-            <button
-              type="button"
-              onClick={() => irAPaso(2)}
-              className={estilosBoton("contorno")}
+          {pagado ? (
+            <div
+              role="status"
+              className="rounded-2xl border border-turquesa bg-turquesa/10 p-6"
             >
-              {t.atras}
-            </button>
-          </div>
+              <h3 className="text-xl font-bold text-oscuro">{t.confirmacion.titulo}</h3>
+              <p className="mt-2 text-texto/80">{t.confirmacion.texto}</p>
+            </div>
+          ) : (
+            <>
+              <div className="rounded-2xl border border-oscuro/10 bg-white p-6 shadow-sm">
+                <p className="text-sm font-semibold text-oscuro">{t.pago.precio}</p>
+                <p className="mt-1 text-3xl font-bold text-oscuro">
+                  {precios && primera !== undefined ? (
+                    typeof primera === "number" ? (
+                      `${precios.currency} ${formato(primera, lang)}`
+                    ) : (
+                      <Relleno texto={primera} />
+                    )
+                  ) : null}
+                </p>
+                {nombrePais && <p className="mt-1 text-sm text-texto/70">{nombrePais}</p>}
+
+                <div className="mt-5">
+                  {enlacePago && esEnlace(enlacePago) ? (
+                    // Se abre en la misma pestaña: al terminar, Stripe devuelve a /pago-ok y
+                    // la persona vuelve aquí, a la confirmación, sin quedarse con dos pestañas.
+                    <a href={enlacePago} className={estilosBoton("acento")}>
+                      {t.pago.boton}
+                    </a>
+                  ) : (
+                    <>
+                      <span
+                        aria-disabled="true"
+                        className={estilosBoton("acento", "cursor-not-allowed opacity-60")}
+                      >
+                        {t.pago.boton}
+                      </span>
+                      {enlacePago && isPlaceholder(enlacePago) && (
+                        <p className="mt-2 text-xs">
+                          <Relleno texto={enlacePago} />
+                        </p>
+                      )}
+                    </>
+                  )}
+                </div>
+                <p className="mt-4 text-sm text-texto/70">{t.pago.nota}</p>
+              </div>
+
+              <div>
+                <button
+                  type="button"
+                  onClick={() => irAPaso(2)}
+                  className={estilosBoton("contorno")}
+                >
+                  {t.atras}
+                </button>
+              </div>
+            </>
+          )}
         </div>
       )}
     </div>

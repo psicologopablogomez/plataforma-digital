@@ -263,12 +263,11 @@
     "titulo": "Agenda tu primera cita",
     "texto": "Tu primera cita es para conocernos: nos cuentas qué estás viviendo y definimos juntos por dónde empezar. Son 50 minutos, online, desde donde estés.",
     "prueba": "Versión de prueba: por ahora no se guardan datos ni se cobra.",
-    "validar": "[[POR VALIDAR: orden de los pasos 2 y 3 (pagar y después agendar, o al revés)]]",
     "paso": "Paso",
     "pasos": [
       "Tus datos",
-      "Paga tu primera cita",
-      "Elige tu horario"
+      "Elige tu horario",
+      "Realiza el pago"
     ],
     "atras": "Atrás",
     "form": {
@@ -309,20 +308,25 @@
       "titulo": "Paga tu primera cita",
       "precio": "Valor de tu primera cita",
       "boton": "Pagar con Stripe",
-      "nota": "Al terminar el pago volverás a esta página, al paso 3.",
-      "continuar": "Continuar al horario"
+      "nota": "Al terminar el pago volverás a esta página y verás la confirmación."
     },
     "horario": {
       "titulo": "Elige tu horario",
       "texto": "Verás los horarios disponibles en tu zona horaria. Al agendar, recibirás por correo el enlace de Google Meet.",
       "zona": "Tu zona horaria",
-      "calendario": "Aquí aparecerá el calendario de reservas."
+      "calendario": "Aquí aparecerá el calendario de reservas.",
+      "continuar": "Continuar al pago",
+      "siguiente": "Después de elegir tu horario, el último paso es el pago."
     },
     "lateral": {
       "titulo": "¿Todavía tienes dudas?",
       "texto": "Agenda una escucha gratuita de 10 minutos o escríbenos por WhatsApp.",
       "escucha": "Agenda una escucha gratuita",
       "whatsapp": "Escríbenos por WhatsApp"
+    },
+    "confirmacion": {
+      "titulo": "¡Gracias!",
+      "texto": "Revisa tu correo: ahí te llegan el recibo de Stripe y el enlace de Google Meet de tu cita. Si tienes dudas, escríbenos por WhatsApp."
     }
   },
   "recursos": {
@@ -522,8 +526,14 @@
       "pendiente": "[[POR DEFINIR: materiales reales]]",
       "descargar": "Descargar",
       "items": [
-        { "tipo": "Guía", "titulo": "Material de ejemplo" },
-        { "tipo": "Tarea", "titulo": "Tarea de ejemplo" }
+        {
+          "tipo": "Guía",
+          "titulo": "Material de ejemplo"
+        },
+        {
+          "tipo": "Tarea",
+          "titulo": "Tarea de ejemplo"
+        }
       ]
     },
     "perfil": {
