@@ -3,11 +3,11 @@
 import { useEffect, useState } from "react";
 import { site } from "@/config/site";
 import type { Dictionary, Locale } from "@/lib/i18n";
+import type { Pais } from "@/lib/paises";
 import { estilosBoton } from "./Button";
 import Relleno from "./Relleno";
 
 type Pestana = "inicio" | "proceso" | "membresia" | "escucha" | "materiales" | "perfil";
-type Region = "CO" | "AU" | "LATAM";
 
 const campo =
   "w-full rounded-lg border border-oscuro/20 bg-white px-3 py-2 text-base text-texto focus:border-azul focus:outline-none focus:ring-2 focus:ring-azul/30";
@@ -55,13 +55,13 @@ export default function MiEspacio({
   lang,
   t,
   etapas,
-  regiones,
+  paises,
   idiomas,
 }: {
   lang: Locale;
   t: Dictionary["miEspacio"];
   etapas: string[];
-  regiones: Record<Region, string>;
+  paises: { principales: Pais[]; otros: Pais[] };
   idiomas: { es: string; en: string };
 }) {
   const [dentro, setDentro] = useState(false);
@@ -408,9 +408,9 @@ export default function MiEspacio({
               <label className={etiqueta}>
                 {t.perfil.pais}
                 <select defaultValue="CO" className={campo}>
-                  {(Object.keys(regiones) as Region[]).map((r) => (
-                    <option key={r} value={r}>
-                      {regiones[r]}
+                  {[...paises.principales, ...paises.otros].map((p) => (
+                    <option key={p.code} value={p.code}>
+                      {p.name}
                     </option>
                   ))}
                 </select>

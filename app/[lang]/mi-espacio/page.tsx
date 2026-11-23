@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getDictionary, isLocale } from "@/lib/i18n";
 import { tituloPagina } from "@/lib/metadata";
+import { listaPaises } from "@/lib/paises";
 import MiEspacio from "@/components/MiEspacio";
 
 // Es un área privada: no debe aparecer en los buscadores.
@@ -29,7 +30,7 @@ export default async function MiEspacioPagina({
         lang={lang}
         t={t.miEspacio}
         etapas={t.marca.etapas}
-        regiones={t.servicios.tarifas.regiones}
+        paises={listaPaises(lang)}
         idiomas={t.agenda.form.idiomas}
       />
     </main>

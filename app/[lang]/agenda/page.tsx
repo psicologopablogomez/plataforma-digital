@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { getDictionary, isLocale } from "@/lib/i18n";
 import { tituloPagina } from "@/lib/metadata";
+import { listaPaises } from "@/lib/paises";
 import { whatsappHref } from "@/lib/whatsapp";
 import AgendaFlow from "@/components/AgendaFlow";
 import RecuadroAgenda from "@/components/RecuadroAgenda";
@@ -29,7 +30,7 @@ export default async function Agenda({
       </header>
 
       <div className="grid gap-8 lg:grid-cols-[1fr_20rem]">
-        <AgendaFlow lang={lang} t={a} regiones={t.servicios.tarifas.regiones} />
+        <AgendaFlow lang={lang} t={a} paises={listaPaises(lang)} />
 
         <aside
           id="escucha"

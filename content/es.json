@@ -235,7 +235,7 @@
       "regiones": {
         "CO": "Colombia",
         "AU": "Australia",
-        "LATAM": "Resto de Latinoamérica"
+        "OTROS": "Otros países"
       },
       "filas": {
         "primera": "Primera cita",
@@ -276,8 +276,10 @@
       "correo": "Correo",
       "whatsapp": "WhatsApp",
       "pais": "País",
-      "paisAyuda": "Define tu precio y tu zona horaria",
+      "paisAyuda": "Define tu precio: Colombia en pesos (COP), Australia en dólares australianos (AUD) y los demás países en dólares (USD).",
       "elige": "Elige tu país",
+      "principales": "Principales",
+      "otros": "Otros países",
       "idioma": "Idioma",
       "idiomas": {
         "es": "Español",

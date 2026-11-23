@@ -4,7 +4,7 @@ import { useState } from "react";
 import { formato } from "@/lib/formato";
 import Relleno from "./Relleno";
 
-type Region = "CO" | "AU" | "LATAM";
+type Region = "CO" | "AU" | "OTROS";
 type Valor = number | string;
 type Precios = Record<
   Region,

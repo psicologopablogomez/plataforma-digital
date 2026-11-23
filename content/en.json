@@ -235,7 +235,7 @@
       "regiones": {
         "CO": "Colombia",
         "AU": "Australia",
-        "LATAM": "Rest of Latin America"
+        "OTROS": "Other countries"
       },
       "filas": {
         "primera": "First session",
@@ -276,8 +276,10 @@
       "correo": "Email",
       "whatsapp": "WhatsApp",
       "pais": "Country",
-      "paisAyuda": "This sets your price and your time zone",
+      "paisAyuda": "This sets your price: Colombia in pesos (COP), Australia in Australian dollars (AUD) and all other countries in US dollars (USD).",
       "elige": "Choose your country",
+      "principales": "Main",
+      "otros": "Other countries",
       "idioma": "Language",
       "idiomas": {
         "es": "Español",

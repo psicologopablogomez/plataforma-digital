@@ -3,18 +3,18 @@
 import { useEffect, useRef, useState } from "react";
 import { site } from "@/config/site";
 import { formato } from "@/lib/formato";
+import { regionDePais, type Pais } from "@/lib/paises";
 import { isPlaceholder, type Dictionary, type Locale } from "@/lib/i18n";
 import { estilosBoton } from "./Button";
 import Relleno from "./Relleno";
 
-type Region = "CO" | "AU" | "LATAM";
 type ParaQuien = "yo" | "pareja" | "familia" | "hijo";
 
 type Datos = {
   nombre: string;
   correo: string;
   whatsapp: string;
-  region: Region | "";
+  pais: string; // código del país elegido (CO, AU, ES, US…)
   idioma: Locale;
   paraQuien: ParaQuien | "";
   queTrae: string;
@@ -40,11 +40,11 @@ function esEnlace(valor: string) {
 export default function AgendaFlow({
   lang,
   t,
-  regiones,
+  paises,
 }: {
   lang: Locale;
   t: Dictionary["agenda"];
-  regiones: Record<Region, string>;
+  paises: { principales: Pais[]; otros: Pais[] };
 }) {
   const [paso, setPaso] = useState<1 | 2 | 3>(1);
   const [zona, setZona] = useState("");
@@ -52,7 +52,7 @@ export default function AgendaFlow({
     nombre: "",
     correo: "",
     whatsapp: "",
-    region: "",
+    pais: "",
     idioma: lang,
     paraQuien: "",
     queTrae: "",
@@ -96,7 +96,9 @@ export default function AgendaFlow({
 
   const mostrarTutor = d.menor || d.paraQuien === "hijo";
   const base = `/${lang}`;
-  const region = d.region || undefined;
+  // Colombia y Australia tienen su precio; cualquier otro país paga el internacional.
+  const region = regionDePais(d.pais);
+  const nombrePais = [...paises.principales, ...paises.otros].find((p) => p.code === d.pais)?.name;
   const precios = region ? site.prices[region] : undefined;
   // Puede ser un número o un texto pendiente ([[POR DEFINIR]]).
   const primera: number | string | undefined = precios?.first;
@@ -201,16 +203,27 @@ export default function AgendaFlow({
               {t.form.pais}
               <select
                 required
-                value={d.region}
-                onChange={(e) => set("region", e.target.value as Region | "")}
+                value={d.pais}
+                onChange={(e) => set("pais", e.target.value)}
                 className={campo}
               >
                 <option value="">{t.form.elige}</option>
-                {(Object.keys(regiones) as Region[]).map((r) => (
-                  <option key={r} value={r}>
-                    {regiones[r]}
-                  </option>
-                ))}
+                {/* Colombia y Australia, fijas arriba, con precio propio */}
+                <optgroup label={t.form.principales}>
+                  {paises.principales.map((p) => (
+                    <option key={p.code} value={p.code}>
+                      {p.name}
+                    </option>
+                  ))}
+                </optgroup>
+                {/* Todos los demás países, en orden alfabético, con el precio internacional */}
+                <optgroup label={t.form.otros}>
+                  {paises.otros.map((p) => (
+                    <option key={p.code} value={p.code}>
+                      {p.name}
+                    </option>
+                  ))}
+                </optgroup>
               </select>
               <span className="text-xs font-normal text-texto/70">{t.form.paisAyuda}</span>
             </label>
@@ -365,7 +378,7 @@ export default function AgendaFlow({
                 )
               ) : null}
             </p>
-            {region && <p className="mt-1 text-sm text-texto/70">{regiones[region]}</p>}
+            {nombrePais && <p className="mt-1 text-sm text-texto/70">{nombrePais}</p>}
 
             <div className="mt-5">
               {enlacePago && esEnlace(enlacePago) ? (

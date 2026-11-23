@@ -13,7 +13,7 @@ export const site = {
   prices: {
     CO: { currency: "COP", first: 100000, member4: 360000, member8: 700000 },
     AU: { currency: "AUD", first: 45, member4: 165, member8: 315 },
-    LATAM: {
+    OTROS: {
       currency: "USD",
       first: 25,
       member4: "[[POR DEFINIR]]",
@@ -38,17 +38,17 @@ export const site = {
     stripePrimera: {
       CO: "https://buy.stripe.com/test_3cI9AS9nla673ov8AU4Ja02", // COP 100.000
       AU: "https://buy.stripe.com/test_cNi5kC5756TV5wD7wQ4Ja00", // AUD 45
-      LATAM: "https://buy.stripe.com/test_eVq14m431fqr4sz3gA4Ja01", // USD 25
+      OTROS: "https://buy.stripe.com/test_eVq14m431fqr4sz3gA4Ja01", // USD 25
     },
     stripeMember4: {
       CO: "[[POR DEFINIR]]",
       AU: "[[POR DEFINIR]]",
-      LATAM: "[[POR DEFINIR]]",
+      OTROS: "[[POR DEFINIR]]",
     },
     stripeMember8: {
       CO: "[[POR DEFINIR]]",
       AU: "[[POR DEFINIR]]",
-      LATAM: "[[POR DEFINIR]]",
+      OTROS: "[[POR DEFINIR]]",
     },
     facebook: "https://www.facebook.com/people/Senderomente/61596785103836/",
     instagram: "https://www.instagram.com/senderomente/",
