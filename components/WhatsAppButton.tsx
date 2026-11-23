@@ -12,7 +12,7 @@ export default function WhatsAppButton({ t }: { t: Dictionary["whatsapp"] }) {
       href={href}
       aria-label={t.etiqueta}
       aria-disabled={!listo}
-      title={listo ? t.etiqueta : `${t.etiqueta} ${site.whatsapp}`}
+      title={listo ? t.etiqueta : `${t.etiqueta} ${site.whatsapp}`.trim()}
       target="_blank"
       rel="noopener noreferrer"
       className={`fixed bottom-4 right-4 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg hover:brightness-110 ${

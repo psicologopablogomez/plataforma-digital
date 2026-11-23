@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { site } from "@/config/site";
 import type { Dictionary, Locale } from "@/lib/i18n";
+import { Correo, NumeroWhatsApp } from "./DatosContacto";
 import Enlace from "./EnlaceExterno";
 
 export default function Footer({
@@ -71,11 +72,10 @@ export default function Footer({
           </p>
           <ul className="flex flex-col gap-2 text-sm">
             <li>
-              {t.pie.correo}: <span className="font-mono text-xs text-naranja">{site.email}</span>
+              {t.pie.correo}: <Correo />
             </li>
             <li>
-              {t.pie.whatsapp}:{" "}
-              <span className="font-mono text-xs text-naranja">{site.whatsapp}</span>
+              {t.pie.whatsapp}: <NumeroWhatsApp mensaje={t.whatsapp.mensaje} />
             </li>
           </ul>
         </div>

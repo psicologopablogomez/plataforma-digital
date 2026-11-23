@@ -4,6 +4,7 @@ import { getDictionary, isLocale } from "@/lib/i18n";
 import { tituloPagina } from "@/lib/metadata";
 import { whatsappHref } from "@/lib/whatsapp";
 import { estilosBoton } from "@/components/Button";
+import { Correo, NumeroWhatsApp } from "@/components/DatosContacto";
 import EnlaceExterno from "@/components/EnlaceExterno";
 import FormularioPrueba, { type CampoFormulario } from "@/components/FormularioPrueba";
 import Relleno from "@/components/Relleno";
@@ -75,7 +76,16 @@ export default async function Contacto({
             <div>
               <h2 className="mb-2 text-lg font-bold text-oscuro">{c.correo}</h2>
               <p className="text-sm">
-                <Relleno texto={site.email} />
+                <Correo className="font-medium text-azul hover:underline" />
+              </p>
+            </div>
+            <div>
+              <h2 className="mb-2 text-lg font-bold text-oscuro">{t.pie.whatsapp}</h2>
+              <p className="text-sm">
+                <NumeroWhatsApp
+                  mensaje={t.whatsapp.mensaje}
+                  className="font-medium text-azul hover:underline"
+                />
               </p>
             </div>
             <div>

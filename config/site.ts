@@ -4,9 +4,9 @@
 
 export const site = {
   name: "Senderomente", // provisional: puede cambiar a "Sendera"
-  domain: "[[POR DEFINIR: dominio]]", // preferido: senderomente.com (no comprado aún)
-  email: "contacto@[[dominio]]",
-  whatsapp: "[[POR DEFINIR: número de WhatsApp Business]]",
+  domain: "senderomente.com",
+  email: "contacto@senderomente.com",
+  whatsapp: "+61404712121", // WhatsApp Business
   sessionMinutes: 50,
 
   // Precios por región. Cuando un valor no está definido, es un texto de relleno.
@@ -45,8 +45,8 @@ export const site = {
       AU: "[[POR DEFINIR]]",
       LATAM: "[[POR DEFINIR]]",
     },
-    facebook: "[[POR DEFINIR]]",
-    instagram: "[[POR DEFINIR]]",
+    facebook: "https://www.facebook.com/people/Senderomente/61596785103836/",
+    instagram: "https://www.instagram.com/senderomente/",
     tiktok: "[[POR DEFINIR]]",
   },
 

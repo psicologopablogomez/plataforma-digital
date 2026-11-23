@@ -7,3 +7,9 @@ export function whatsappHref(mensaje: string): string | undefined {
   if (numero.length < 8) return undefined;
   return `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
 }
+
+// Cómo se muestra el número en pantalla: +61 404 712 121.
+export function telefonoVisible(numero: string): string {
+  const australia = numero.match(/^\+61(\d{3})(\d{3})(\d{3})$/);
+  return australia ? `+61 ${australia[1]} ${australia[2]} ${australia[3]}` : numero;
+}
