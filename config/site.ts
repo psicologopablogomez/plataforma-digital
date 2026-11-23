@@ -33,9 +33,11 @@ export const site = {
     // sesión (Fase 2): si no, cualquiera podría reservarlas sin ser miembro.
     agendaMiembro: "[[POR DEFINIR]]", // sesiones de membresía
     agendaEscuchaMiembros: "[[POR DEFINIR]]", // escucha breve (solo miembros)
+    // Enlaces de pago de PRUEBA (modo sandbox: no cobran dinero real). Antes de abrir
+    // el sitio a pacientes reales se reemplazan por los enlaces reales.
     stripePrimera: {
       CO: "[[POR DEFINIR]]",
-      AU: "[[POR DEFINIR]]",
+      AU: "https://buy.stripe.com/test_cNi5kC5756TV5wD7wQ4Ja00",
       LATAM: "[[POR DEFINIR]]",
     },
     stripeMember4: {

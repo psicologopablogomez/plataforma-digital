@@ -369,12 +369,9 @@ export default function AgendaFlow({
 
             <div className="mt-5">
               {enlacePago && esEnlace(enlacePago) ? (
-                <a
-                  href={enlacePago}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={estilosBoton("acento")}
-                >
+                // Se abre en la misma pestaña: al terminar, Stripe devuelve a /pago-ok y
+                // la persona sigue directo al paso 3 sin quedarse con dos pestañas.
+                <a href={enlacePago} className={estilosBoton("acento")}>
                   {t.pago.boton}
                 </a>
               ) : (
