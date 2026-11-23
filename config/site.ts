@@ -36,9 +36,9 @@ export const site = {
     // Enlaces de pago de PRUEBA (modo sandbox: no cobran dinero real). Antes de abrir
     // el sitio a pacientes reales se reemplazan por los enlaces reales.
     stripePrimera: {
-      CO: "[[POR DEFINIR]]",
-      AU: "https://buy.stripe.com/test_cNi5kC5756TV5wD7wQ4Ja00",
-      LATAM: "[[POR DEFINIR]]",
+      CO: "https://buy.stripe.com/test_3cI9AS9nla673ov8AU4Ja02", // COP 100.000
+      AU: "https://buy.stripe.com/test_cNi5kC5756TV5wD7wQ4Ja00", // AUD 45
+      LATAM: "https://buy.stripe.com/test_eVq14m431fqr4sz3gA4Ja01", // USD 25
     },
     stripeMember4: {
       CO: "[[POR DEFINIR]]",
