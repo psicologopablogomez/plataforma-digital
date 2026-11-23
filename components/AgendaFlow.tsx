@@ -66,14 +66,25 @@ export default function AgendaFlow({
   });
   const inicioRef = useRef<HTMLDivElement>(null);
 
-  // La zona horaria se detecta en el navegador de la persona.
   useEffect(() => {
+    // La zona horaria se detecta en el navegador de la persona.
     try {
       setZona(Intl.DateTimeFormat().resolvedOptions().timeZone);
     } catch {
       setZona("");
     }
-  }, []);
+    // Se recuerda el idioma: Stripe devuelve a la persona a /pago-ok y de ahí se
+    // la lleva a esta página en el mismo idioma.
+    try {
+      document.cookie = `idioma=${lang}; path=/; max-age=86400; SameSite=Lax`;
+    } catch {
+      // Sin cookies: volverá en español.
+    }
+    // Si vuelve de pagar (/agenda?pago=ok), se abre directo el paso 3.
+    if (new URLSearchParams(window.location.search).get("pago") === "ok") {
+      setPaso(3);
+    }
+  }, [lang]);
 
   const irAPaso = (n: 1 | 2 | 3) => {
     setPaso(n);
