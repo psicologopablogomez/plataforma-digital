@@ -4,7 +4,7 @@ import { estilosBoton } from "./Button";
 import Relleno from "./Relleno";
 
 // Recuadro de /agenda: "¿Todavía tienes dudas?". Los botones se activan al
-// conectar Calendly (escucha gratuita) y el número real de WhatsApp.
+// conectar Cal.com (escucha gratuita) y el número real de WhatsApp.
 export default function RecuadroAgenda({
   t,
   wa,
@@ -12,7 +12,7 @@ export default function RecuadroAgenda({
   t: Dictionary["agenda"]["lateral"];
   wa: string | undefined;
 }) {
-  const escucha = site.links.calendlyEscucha;
+  const escucha = site.links.agendaEscucha;
   const escuchaLista = escucha.startsWith("http");
 
   return (

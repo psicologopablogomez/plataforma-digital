@@ -14,7 +14,7 @@ export function estilosBoton(variante: Variante, className = ""): string {
   return `inline-flex items-center justify-center rounded-full px-6 py-3 text-center text-base font-semibold ${estilos[variante]} ${className}`;
 }
 
-// Botón-enlace reutilizable. Al conectar Calendly/Stripe solo cambia el destino.
+// Botón-enlace reutilizable. Al conectar Cal.com/Stripe solo cambia el destino.
 export default function Button({
   href,
   children,

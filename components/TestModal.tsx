@@ -54,7 +54,14 @@ export default function TestModal({
     const temporizador = yaVisto
       ? undefined
       : window.setTimeout(() => {
-          if (!document.querySelector("dialog[open]")) abrir();
+          // Se vuelve a comprobar justo antes de aparecer (por ejemplo, si ya lo abriste).
+          let visto = false;
+          try {
+            visto = sessionStorage.getItem(CLAVE_VISTO) === "1";
+          } catch {
+            visto = false;
+          }
+          if (!visto && !document.querySelector("dialog[open]")) abrir();
         }, SEGUNDOS_PARA_APARECER * 1000);
 
     return () => {

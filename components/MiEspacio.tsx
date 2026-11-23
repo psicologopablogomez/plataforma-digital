@@ -203,12 +203,12 @@ export default function MiEspacio({
               <BotonEnlace href={t.inicio.meet} variante="principal">
                 {t.inicio.entrar}
               </BotonEnlace>
-              <BotonEnlace href={site.links.calendlyMiembro} variante="contorno">
+              <BotonEnlace href={site.links.agendaMiembro} variante="contorno">
                 {t.inicio.reprogramar}
               </BotonEnlace>
             </div>
             <p className="text-xs">
-              <Relleno texto={t.inicio.meet} /> · <Relleno texto={site.links.calendlyMiembro} />
+              <Relleno texto={t.inicio.meet} /> · <Relleno texto={site.links.agendaMiembro} />
             </p>
           </div>
         )}
@@ -327,7 +327,7 @@ export default function MiEspacio({
                   {t.escucha.agendar}
                 </button>
                 <span className="text-xs">
-                  <Relleno texto={site.links.calendlyToken} />
+                  <Relleno texto={site.links.agendaEscuchaMiembros} />
                 </span>
               </div>
             ) : (

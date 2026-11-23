@@ -314,7 +314,7 @@
       "titulo": "Choose your time",
       "texto": "You'll see the available times in your own time zone. When you book, you'll receive the Google Meet link by email.",
       "zona": "Your time zone",
-      "calendario": "The Calendly calendar will appear here."
+      "calendario": "The booking calendar will appear here."
     },
     "lateral": {
       "titulo": "Still have questions?",

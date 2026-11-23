@@ -417,9 +417,9 @@ export default function AgendaFlow({
             </p>
           )}
 
-          {esEnlace(site.links.calendlyPrimera) ? (
+          {esEnlace(site.links.agendaPrimera) ? (
             <iframe
-              src={site.links.calendlyPrimera}
+              src={`${site.links.agendaPrimera}?embed=true`}
               title={t.pasos[2]}
               className="h-[40rem] w-full rounded-2xl border border-oscuro/10"
             />
@@ -427,7 +427,7 @@ export default function AgendaFlow({
             <div className="flex min-h-64 flex-col items-center justify-center gap-3 rounded-2xl border-2 border-dashed border-azul/40 bg-azul/5 p-6 text-center">
               <p className="font-semibold text-oscuro">{t.horario.calendario}</p>
               <p className="text-xs">
-                <Relleno texto={site.links.calendlyPrimera} />
+                <Relleno texto={site.links.agendaPrimera} />
               </p>
             </div>
           )}

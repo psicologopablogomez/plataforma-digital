@@ -24,12 +24,15 @@ export const site = {
   // Espacios de escucha breve para miembros
   tokens: { perWeek: 2, minutes: 10, extraPrice: "[[POR DEFINIR]]" },
 
-  // Enlaces que se conectarán en la Fase 1 (Calendly, Stripe y redes)
+  // Enlaces de la Fase 1: agenda (Cal.com), pagos (Stripe) y redes
   links: {
-    calendlyEscucha: "[[POR DEFINIR]]", // escucha breve gratuita, 10 min
-    calendlyPrimera: "[[POR DEFINIR]]", // primera cita, 50 min
-    calendlyMiembro: "[[POR DEFINIR]]", // sesiones de membresía
-    calendlyToken: "[[POR DEFINIR]]", // escucha breve (solo miembros)
+    agendaEscucha: "https://cal.com/senderomente/escucha-gratuita", // escucha gratuita, 10 min
+    agendaPrimera: "https://cal.com/senderomente/primera-cita", // primera cita, 50 min
+    // Las dos citas de MIEMBROS (sesión de membresía y espacio de escucha) ya existen
+    // en Cal.com, pero NO se conectan al sitio hasta que Mi espacio exija inicio de
+    // sesión (Fase 2): si no, cualquiera podría reservarlas sin ser miembro.
+    agendaMiembro: "[[POR DEFINIR]]", // sesiones de membresía
+    agendaEscuchaMiembros: "[[POR DEFINIR]]", // escucha breve (solo miembros)
     stripePrimera: {
       CO: "[[POR DEFINIR]]",
       AU: "[[POR DEFINIR]]",
