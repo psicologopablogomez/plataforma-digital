@@ -8,8 +8,34 @@ import type { Area, ServicioId, TestData } from "@/lib/test";
 
 type Paso = "entrada" | "resultado" | number;
 
-const CLAVE_VISTO = "test-orientacion-visto";
+const COOKIE_VISTO = "test_visto";
+const HORAS_SIN_VOLVER = 24; // tras verlo, no vuelve a salir solo en este navegador durante 24 horas
 const SEGUNDOS_PARA_APARECER = 8;
+
+// Páginas donde NO debe salir solo: la persona está reservando o en su área privada.
+const RUTAS_SIN_AVISO = /\/(agenda|mi-espacio|pago-ok)(\/|$)/;
+
+// Se recuerda con una cookie (dura entre pestañas y visitas), y además en memoria
+// mientras la página siga abierta, por si el navegador bloquea las cookies.
+let vistoEnMemoria = false;
+
+function yaLoVio(): boolean {
+  if (vistoEnMemoria) return true;
+  try {
+    return document.cookie.split("; ").some((c) => c.startsWith(`${COOKIE_VISTO}=`));
+  } catch {
+    return false;
+  }
+}
+
+function marcarVisto() {
+  vistoEnMemoria = true;
+  try {
+    document.cookie = `${COOKIE_VISTO}=1; path=/; max-age=${HORAS_SIN_VOLVER * 3600}; SameSite=Lax`;
+  } catch {
+    // Sin cookies: queda solo la marca en memoria.
+  }
+}
 
 // Test de orientación (esquema 7.2): 4 preguntas, resultado por área.
 // Es una orientación, no un diagnóstico. No se guarda ninguna respuesta.
@@ -31,11 +57,7 @@ export default function TestModal({
   const abrir = useCallback(() => {
     setPaso("entrada");
     setRespuestas([]);
-    try {
-      sessionStorage.setItem(CLAVE_VISTO, "1");
-    } catch {
-      // Sin almacenamiento: simplemente puede volver a aparecer.
-    }
+    marcarVisto();
     if (dialogRef.current && !dialogRef.current.open) dialogRef.current.showModal();
   }, []);
 
@@ -44,24 +66,15 @@ export default function TestModal({
   useEffect(() => {
     window.addEventListener(EVENTO_ABRIR_TEST, abrir);
 
-    let yaVisto = false;
-    try {
-      yaVisto = sessionStorage.getItem(CLAVE_VISTO) === "1";
-    } catch {
-      yaVisto = false;
-    }
-    // Aparece solo una vez por visita, y sin interrumpir otra ventana abierta.
-    const temporizador = yaVisto
+    // Sale solo una vez al entrar al sitio. Se comprueba al cargar y otra vez justo
+    // antes de aparecer, y nunca se muestra encima de otra ventana abierta.
+    const temporizador = yaLoVio()
       ? undefined
       : window.setTimeout(() => {
-          // Se vuelve a comprobar justo antes de aparecer (por ejemplo, si ya lo abriste).
-          let visto = false;
-          try {
-            visto = sessionStorage.getItem(CLAVE_VISTO) === "1";
-          } catch {
-            visto = false;
-          }
-          if (!visto && !document.querySelector("dialog[open]")) abrir();
+          if (yaLoVio()) return;
+          if (RUTAS_SIN_AVISO.test(window.location.pathname)) return;
+          if (document.querySelector("dialog[open]")) return;
+          abrir();
         }, SEGUNDOS_PARA_APARECER * 1000);
 
     return () => {
