@@ -17,10 +17,8 @@
   --font-editorial: Georgia, "Times New Roman", serif;
 }
 
-html,
-body {
-  height: 100%;
-}
+/* No se fija el alto de html/body: si body mide solo una pantalla, el encabezado
+   fijo (sticky) deja de seguir al desplazarse. El alto mínimo lo da min-h-screen. */
 
 body {
   background: var(--color-fondo);
