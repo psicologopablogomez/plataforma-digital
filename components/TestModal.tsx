@@ -198,7 +198,7 @@ export default function TestModal({
 
         {paso === "resultado" && (
           <>
-            <h2 className="font-editorial text-2xl font-bold text-oscuro">
+            <h2 className="font-editorial text-2xl text-oscuro">
               {test.resultados[area].titulo}
             </h2>
             <p className="text-lg">{test.resultados[area].texto}</p>

@@ -23,7 +23,7 @@ export default async function Agenda({
   return (
     <main className="mx-auto max-w-6xl px-4 py-12 sm:py-16">
       <header className="mx-auto mb-10 max-w-3xl text-center">
-        <h1 className="font-editorial text-3xl font-bold text-oscuro sm:text-5xl">
+        <h1 className="font-editorial text-3xl text-oscuro sm:text-5xl">
           {a.titulo}
         </h1>
         <p className="mt-4 text-lg text-texto/80">{a.texto}</p>

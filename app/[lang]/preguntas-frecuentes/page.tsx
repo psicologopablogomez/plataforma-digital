@@ -20,7 +20,7 @@ export default async function PreguntasFrecuentes({
   return (
     <main>
       <Seccion ancho="max-w-3xl">
-        <h1 className="mb-8 text-center font-editorial text-3xl font-bold text-oscuro sm:text-5xl">
+        <h1 className="mb-8 text-center font-editorial text-3xl text-oscuro sm:text-5xl">
           {t.paginas["preguntas-frecuentes"]}
         </h1>
         <div className="flex flex-col gap-3">

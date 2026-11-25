@@ -41,7 +41,7 @@ export default async function PaginaProvisional({
 
   return (
     <main className="mx-auto flex min-h-[50vh] max-w-3xl flex-col gap-4 px-4 py-16">
-      <h1 className="text-3xl font-bold text-oscuro">{titulo}</h1>
+      <h1 className="font-editorial text-3xl text-oscuro sm:text-4xl">{titulo}</h1>
       <p className="text-texto/80">
         {legales.includes(page) ? t.pendiente.textoLegal : t.pendiente.enConstruccion}
       </p>

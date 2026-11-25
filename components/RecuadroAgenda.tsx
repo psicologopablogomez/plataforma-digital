@@ -17,7 +17,7 @@ export default function RecuadroAgenda({
 
   return (
     <div className="flex flex-col gap-4">
-      <h2 className="font-editorial text-xl font-bold">{t.titulo}</h2>
+      <h2 className="font-editorial text-xl">{t.titulo}</h2>
       <p className="text-sm opacity-95">{t.texto}</p>
 
       {escuchaLista ? (

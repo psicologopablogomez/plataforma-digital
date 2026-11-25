@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Figtree, Young_Serif } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import { site } from "@/config/site";
@@ -9,6 +10,16 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 import TestModal from "@/components/TestModal";
 import { getTest } from "@/lib/test";
 import { listaPaises } from "@/lib/paises";
+
+// Tipografía: Figtree para el texto y Young Serif para títulos y frases destacadas.
+// Next.js las descarga al construir el sitio y las sirve desde tu propio dominio.
+const figtree = Figtree({ subsets: ["latin"], variable: "--font-figtree", display: "swap" });
+const youngSerif = Young_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-young-serif",
+  display: "swap",
+});
 
 export const dynamicParams = false;
 
@@ -42,7 +53,7 @@ export default async function LangLayout({
   const t = getDictionary(lang);
 
   return (
-    <html lang={lang}>
+    <html lang={lang} className={`${figtree.variable} ${youngSerif.variable}`}>
       <body className="flex min-h-screen flex-col">
         <Header lang={lang} t={t} paises={listaPaises(lang)} />
         <div className="flex-1">{children}</div>

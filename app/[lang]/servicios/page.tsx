@@ -33,7 +33,7 @@ export default async function Servicios({
       {/* 1. Introducción */}
       <Seccion ancho="max-w-3xl">
         <div className="text-center">
-          <h1 className="font-editorial text-4xl font-bold text-oscuro sm:text-5xl">
+          <h1 className="font-editorial text-4xl text-oscuro sm:text-5xl">
             {s.intro.titulo}
           </h1>
           <p className="mt-6 text-lg text-texto/80">{s.intro.texto}</p>
@@ -105,7 +105,7 @@ export default async function Servicios({
       {/* 4. Tarifas por región */}
       <section id="tarifas" className="scroll-mt-24 bg-turquesa/10">
         <div className="mx-auto max-w-6xl px-4 py-14 sm:py-20">
-          <h2 className="mb-8 text-center text-2xl font-bold text-oscuro sm:text-3xl">
+          <h2 className="mb-8 text-center font-editorial text-2xl text-oscuro sm:text-3xl">
             {s.tarifas.titulo}
           </h2>
           <Tarifas
@@ -120,7 +120,7 @@ export default async function Servicios({
       {/* 5. Espacios de escucha breve para miembros */}
       <Seccion ancho="max-w-3xl">
         <div className="rounded-2xl bg-gradient-to-br from-oscuro to-azul p-8 text-white sm:p-10">
-          <h2 className="font-editorial text-2xl font-bold sm:text-3xl">{s.escucha.titulo}</h2>
+          <h2 className="font-editorial text-2xl sm:text-3xl">{s.escucha.titulo}</h2>
           <p className="mt-4 leading-relaxed opacity-95">
             <Relleno texto={s.escucha.texto} />
           </p>
@@ -138,9 +138,9 @@ export default async function Servicios({
       </Seccion>
 
       {/* 7. Cierre */}
-      <section className="bg-gradient-to-br from-oscuro via-azul to-turquesa text-white">
+      <section className="bg-gradient-to-br from-oscuro via-azul via-70% to-turquesa text-white">
         <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 px-4 py-16 text-center">
-          <p className="font-editorial text-2xl font-bold sm:text-3xl">{s.cierre.texto}</p>
+          <p className="font-editorial text-2xl sm:text-3xl">{s.cierre.texto}</p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Button href={`${base}/agenda#escucha`} variante="acento">
               {s.cierre.escucha}

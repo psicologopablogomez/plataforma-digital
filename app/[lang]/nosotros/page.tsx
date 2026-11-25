@@ -37,7 +37,7 @@ export default async function Nosotros({
       {/* 1. Quiénes somos */}
       <Seccion ancho="max-w-3xl">
         <div className="text-center">
-          <h1 className="font-editorial text-3xl font-bold text-oscuro sm:text-5xl">
+          <h1 className="font-editorial text-3xl text-oscuro sm:text-5xl">
             {n.quienes.titulo}
           </h1>
           <p className="mt-6 text-lg text-texto/80">{n.quienes.texto}</p>
@@ -45,7 +45,7 @@ export default async function Nosotros({
       </Seccion>
 
       {/* 2. Manifiesto: bloque visual con mucho espacio */}
-      <section className="bg-gradient-to-br from-oscuro via-azul to-turquesa text-white">
+      <section className="bg-gradient-to-br from-oscuro via-azul via-70% to-turquesa text-white">
         <div className="mx-auto max-w-3xl px-4 py-20 text-center sm:py-28">
           <h2 className="mb-8 text-sm font-semibold uppercase tracking-widest opacity-80">
             {n.manifiesto.titulo}
@@ -93,7 +93,7 @@ export default async function Nosotros({
           {n.proceso.etapas.map((etapa, i) => (
             <li key={etapa.titulo} className="rounded-2xl bg-white p-6 shadow-sm">
               <span className="mb-3 block text-sm font-bold text-azul">{i + 1}</span>
-              <h3 className="font-editorial text-2xl font-bold text-oscuro">{etapa.titulo}</h3>
+              <h3 className="font-editorial text-2xl text-oscuro">{etapa.titulo}</h3>
               <p className="mt-2 text-texto/80">{etapa.texto}</p>
             </li>
           ))}

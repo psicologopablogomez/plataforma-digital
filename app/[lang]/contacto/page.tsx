@@ -35,7 +35,7 @@ export default async function Contacto({
     <main>
       <Seccion ancho="max-w-3xl">
         <div className="text-center">
-          <h1 className="font-editorial text-3xl font-bold text-oscuro sm:text-5xl">
+          <h1 className="font-editorial text-3xl text-oscuro sm:text-5xl">
             {c.titulo}
           </h1>
           <p className="mt-4 text-lg text-texto/80">{c.texto}</p>

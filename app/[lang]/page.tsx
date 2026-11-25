@@ -34,7 +34,7 @@ export default async function Home({
   return (
     <main>
       {/* 1. Portada: abre con la filosofía y la promesa */}
-      <section className="relative bg-gradient-to-br from-oscuro via-azul to-turquesa text-white">
+      <section className="relative bg-gradient-to-br from-oscuro via-azul via-70% to-turquesa text-white">
         {/* Si la foto /public/images/inicio/hero.jpg ya está subida, se usa de fondo */}
         {fotoExiste("/images/inicio/hero.jpg") && (
           <>
@@ -50,7 +50,7 @@ export default async function Home({
           </>
         )}
         <div className="relative mx-auto flex min-h-[70vh] max-w-4xl flex-col items-center justify-center gap-6 px-4 py-20 text-center">
-          <h1 className="font-editorial text-4xl font-bold leading-tight sm:text-6xl">
+          <h1 className="font-editorial text-4xl leading-tight sm:text-6xl">
             {t.marca.filosofia}
           </h1>
           <p className="max-w-2xl text-lg opacity-95 sm:text-xl">{t.marca.promesa}</p>
@@ -194,7 +194,7 @@ export default async function Home({
       {/* 8. Próximo evento (sin ventana emergente) */}
       <Seccion titulo={i.evento.titulo}>
         <div className="mx-auto flex max-w-3xl flex-col gap-4 rounded-2xl bg-gradient-to-br from-oscuro to-azul p-8 text-white">
-          <h3 className="font-editorial text-2xl font-bold">{i.evento.nombre}</h3>
+          <h3 className="font-editorial text-2xl">{i.evento.nombre}</h3>
           <p className="opacity-90">{i.evento.texto}</p>
           <p className="text-sm">
             <span className="font-semibold">{i.evento.etiquetaFecha}:</span>{" "}
@@ -234,9 +234,9 @@ export default async function Home({
       </Seccion>
 
       {/* 10. Cierre */}
-      <section className="bg-gradient-to-br from-oscuro via-azul to-turquesa text-white">
+      <section className="bg-gradient-to-br from-oscuro via-azul via-70% to-turquesa text-white">
         <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 px-4 py-16 text-center">
-          <p className="font-editorial text-3xl font-bold sm:text-4xl">{t.marca.cierre}</p>
+          <p className="font-editorial text-3xl sm:text-4xl">{t.marca.cierre}</p>
           <Button href={`${base}/agenda`} variante="acento">
             {i.cierre.boton}
           </Button>

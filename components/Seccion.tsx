@@ -1,4 +1,4 @@
-// Bloque de página con título centrado y fondo blanco o suave.
+// Bloque de página con título centrado (en la letra editorial) y fondo crema o suave.
 export default function Seccion({
   titulo,
   children,
@@ -11,10 +11,10 @@ export default function Seccion({
   ancho?: string;
 }) {
   return (
-    <section className={fondo === "suave" ? "bg-turquesa/10" : "bg-white"}>
+    <section className={fondo === "suave" ? "bg-turquesa/10" : "bg-fondo"}>
       <div className={`mx-auto ${ancho} px-4 py-14 sm:py-20`}>
         {titulo && (
-          <h2 className="mb-8 text-center text-2xl font-bold text-oscuro sm:text-3xl">
+          <h2 className="mb-8 text-center font-editorial text-2xl text-oscuro sm:text-3xl">
             {titulo}
           </h2>
         )}

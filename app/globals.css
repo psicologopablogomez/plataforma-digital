@@ -1,20 +1,26 @@
 @import "tailwindcss";
 
 /*
-  Colores y tipografías PROVISIONALES.
-  Los códigos exactos llegan con el manual de marca v2 ([[POR DEFINIR]]).
-  Para cambiarlos, se editan solo aquí.
+  Paleta C · "Amanecer" y tipografía Young Serif + Figtree.
+  Los códigos de color son una propuesta: cuando el manual de marca v2 traiga los
+  oficiales, se cambian solo aquí.
 */
 @theme {
-  --color-oscuro: #0b2a6f; /* azul denso (la "oscuridad") */
-  --color-azul: #1e4fd8; /* azul principal */
-  --color-turquesa: #17b8c6; /* turquesa luminoso (la "luz") */
-  --color-naranja: #ff8a3d; /* acento */
-  --color-fondo: #ffffff;
-  --color-texto: #12203f;
+  --color-oscuro: #0f3d4c; /* azul petróleo oscuro (la "oscuridad"): títulos y fondos densos */
+  --color-azul: #1b7a8c; /* azul petróleo medio: color principal de botones y enlaces */
+  --color-turquesa: #3cc1b0; /* turquesa luminoso (la "luz") */
+  --color-naranja: #ff8f5a; /* acento cálido */
+  --color-fondo: #fff6ee; /* crema suave de fondo */
+  --color-texto: #16323b; /* texto: petróleo casi negro */
+}
 
-  --font-sans: "Segoe UI", system-ui, -apple-system, Roboto, sans-serif;
-  --font-editorial: Georgia, "Times New Roman", serif;
+/*
+  Las fuentes las carga Next.js en app/[lang]/layout.tsx (variables --font-figtree y
+  --font-young-serif). "inline" hace que Tailwind use esas variables tal cual.
+*/
+@theme inline {
+  --font-sans: var(--font-figtree), system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-editorial: var(--font-young-serif), Georgia, "Times New Roman", serif;
 }
 
 /* No se fija el alto de html/body: si body mide solo una pantalla, el encabezado

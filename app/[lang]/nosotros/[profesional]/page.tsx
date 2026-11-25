@@ -50,7 +50,7 @@ export default async function PerfilProfesional({
       <header className="mt-6 flex flex-col items-center gap-4 text-center sm:flex-row sm:text-left">
         <Avatar nombre={datos.nombre} foto={profesional.foto} tamano={144} />
         <div>
-          <h1 className="font-editorial text-3xl font-bold text-oscuro sm:text-4xl">
+          <h1 className="font-editorial text-3xl text-oscuro sm:text-4xl">
             {datos.nombre}
           </h1>
           <p className="mt-1 font-medium text-azul">{datos.cargo}</p>

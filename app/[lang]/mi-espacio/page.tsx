@@ -23,7 +23,7 @@ export default async function MiEspacioPagina({
 
   return (
     <main className="mx-auto max-w-4xl px-4 py-12 sm:py-16">
-      <h1 className="mb-8 text-center font-editorial text-3xl font-bold text-oscuro sm:text-5xl">
+      <h1 className="mb-8 text-center font-editorial text-3xl text-oscuro sm:text-5xl">
         {t.miEspacio.titulo}
       </h1>
       <MiEspacio

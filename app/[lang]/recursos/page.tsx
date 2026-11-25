@@ -39,7 +39,7 @@ export default async function Recursos({
     <main>
       <Seccion ancho="max-w-3xl">
         <div className="text-center">
-          <h1 className="font-editorial text-3xl font-bold text-oscuro sm:text-5xl">
+          <h1 className="font-editorial text-3xl text-oscuro sm:text-5xl">
             {r.titulo}
           </h1>
           <p className="mt-4 text-lg text-texto/80">{r.texto}</p>
@@ -56,9 +56,9 @@ export default async function Recursos({
         <p className="mt-8 text-center text-xs text-texto/70">{r.aviso}</p>
       </Seccion>
 
-      <section className="bg-gradient-to-br from-oscuro via-azul to-turquesa text-white">
+      <section className="bg-gradient-to-br from-oscuro via-azul via-70% to-turquesa text-white">
         <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 px-4 py-14 text-center">
-          <p className="font-editorial text-2xl font-bold sm:text-3xl">{r.cierre.texto}</p>
+          <p className="font-editorial text-2xl sm:text-3xl">{r.cierre.texto}</p>
           <Button href={`/${lang}/agenda`} variante="acento">
             {r.cierre.boton}
           </Button>

@@ -32,7 +32,7 @@ export default async function Eventos({
     <main>
       <Seccion ancho="max-w-3xl">
         <div className="text-center">
-          <h1 className="font-editorial text-3xl font-bold text-oscuro sm:text-5xl">
+          <h1 className="font-editorial text-3xl text-oscuro sm:text-5xl">
             {e.titulo}
           </h1>
           <p className="mt-4 text-lg text-texto/80">{e.texto}</p>
@@ -44,7 +44,7 @@ export default async function Eventos({
           <p className="text-sm font-semibold uppercase tracking-widest opacity-80">
             {e.primer}
           </p>
-          <h2 className="font-editorial text-2xl font-bold sm:text-3xl">{ev.nombre}</h2>
+          <h2 className="font-editorial text-2xl sm:text-3xl">{ev.nombre}</h2>
           <p className="opacity-95">{ev.texto}</p>
           <ul className="flex flex-col gap-1 text-sm">
             <li>
