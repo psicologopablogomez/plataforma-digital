@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { site } from "@/config/site";
 import type { Dictionary, Locale } from "@/lib/i18n";
+import type { Pais } from "@/lib/paises";
 import CrisisButton from "./CrisisButton";
 import LanguageSwitch from "./LanguageSwitch";
 
@@ -11,9 +12,11 @@ import LanguageSwitch from "./LanguageSwitch";
 export default function Header({
   lang,
   t,
+  paises,
 }: {
   lang: Locale;
   t: Dictionary;
+  paises: { principales: Pais[]; otros: Pais[] };
 }) {
   const [abierto, setAbierto] = useState(false);
 
@@ -53,7 +56,7 @@ export default function Header({
         </nav>
 
         <div className="flex items-center gap-2">
-          <CrisisButton t={t.crisis} />
+          <CrisisButton lang={lang} t={t.crisis} paises={paises} />
           <div className="hidden xl:block">
             <LanguageSwitch lang={lang} label={t.encabezado.idioma} />
           </div>

@@ -28,17 +28,20 @@
     "irInicio": "Ir al inicio"
   },
   "crisis": {
-    "boton": "¿Necesitas ayuda ahora?",
+    "boton": "Ayuda en crisis",
     "titulo": "No estás solo",
     "texto": "Si estás en peligro o piensas en hacerte daño, contacta ahora una línea de atención de tu país. No estás solo.",
     "elegirPais": "Elige tu país",
-    "linea": "Línea de atención",
-    "cerrar": "Cerrar",
-    "paises": {
-      "AU": "Australia",
-      "CO": "Colombia",
-      "ES": "España"
-    }
+    "principales": "Principales",
+    "otros": "Otros países",
+    "sinSeleccion": "Elige tu país para ver las líneas de ayuda. Si estás en peligro inmediato, llama al número de emergencias de tu país.",
+    "emergencias": "En una emergencia, llama al",
+    "lineasTitulo": "Líneas de ayuda",
+    "llamar": "Llamar a",
+    "masLineas": "Ver más líneas de ayuda de {pais}",
+    "directorio": "Ver las líneas de ayuda de {pais}",
+    "directorioNota": "Es un directorio internacional de líneas de ayuda. Se abre en otra pestaña.",
+    "cerrar": "Cerrar"
   },
   "pie": {
     "menu": "Menú",

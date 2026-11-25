@@ -55,12 +55,7 @@ export const site = {
     tiktok: "[[POR DEFINIR]]",
   },
 
-  // Líneas de ayuda en crisis. Juan Pablo enviará los números oficiales.
-  crisisLines: {
-    AU: "[[POR DEFINIR]]",
-    CO: "[[POR DEFINIR]]",
-    ES: "[[POR DEFINIR]]",
-  },
+  // Las líneas de ayuda en crisis por país están en config/crisis.ts.
 } as const;
 
 export type Site = typeof site;

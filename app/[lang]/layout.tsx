@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import TestModal from "@/components/TestModal";
 import { getTest } from "@/lib/test";
+import { listaPaises } from "@/lib/paises";
 
 export const dynamicParams = false;
 
@@ -43,7 +44,7 @@ export default async function LangLayout({
   return (
     <html lang={lang}>
       <body className="flex min-h-screen flex-col">
-        <Header lang={lang} t={t} />
+        <Header lang={lang} t={t} paises={listaPaises(lang)} />
         <div className="flex-1">{children}</div>
         <Footer lang={lang} t={t} />
         <WhatsAppButton t={t.whatsapp} />

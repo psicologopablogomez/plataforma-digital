@@ -28,17 +28,20 @@
     "irInicio": "Go to home"
   },
   "crisis": {
-    "boton": "Need help now?",
+    "boton": "Crisis help",
     "titulo": "You are not alone",
     "texto": "If you are in danger or thinking about hurting yourself, contact a helpline in your country now. You are not alone.",
     "elegirPais": "Choose your country",
-    "linea": "Helpline",
-    "cerrar": "Close",
-    "paises": {
-      "AU": "Australia",
-      "CO": "Colombia",
-      "ES": "Spain"
-    }
+    "principales": "Main",
+    "otros": "Other countries",
+    "sinSeleccion": "Choose your country to see helplines. If you are in immediate danger, call your country's emergency number.",
+    "emergencias": "In an emergency, call",
+    "lineasTitulo": "Helplines",
+    "llamar": "Call",
+    "masLineas": "See more helplines in {pais}",
+    "directorio": "See helplines in {pais}",
+    "directorioNota": "This is an international helpline directory. It opens in a new tab.",
+    "cerrar": "Close"
   },
   "pie": {
     "menu": "Menu",
