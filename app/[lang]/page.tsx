@@ -5,6 +5,7 @@ import Foto from "@/components/Foto";
 import HeroFondo from "@/components/HeroFondo";
 import Button from "@/components/Button";
 import AbrirTestButton from "@/components/AbrirTestButton";
+import AbrirTestEnlace from "@/components/AbrirTestEnlace";
 import Relleno from "@/components/Relleno";
 import Seccion from "@/components/Seccion";
 import ProfessionalCard from "@/components/ProfessionalCard";
@@ -15,6 +16,14 @@ import { profesionales } from "@/config/profesionales";
 
 // A qué parte de Servicios lleva cada frase (en el mismo orden del texto).
 const anclasServicios = ["individual", "pareja", "familiar", "migrantes"];
+
+// A dónde lleva cada tarjeta de "Cómo funciona" (en el mismo orden de los pasos).
+// "test" abre la ventana del test de orientación.
+const destinosPasos: { principal: "test" | string; secundaria?: string }[] = [
+  { principal: "test", secundaria: "/agenda#escucha" },
+  { principal: "/agenda" },
+  { principal: "/servicios#tarifas", secundaria: "/mi-espacio" },
+];
 
 export default async function Home({
   params,
@@ -60,7 +69,7 @@ export default async function Home({
             <li key={frase}>
               <Link
                 href={`${base}/servicios#${anclasServicios[n]}`}
-                className="flex h-full items-center justify-center rounded-2xl bg-gradient-to-br from-oscuro to-azul p-6 text-center font-editorial text-xl text-white shadow-sm hover:brightness-110"
+                className="flex h-full items-center justify-center rounded-2xl bg-gradient-to-br from-oscuro to-azul p-6 text-center font-editorial text-xl text-white shadow-sm hover:from-azul hover:to-oscuro"
               >
                 “{frase}”
               </Link>
@@ -75,15 +84,47 @@ export default async function Home({
       {/* 3. Cómo funciona */}
       <Seccion titulo={i.comoFunciona.titulo} fondo="suave">
         <ol className="grid gap-6 md:grid-cols-3">
-          {i.comoFunciona.pasos.map((paso, n) => (
-            <li key={paso.titulo} className="rounded-2xl bg-white p-6 shadow-sm">
-              <span className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-azul text-lg font-bold text-white">
-                {n + 1}
-              </span>
-              <h3 className="text-lg font-bold text-oscuro">{paso.titulo}</h3>
-              <p className="mt-2 text-texto/80">{paso.texto}</p>
-            </li>
-          ))}
+          {i.comoFunciona.pasos.map((paso, n) => {
+            const accion = i.comoFunciona.acciones[n];
+            const destino = destinosPasos[n];
+            // Toda la tarjeta es clicable (la acción principal cubre la tarjeta);
+            // la acción secundaria queda por encima, con su propio enlace.
+            const principal =
+              "text-azul after:absolute after:inset-0 after:rounded-2xl group-hover:text-oscuro focus-visible:outline-none focus-visible:after:ring-2 focus-visible:after:ring-azul";
+            return (
+              <li
+                key={paso.titulo}
+                className="group relative flex flex-col rounded-2xl bg-white p-6 shadow-sm ring-1 ring-transparent transition hover:-translate-y-0.5 hover:shadow-md hover:ring-azul/40"
+              >
+                <span className="mb-4 flex h-10 w-10 items-center justify-center rounded-full bg-azul text-lg font-bold text-white transition-colors group-hover:bg-naranja group-hover:text-oscuro">
+                  {n + 1}
+                </span>
+                <h3 className="text-lg font-bold text-oscuro transition-colors group-hover:text-azul">
+                  {paso.titulo}
+                </h3>
+                <p className="mt-2 text-texto/80">{paso.texto}</p>
+                <div className="mt-auto flex flex-col gap-2 pt-5 text-sm font-semibold">
+                  {destino.principal === "test" ? (
+                    <AbrirTestEnlace className={`${principal} self-start text-left`}>
+                      {accion.principal} →
+                    </AbrirTestEnlace>
+                  ) : (
+                    <Link href={`${base}${destino.principal}`} className={`${principal} self-start`}>
+                      {accion.principal} →
+                    </Link>
+                  )}
+                  {destino.secundaria && accion.secundaria && (
+                    <Link
+                      href={`${base}${destino.secundaria}`}
+                      className="relative z-10 self-start text-texto/80 underline-offset-2 hover:text-azul hover:underline"
+                    >
+                      {accion.secundaria}
+                    </Link>
+                  )}
+                </div>
+              </li>
+            );
+          })}
         </ol>
         <p className="mt-8 text-center text-lg font-semibold text-oscuro">
           {t.marca.etapas.join(" · ")}. {t.marca.lema}
@@ -97,7 +138,7 @@ export default async function Home({
             <li key={item.titulo}>
               <Link
                 href={`${base}/servicios#${anclasServicios[n]}`}
-                className="group flex h-full flex-col overflow-hidden rounded-2xl border border-oscuro/10 bg-white shadow-sm hover:shadow-md"
+                className="group flex h-full flex-col overflow-hidden rounded-2xl border border-oscuro/10 bg-white shadow-sm hover:border-azul hover:shadow-md"
               >
                 <Foto
                   ruta={`/images/servicios/${anclasServicios[n]}.jpg`}
@@ -206,7 +247,7 @@ export default async function Home({
               key={item.p}
               className="group rounded-xl bg-white p-5 shadow-sm open:shadow-md"
             >
-              <summary className="cursor-pointer list-none font-semibold text-oscuro marker:hidden">
+              <summary className="cursor-pointer list-none font-semibold text-oscuro marker:hidden hover:text-azul">
                 {item.p}
               </summary>
               <p className="mt-3 text-texto/80">{item.r}</p>

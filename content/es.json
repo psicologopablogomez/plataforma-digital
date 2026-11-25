@@ -577,6 +577,19 @@
           "titulo": "Tu proceso.",
           "texto": "Continúa con una membresía de 4 u 8 sesiones al mes, a tu ritmo, y sigue tu avance en Mi espacio."
         }
+      ],
+      "acciones": [
+        {
+          "principal": "Haz el test",
+          "secundaria": "Agenda una escucha gratuita"
+        },
+        {
+          "principal": "Agenda tu primera cita"
+        },
+        {
+          "principal": "Conoce la membresía",
+          "secundaria": "Ir a Mi espacio"
+        }
       ]
     },
     "acompanamos": {

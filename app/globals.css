@@ -31,3 +31,21 @@ body {
   color: var(--color-texto);
   font-family: var(--font-sans);
 }
+
+/* Todo lo que se puede pulsar muestra la manita y cambia de color con suavidad. */
+@layer base {
+  a[href],
+  button:not(:disabled),
+  summary,
+  select,
+  [role="button"] {
+    cursor: pointer;
+    transition-property: color, background-color, border-color, text-decoration-color, box-shadow, transform;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+  }
+  [aria-disabled="true"],
+  button:disabled {
+    cursor: not-allowed;
+  }
+}

@@ -60,7 +60,7 @@ export default function Tarifas({
             className={
               region === r
                 ? "rounded-full bg-azul px-5 py-2 text-sm font-semibold text-white"
-                : "rounded-full border border-azul px-5 py-2 text-sm font-semibold text-azul hover:bg-azul/10"
+                : "rounded-full border border-azul px-5 py-2 text-sm font-semibold text-azul hover:bg-azul hover:text-white"
             }
           >
             {t.regiones[r]}

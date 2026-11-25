@@ -38,7 +38,7 @@ export default function Header({
         <Link
           href={`/${lang}`}
           aria-label={t.encabezado.irInicio}
-          className="text-lg font-bold tracking-tight text-oscuro"
+          className="text-lg font-bold tracking-tight text-oscuro hover:text-azul"
         >
           {site.name}
         </Link>
@@ -48,7 +48,7 @@ export default function Header({
             <Link
               key={item.href}
               href={item.href}
-              className="text-texto hover:text-azul"
+              className="text-texto hover:text-azul hover:underline hover:decoration-turquesa hover:decoration-2 hover:underline-offset-8"
             >
               {item.texto}
             </Link>
@@ -62,13 +62,13 @@ export default function Header({
           </div>
           <Link
             href={`/${lang}/mi-espacio`}
-            className="hidden whitespace-nowrap rounded-full border border-azul px-3 py-2 text-sm font-semibold text-azul hover:bg-azul/10 xl:block"
+            className="hidden whitespace-nowrap rounded-full border border-azul px-3 py-2 text-sm font-semibold text-azul hover:bg-azul hover:text-white xl:block"
           >
             {t.encabezado.miEspacio}
           </Link>
           <Link
             href={`/${lang}/agenda`}
-            className="hidden whitespace-nowrap rounded-full bg-azul px-3 py-2 text-sm font-semibold text-white hover:brightness-110 xl:block"
+            className="hidden whitespace-nowrap rounded-full bg-azul px-3 py-2 text-sm font-semibold text-white hover:bg-oscuro xl:block"
           >
             {t.encabezado.agenda}
           </Link>
@@ -79,7 +79,7 @@ export default function Header({
             aria-expanded={abierto}
             aria-controls="menu-movil"
             aria-label={abierto ? t.encabezado.cerrarMenu : t.encabezado.abrirMenu}
-            className="rounded-lg p-2 text-oscuro hover:bg-oscuro/10 xl:hidden"
+            className="rounded-lg p-2 text-oscuro hover:bg-azul hover:text-white xl:hidden"
           >
             <svg
               width="24"
@@ -111,7 +111,7 @@ export default function Header({
               key={item.href}
               href={item.href}
               onClick={cerrar}
-              className="rounded-lg px-3 py-2 font-medium text-texto hover:bg-azul/10"
+              className="rounded-lg px-3 py-2 font-medium text-texto hover:bg-azul hover:text-white"
             >
               {item.texto}
             </Link>
@@ -119,7 +119,7 @@ export default function Header({
           <Link
             href={`/${lang}/mi-espacio`}
             onClick={cerrar}
-            className="rounded-lg px-3 py-2 font-medium text-azul hover:bg-azul/10"
+            className="rounded-lg px-3 py-2 font-medium text-azul hover:bg-azul hover:text-white"
           >
             {t.encabezado.miEspacio}
           </Link>

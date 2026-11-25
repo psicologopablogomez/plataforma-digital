@@ -15,8 +15,8 @@ export default function WhatsAppButton({ t }: { t: Dictionary["whatsapp"] }) {
       title={listo ? t.etiqueta : `${t.etiqueta} ${site.whatsapp}`.trim()}
       target="_blank"
       rel="noopener noreferrer"
-      className={`fixed bottom-4 right-4 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg hover:brightness-110 ${
-        listo ? "" : "cursor-not-allowed opacity-70"
+      className={`fixed bottom-4 right-4 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg ${
+        listo ? "hover:bg-[#1da851]" : "cursor-not-allowed opacity-70"
       }`}
     >
       <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">

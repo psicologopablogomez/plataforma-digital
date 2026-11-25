@@ -32,14 +32,14 @@ export default function CrisisButton({
   const pais = [...paises.principales, ...paises.otros].find((p) => p.code === codigo);
   const ayuda = codigo ? ayudaCrisis[codigo] : undefined;
   const enlaceExterno =
-    "font-semibold text-azul underline underline-offset-2 hover:brightness-110";
+    "font-semibold text-azul underline underline-offset-2 hover:text-oscuro";
 
   return (
     <>
       <button
         type="button"
         onClick={() => dialogRef.current?.showModal()}
-        className="whitespace-nowrap rounded-full bg-naranja px-3 py-1.5 text-xs font-semibold text-oscuro shadow-sm hover:brightness-95"
+        className="whitespace-nowrap rounded-full bg-naranja px-3 py-1.5 text-xs font-semibold text-oscuro shadow-sm hover:bg-turquesa"
       >
         {t.boton}
       </button>
@@ -144,7 +144,7 @@ export default function CrisisButton({
           <button
             type="button"
             onClick={() => dialogRef.current?.close()}
-            className="self-end rounded-full bg-azul px-5 py-2 text-sm font-semibold text-white hover:brightness-110"
+            className="self-end rounded-full bg-azul px-5 py-2 text-sm font-semibold text-white hover:bg-oscuro"
           >
             {t.cerrar}
           </button>

@@ -577,6 +577,19 @@
           "titulo": "Your process.",
           "texto": "Continue with a monthly membership of 4 or 8 sessions, at your own pace, and follow your progress in My space."
         }
+      ],
+      "acciones": [
+        {
+          "principal": "Take the test",
+          "secundaria": "Book a free listening session"
+        },
+        {
+          "principal": "Book your first session"
+        },
+        {
+          "principal": "Learn about membership",
+          "secundaria": "Go to My space"
+        }
       ]
     },
     "acompanamos": {

@@ -121,7 +121,7 @@ export default function TestModal({
           type="button"
           onClick={cerrar}
           aria-label={test.ui.cerrar}
-          className="absolute right-3 top-3 rounded-full p-2 text-oscuro hover:bg-oscuro/10"
+          className="absolute right-3 top-3 rounded-full p-2 text-oscuro hover:bg-oscuro hover:text-white"
         >
           <svg
             width="20"
@@ -144,14 +144,14 @@ export default function TestModal({
               <button
                 type="button"
                 onClick={() => setPaso(0)}
-                className="rounded-full bg-azul px-6 py-3 font-semibold text-white hover:brightness-110"
+                className="rounded-full bg-azul px-6 py-3 font-semibold text-white hover:bg-oscuro"
               >
                 {test.entrada.empezar}
               </button>
               <button
                 type="button"
                 onClick={cerrar}
-                className="rounded-full px-6 py-3 font-semibold text-azul hover:bg-azul/10"
+                className="rounded-full px-6 py-3 font-semibold text-azul hover:bg-azul hover:text-white"
               >
                 {test.entrada.ahoraNo}
               </button>
@@ -180,7 +180,7 @@ export default function TestModal({
                   type="button"
                   onClick={() => elegir(n)}
                   aria-pressed={respuestas[paso] === n}
-                  className="rounded-xl border border-oscuro/15 px-4 py-3 text-left font-medium hover:border-azul hover:bg-azul/5"
+                  className="rounded-xl border border-oscuro/15 px-4 py-3 text-left font-medium hover:border-azul hover:bg-azul hover:text-white"
                 >
                   {opcion.texto}
                 </button>
@@ -189,7 +189,7 @@ export default function TestModal({
             <button
               type="button"
               onClick={atras}
-              className="self-start text-sm font-semibold text-azul hover:underline"
+              className="self-start text-sm font-semibold text-azul hover:text-oscuro hover:underline"
             >
               ← {test.ui.atras}
             </button>
@@ -208,7 +208,7 @@ export default function TestModal({
               <Link
                 href={`${base}/servicios#${servicio}`}
                 onClick={cerrar}
-                className="font-semibold text-azul hover:underline"
+                className="font-semibold text-azul hover:text-oscuro hover:underline"
               >
                 {servicios[servicio]}
               </Link>
@@ -224,21 +224,21 @@ export default function TestModal({
               <Link
                 href={`${base}/agenda`}
                 onClick={cerrar}
-                className="rounded-full bg-azul px-6 py-3 text-center font-semibold text-white hover:brightness-110"
+                className="rounded-full bg-azul px-6 py-3 text-center font-semibold text-white hover:bg-oscuro"
               >
                 {test.botones.primeraCita}
               </Link>
               <Link
                 href={`${base}/servicios#escucha`}
                 onClick={cerrar}
-                className="rounded-full border border-azul px-6 py-3 text-center font-semibold text-azul hover:bg-azul/10"
+                className="rounded-full border border-azul px-6 py-3 text-center font-semibold text-azul hover:bg-azul hover:text-white"
               >
                 {test.botones.escucha}
               </Link>
               <Link
                 href={`${base}/recursos`}
                 onClick={cerrar}
-                className="rounded-full px-6 py-3 text-center font-semibold text-azul hover:bg-azul/10"
+                className="rounded-full px-6 py-3 text-center font-semibold text-azul hover:bg-azul hover:text-white"
               >
                 {test.botones.recursos}
               </Link>

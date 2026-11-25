@@ -4,7 +4,7 @@ import { telefonoVisible, whatsappHref } from "@/lib/whatsapp";
 import Relleno from "./Relleno";
 
 // Correo de contacto: enlace real, o relleno si todavía no está definido.
-export function Correo({ className = "hover:underline" }: { className?: string }) {
+export function Correo({ className = "hover:text-turquesa hover:underline" }: { className?: string }) {
   if (isPlaceholder(site.email)) return <Relleno texto={site.email} />;
   return (
     <a href={`mailto:${site.email}`} className={className}>
@@ -16,7 +16,7 @@ export function Correo({ className = "hover:underline" }: { className?: string }
 // Número de WhatsApp que abre el chat con el mensaje prellenado.
 export function NumeroWhatsApp({
   mensaje,
-  className = "hover:underline",
+  className = "hover:text-turquesa hover:underline",
 }: {
   mensaje: string;
   className?: string;

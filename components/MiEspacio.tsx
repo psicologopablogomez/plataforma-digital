@@ -161,7 +161,7 @@ export default function MiEspacio({
             setDentro(false);
             setPestana("inicio");
           }}
-          className="text-sm font-semibold text-azul hover:underline"
+          className="text-sm font-semibold text-azul hover:text-oscuro hover:underline"
         >
           {t.salir}
         </button>
@@ -178,7 +178,7 @@ export default function MiEspacio({
             className={
               pestana === p
                 ? "rounded-full bg-azul px-4 py-2 text-sm font-semibold text-white"
-                : "rounded-full border border-azul px-4 py-2 text-sm font-semibold text-azul hover:bg-azul/10"
+                : "rounded-full border border-azul px-4 py-2 text-sm font-semibold text-azul hover:bg-azul hover:text-white"
             }
           >
             {t.pestanas[p]}
@@ -344,7 +344,7 @@ export default function MiEspacio({
               <button
                 type="button"
                 onClick={() => setEspacios(ESPACIOS_POR_SEMANA)}
-                className="self-start text-sm font-semibold text-azul hover:underline"
+                className="self-start text-sm font-semibold text-azul hover:text-oscuro hover:underline"
               >
                 {t.escucha.reiniciar}
               </button>

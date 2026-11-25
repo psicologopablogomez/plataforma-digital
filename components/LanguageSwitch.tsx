@@ -30,7 +30,7 @@ export default function LanguageSwitch({
           className={
             l === lang
               ? "rounded-full bg-azul px-2.5 py-1 text-white"
-              : "rounded-full px-2.5 py-1 text-azul hover:bg-azul/10"
+              : "rounded-full px-2.5 py-1 text-azul hover:bg-azul hover:text-white"
           }
         >
           {l.toUpperCase()}

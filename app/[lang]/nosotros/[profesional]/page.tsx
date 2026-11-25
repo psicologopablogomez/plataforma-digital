@@ -43,7 +43,7 @@ export default async function PerfilProfesional({
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-12 sm:py-16">
-      <Link href={`/${lang}/nosotros`} className="text-sm font-semibold text-azul hover:underline">
+      <Link href={`/${lang}/nosotros`} className="text-sm font-semibold text-azul hover:text-oscuro hover:underline">
         ← {p.volver}
       </Link>
 

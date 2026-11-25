@@ -43,7 +43,7 @@ export default function Footer({
           <ul className="flex flex-col gap-2 text-sm">
             {menu.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="hover:underline">
+                <Link href={item.href} className="hover:text-turquesa hover:underline">
                   {item.texto}
                 </Link>
               </li>
@@ -87,7 +87,7 @@ export default function Footer({
           <ul className="flex flex-col gap-2 text-sm">
             {legales.map((item) => (
               <li key={item.href}>
-                <Link href={item.href} className="hover:underline">
+                <Link href={item.href} className="hover:text-turquesa hover:underline">
                   {item.texto}
                 </Link>
               </li>

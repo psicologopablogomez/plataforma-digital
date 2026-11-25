@@ -127,7 +127,7 @@ export default function AgendaFlow({
                   actual
                     ? "border-azul bg-azul text-white"
                     : hecho
-                      ? "border-turquesa bg-turquesa/15 text-oscuro"
+                      ? "border-turquesa bg-turquesa/15 text-oscuro hover:bg-turquesa/40"
                       : "border-oscuro/15 text-texto/60"
                 }`}
               >
@@ -245,7 +245,7 @@ export default function AgendaFlow({
             {opcionesParaQuien.map((o) => (
               <label
                 key={o}
-                className="flex cursor-pointer items-center gap-3 rounded-lg border border-oscuro/15 px-3 py-2 hover:border-azul"
+                className="flex cursor-pointer items-center gap-3 rounded-lg border border-oscuro/15 px-3 py-2 hover:border-azul hover:bg-azul/10"
               >
                 <input
                   required

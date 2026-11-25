@@ -76,7 +76,7 @@ export default async function Contacto({
             <div>
               <h2 className="mb-2 text-lg font-bold text-oscuro">{c.correo}</h2>
               <p className="text-sm">
-                <Correo className="font-medium text-azul hover:underline" />
+                <Correo className="font-medium text-azul hover:text-oscuro hover:underline" />
               </p>
             </div>
             <div>
@@ -84,7 +84,7 @@ export default async function Contacto({
               <p className="text-sm">
                 <NumeroWhatsApp
                   mensaje={t.whatsapp.mensaje}
-                  className="font-medium text-azul hover:underline"
+                  className="font-medium text-azul hover:text-oscuro hover:underline"
                 />
               </p>
             </div>

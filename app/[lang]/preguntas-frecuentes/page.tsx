@@ -29,7 +29,7 @@ export default async function PreguntasFrecuentes({
               key={item.p}
               className="rounded-xl border border-oscuro/10 bg-white p-5 shadow-sm open:shadow-md"
             >
-              <summary className="cursor-pointer list-none font-semibold text-oscuro marker:hidden">
+              <summary className="cursor-pointer list-none font-semibold text-oscuro marker:hidden hover:text-azul">
                 {item.p}
               </summary>
               <p className="mt-3 text-texto/80">

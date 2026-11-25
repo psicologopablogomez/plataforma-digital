@@ -3,10 +3,10 @@ import Link from "next/link";
 export type Variante = "principal" | "acento" | "contorno" | "contornoClaro";
 
 const estilos: Record<Variante, string> = {
-  principal: "bg-azul text-white hover:brightness-110",
-  acento: "bg-naranja text-oscuro hover:brightness-95",
-  contorno: "border border-azul text-azul hover:bg-azul/10",
-  contornoClaro: "border border-white text-white hover:bg-white/10",
+  principal: "bg-azul text-white not-aria-disabled:hover:bg-oscuro",
+  acento: "bg-naranja text-oscuro not-aria-disabled:hover:bg-turquesa",
+  contorno: "border border-azul text-azul not-aria-disabled:hover:bg-azul not-aria-disabled:hover:text-white",
+  contornoClaro: "border border-white text-white not-aria-disabled:hover:bg-white not-aria-disabled:hover:text-oscuro",
 };
 
 // Las clases del botón, para usarlas también en botones que no son enlaces.
