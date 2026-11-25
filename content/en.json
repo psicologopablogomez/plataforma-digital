@@ -85,7 +85,8 @@
     "dependencia": "Emotional dependence",
     "pareja": "Couples",
     "familia": "Family",
-    "migracion": "Migration"
+    "migracion": "Migration",
+    "sentido": "Sense of purpose"
   },
   "tarjeta": {
     "perfil": "Profile",
@@ -94,8 +95,7 @@
   "profesionales": {
     "juan-pablo": {
       "nombre": "Pablo Gómez",
-      "cargo": "Colombian psychologist with a master's degree",
-      "estudios": "[[POR DEFINIR: iniciales de estudios]]"
+      "cargo": "Colombian psychologist with a master's degree"
     }
   },
   "nosotros": {

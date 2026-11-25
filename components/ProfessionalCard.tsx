@@ -3,7 +3,6 @@ import type { Profesional } from "@/config/profesionales";
 import { fotoExiste } from "@/lib/fotos";
 import type { Dictionary, Locale } from "@/lib/i18n";
 import Button from "./Button";
-import Relleno from "./Relleno";
 
 // Foto del profesional, o sus iniciales mientras la foto no esté subida.
 export function Avatar({
@@ -43,19 +42,18 @@ export function Avatar({
   );
 }
 
-// Tarjeta de profesional (esquema 7.4): foto, nombre, estudios, etiquetas y dos botones.
+// Tarjeta de profesional (esquema 7.4): foto, nombre, cargo, etiquetas cortas y dos botones.
+// Las especialidades completas se ven en la página de perfil.
 export default function ProfessionalCard({
   lang,
   t,
   profesional,
   frase,
-  maxEtiquetas = 4,
 }: {
   lang: Locale;
   t: Dictionary;
   profesional: Profesional;
   frase?: string;
-  maxEtiquetas?: number;
 }) {
   const datos = t.profesionales[profesional.id];
   const base = `/${lang}`;
@@ -66,20 +64,17 @@ export default function ProfessionalCard({
       <div>
         <h3 className="text-xl font-bold text-oscuro">{datos.nombre}</h3>
         <p className="mt-1 text-sm font-medium text-azul">{datos.cargo}</p>
-        <p className="mt-1 text-sm text-texto/70">
-          <Relleno texto={datos.estudios} />
-        </p>
       </div>
 
       {frase && <p className="font-editorial text-xl text-oscuro">“{frase}”</p>}
 
       <ul className="flex flex-wrap justify-center gap-2">
-        {profesional.especialidades.slice(0, maxEtiquetas).map((id) => (
+        {profesional.etiquetasTarjeta.map((id) => (
           <li
             key={id}
             className="rounded-full bg-turquesa/15 px-3 py-1 text-xs font-medium text-oscuro"
           >
-            {t.especialidades[id]}
+            {t.etiquetas[id]}
           </li>
         ))}
       </ul>

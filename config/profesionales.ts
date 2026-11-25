@@ -2,6 +2,8 @@
 // elemento aquí y sus textos en content/es.json y content/en.json (clave "profesionales").
 // Las especialidades son las del buscador de la Fase 2: sus nombres están en "especialidades".
 
+import type { EtiquetaId } from "./recursos";
+
 export type EspecialidadId =
   | "ansiedad"
   | "depresion"
@@ -17,8 +19,10 @@ export type Profesional = {
   id: "juan-pablo";
   // Cuando la foto está subida a esta ruta, aparece sola. Si no, se ven las iniciales.
   foto: string;
-  // Las 4 primeras se ven en la tarjeta; todas aparecen en el perfil.
+  // Todas las especialidades aparecen en la página de perfil.
   especialidades: EspecialidadId[];
+  // Etiquetas cortas que se ven en la tarjeta (Inicio y Nosotros).
+  etiquetasTarjeta: EtiquetaId[];
 };
 
 export const profesionales: Profesional[] = [
@@ -36,5 +40,6 @@ export const profesionales: Profesional[] = [
       "sentido",
       "migracion",
     ],
+    etiquetasTarjeta: ["ansiedad", "pareja", "familia", "migracion", "sentido"],
   },
 ];
