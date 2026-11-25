@@ -1,42 +1,40 @@
-// Lista de profesionales. Hoy solo Juan Pablo; para sumar a alguien se agrega otro
+// Lista de profesionales. Hoy solo Pablo Gómez; para sumar a alguien se agrega otro
 // elemento aquí y sus textos en content/es.json y content/en.json (clave "profesionales").
-// Las etiquetas son las del buscador de la Fase 2: sus nombres están en "etiquetas".
+// Las especialidades son las del buscador de la Fase 2: sus nombres están en "especialidades".
 
-export type EtiquetaId =
+export type EspecialidadId =
   | "ansiedad"
   | "depresion"
-  | "panico"
-  | "fobias"
-  | "duelo"
-  | "dependencia"
-  | "ira"
-  | "sentido"
-  | "vocacional"
+  | "estres"
   | "pareja"
+  | "dependencia"
   | "familia"
+  | "duelo"
+  | "sentido"
   | "migracion";
 
 export type Profesional = {
   id: "juan-pablo";
   // Cuando la foto está subida a esta ruta, aparece sola. Si no, se ven las iniciales.
   foto: string;
-  etiquetas: EtiquetaId[];
+  // Las 4 primeras se ven en la tarjeta; todas aparecen en el perfil.
+  especialidades: EspecialidadId[];
 };
 
 export const profesionales: Profesional[] = [
   {
     id: "juan-pablo",
     foto: "/images/nosotros/juan-pablo.jpg",
-    etiquetas: [
+    especialidades: [
       "ansiedad",
       "depresion",
-      "panico",
-      "fobias",
-      "duelo",
+      "estres",
+      "pareja",
       "dependencia",
-      "ira",
+      "familia",
+      "duelo",
       "sentido",
-      "vocacional",
+      "migracion",
     ],
   },
 ];

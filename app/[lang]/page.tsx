@@ -135,7 +135,7 @@ export default async function Home({
       {/* 5. Temas que trabajamos */}
       <Seccion titulo={i.temas.titulo} fondo="suave">
         <ul className="flex flex-wrap justify-center gap-3">
-          {i.temas.items.map((tema) => (
+          {profesionales[0].especialidades.map((id) => t.especialidades[id]).map((tema) => (
             <li
               key={tema}
               className="rounded-full border border-azul/30 bg-white px-4 py-2 text-sm font-medium text-oscuro"

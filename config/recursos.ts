@@ -1,4 +1,5 @@
-import type { EtiquetaId } from "./profesionales";
+// Etiquetas cortas de los recursos (sus nombres están en "etiquetas" de content).
+export type EtiquetaId = "ansiedad" | "dependencia" | "pareja" | "familia" | "migracion";
 
 // Recursos gratuitos (tests y guías). Los textos están en content/es.json y en.json
 // (clave "recursos.items"). Para sumar una guía: se agrega aquí y se escribe su texto allá.

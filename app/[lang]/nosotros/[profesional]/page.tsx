@@ -73,12 +73,12 @@ export default async function PerfilProfesional({
         <div>
           <h2 className="mb-3 text-lg font-bold text-oscuro">{p.temasTitulo}</h2>
           <ul className="flex flex-wrap gap-2">
-            {profesional.etiquetas.map((id) => (
+            {profesional.especialidades.map((id) => (
               <li
                 key={id}
                 className="rounded-full bg-turquesa/15 px-3 py-1 text-sm font-medium text-oscuro"
               >
-                {t.etiquetas[id]}
+                {t.especialidades[id]}
               </li>
             ))}
           </ul>

@@ -82,14 +82,7 @@
   },
   "etiquetas": {
     "ansiedad": "Ansiedad",
-    "depresion": "Depresión",
-    "panico": "Ataques de pánico",
-    "fobias": "Fobias",
-    "duelo": "Duelo",
     "dependencia": "Dependencia emocional",
-    "ira": "Manejo de la ira y las emociones",
-    "sentido": "Sentido de vida",
-    "vocacional": "Orientación vocacional",
     "pareja": "Pareja",
     "familia": "Familia",
     "migracion": "Migración"
@@ -174,7 +167,7 @@
     "idiomasTitulo": "Idiomas",
     "idiomas": "Español [[POR CONFIRMAR: inglés]]",
     "registroTitulo": "Registro profesional",
-    "registro": "Psicólogo registrado en Colombia (COLPSIC). [[POR DEFINIR: cómo presentar el servicio a personas en Australia (consulta legal pendiente)]]",
+    "registro": "Psicólogo registrado en Colombia (COLPSIC).",
     "agendar": "Agenda tu primera cita"
   },
   "servicios": {
@@ -612,22 +605,11 @@
       ]
     },
     "temas": {
-      "titulo": "Temas que trabajamos",
-      "items": [
-        "Ansiedad",
-        "Depresión",
-        "Ataques de pánico",
-        "Fobias",
-        "Duelo",
-        "Dependencia emocional",
-        "Manejo de la ira y las emociones",
-        "Sentido de vida",
-        "Orientación vocacional"
-      ]
+      "titulo": "Temas que trabajamos"
     },
     "quien": {
       "titulo": "Quién te acompaña",
-      "frase": "Sé lo que es empezar de cero lejos de casa, porque también lo viví."
+      "frase": "Tú decides, actúas y te transformas. Yo camino a tu lado."
     },
     "recursos": {
       "titulo": "Recursos gratuitos",
@@ -671,5 +653,16 @@
     "cierre": {
       "boton": "Agenda tu primera cita"
     }
+  },
+  "especialidades": {
+    "ansiedad": "Ansiedad",
+    "depresion": "Depresión",
+    "estres": "Estrés y agotamiento laboral",
+    "pareja": "Pareja y rupturas",
+    "dependencia": "Dependencia emocional y codependencia",
+    "familia": "Conflictos y convivencia familiar",
+    "duelo": "Duelo y pérdidas",
+    "sentido": "Sentido de vida",
+    "migracion": "Duelo migratorio y adaptación a otro país"
   }
 }

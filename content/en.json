@@ -82,14 +82,7 @@
   },
   "etiquetas": {
     "ansiedad": "Anxiety",
-    "depresion": "Depression",
-    "panico": "Panic attacks",
-    "fobias": "Phobias",
-    "duelo": "Grief",
     "dependencia": "Emotional dependence",
-    "ira": "Managing anger and emotions",
-    "sentido": "Sense of purpose",
-    "vocacional": "Career guidance",
     "pareja": "Couples",
     "familia": "Family",
     "migracion": "Migration"
@@ -174,7 +167,7 @@
     "idiomasTitulo": "Languages",
     "idiomas": "Spanish [[POR CONFIRMAR: inglés]]",
     "registroTitulo": "Professional registration",
-    "registro": "Psychologist registered in Colombia (COLPSIC). [[POR DEFINIR: cómo presentar el servicio a personas en Australia (consulta legal pendiente)]]",
+    "registro": "Psychologist registered in Colombia (COLPSIC).",
     "agendar": "Book your first session"
   },
   "servicios": {
@@ -612,22 +605,11 @@
       ]
     },
     "temas": {
-      "titulo": "Topics we work on",
-      "items": [
-        "Anxiety",
-        "Depression",
-        "Panic attacks",
-        "Phobias",
-        "Grief",
-        "Emotional dependence",
-        "Managing anger and emotions",
-        "Sense of purpose",
-        "Career guidance"
-      ]
+      "titulo": "Topics we work on"
     },
     "quien": {
       "titulo": "Who is by your side",
-      "frase": "I know what it is to start from scratch far from home, because I lived it too."
+      "frase": "You decide, you act and you transform. I walk by your side."
     },
     "recursos": {
       "titulo": "Free resources",
@@ -671,5 +653,16 @@
     "cierre": {
       "boton": "Book your first session"
     }
+  },
+  "especialidades": {
+    "ansiedad": "Anxiety",
+    "depresion": "Depression",
+    "estres": "Stress and work burnout",
+    "pareja": "Couples and breakups",
+    "dependencia": "Emotional dependence and codependency",
+    "familia": "Family conflict and living together",
+    "duelo": "Grief and loss",
+    "sentido": "Sense of purpose",
+    "migracion": "Migration grief and adapting to a new country"
   }
 }

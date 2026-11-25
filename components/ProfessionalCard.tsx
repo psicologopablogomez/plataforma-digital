@@ -74,12 +74,12 @@ export default function ProfessionalCard({
       {frase && <p className="font-editorial text-xl text-oscuro">“{frase}”</p>}
 
       <ul className="flex flex-wrap justify-center gap-2">
-        {profesional.etiquetas.slice(0, maxEtiquetas).map((id) => (
+        {profesional.especialidades.slice(0, maxEtiquetas).map((id) => (
           <li
             key={id}
             className="rounded-full bg-turquesa/15 px-3 py-1 text-xs font-medium text-oscuro"
           >
-            {t.etiquetas[id]}
+            {t.especialidades[id]}
           </li>
         ))}
       </ul>
