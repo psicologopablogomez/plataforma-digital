@@ -1,9 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { fotoExiste } from "@/lib/fotos";
 import { getDictionary, isLocale } from "@/lib/i18n";
 import Foto from "@/components/Foto";
+import HeroFondo from "@/components/HeroFondo";
 import Button from "@/components/Button";
 import AbrirTestButton from "@/components/AbrirTestButton";
 import Relleno from "@/components/Relleno";
@@ -35,21 +34,9 @@ export default async function Home({
     <main>
       {/* 1. Portada: abre con la filosofía y la promesa */}
       <section className="relative bg-gradient-to-br from-oscuro via-azul via-70% to-turquesa text-white">
-        {/* Si la foto /public/images/inicio/hero.jpg ya está subida, se usa de fondo */}
-        {fotoExiste("/images/inicio/hero.jpg") && (
-          <>
-            <Image
-              src="/images/inicio/hero.jpg"
-              alt=""
-              fill
-              priority
-              sizes="100vw"
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-br from-oscuro/85 via-azul/70 to-turquesa/60" />
-          </>
-        )}
-        <div className="relative mx-auto flex min-h-[70vh] max-w-4xl flex-col items-center justify-center gap-6 px-4 py-20 text-center">
+        {/* Foto de fondo (hero.jpg y hero-movil.jpg): si no está subida, queda el degradado */}
+        <HeroFondo />
+        <div className="relative mx-auto flex min-h-[70vh] max-w-4xl flex-col items-center justify-center gap-6 px-4 py-20 text-center [text-shadow:0_1px_14px_rgb(15_61_76/0.6)]">
           <h1 className="font-editorial text-4xl leading-tight sm:text-6xl">
             {t.marca.filosofia}
           </h1>
