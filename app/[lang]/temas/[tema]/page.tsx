@@ -46,7 +46,7 @@ export default async function Tema({
           </Link>
           <p className="mt-6 text-sm font-bold uppercase tracking-wide opacity-90">{c.titulo}</p>
           <h1 className="mt-2 font-editorial text-4xl sm:text-5xl">{t.especialidades[id]}</h1>
-          <p className="mx-auto mt-5 max-w-2xl text-lg opacity-95">{contenido.descripcion}</p>
+          <p className="mx-auto mt-5 max-w-3xl text-base opacity-95 sm:text-lg">{contenido.descripcion}</p>
         </div>
       </section>
 

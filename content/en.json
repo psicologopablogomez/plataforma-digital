@@ -717,7 +717,7 @@
     },
     "items": {
       "ansiedad": {
-        "descripcion": "Anxiety is a feeling of alertness or worry that won't switch off, even when there is no real danger in front of you.",
+        "descripcion": "Excessive worry that is hard to control, present on most days for at least six months, together with restlessness, tiredness, muscle tension or trouble concentrating and sleeping that affect your daily life.",
         "preguntas": [
           "I worry a lot, almost every day, and find it hard to stop those thoughts.",
           "My body feels tense: racing heart, a knot in my stomach or shortness of breath.",
@@ -728,7 +728,7 @@
         ]
       },
       "depresion": {
-        "descripcion": "Depression is a deep sadness or emptiness that lasts for weeks and drains energy and meaning from everyday life.",
+        "descripcion": "Depressed mood or loss of interest nearly all day, for at least two weeks, with changes in sleep or appetite, tiredness, guilt or trouble concentrating, significantly affecting your daily life.",
         "preguntas": [
           "I feel sad, empty or hopeless most of the day.",
           "I lost interest or enjoyment in things I used to like.",
@@ -739,7 +739,7 @@
         ]
       },
       "estres": {
-        "descripcion": "Work burnout appears when the demands of work outweigh your energy for a long time and you can no longer recover.",
+        "descripcion": "Not a DSM-5 diagnosis: it describes extreme exhaustion, distance from work and lower performance after prolonged stress. If the distress follows a specific stressor, it may fit an adjustment disorder.",
         "preguntas": [
           "I end the day exhausted, even after sleeping or resting on the weekend.",
           "I find it hard to switch off from work, even outside working hours.",
@@ -750,7 +750,7 @@
         ]
       },
       "pareja": {
-        "descripcion": "Conflicts in a relationship and breakups can leave doubts, pain and the feeling of having lost your way.",
+        "descripcion": "The DSM-5 recognizes relationship problems with a partner: conflict, distance and poor communication. A breakup can lead to an adjustment disorder, distress out of proportion that appears within three months of the change.",
         "preguntas": [
           "We argue often and the fights repeat without reaching a solution.",
           "I feel I can't be myself or say what I think with my partner.",
@@ -761,7 +761,7 @@
         ]
       },
       "dependencia": {
-        "descripcion": "Emotional dependence is needing another person so much that your well-being and decisions end up revolving around them.",
+        "descripcion": "Not a DSM-5 diagnosis. It is described as an excessive need to be taken care of, leading to giving up decisions, fearing abandonment and tolerating mistreatment; it resembles dependent personality disorder.",
         "preguntas": [
           "I find it hard to make decisions without asking that person or without their approval.",
           "I put aside my plans, my friends or my interests so as not to lose them.",
@@ -772,7 +772,7 @@
         ]
       },
       "familia": {
-        "descripcion": "Living with family can bring tension, misunderstandings and wounds that are hard to resolve alone.",
+        "descripcion": "The DSM-5 includes problems in relationships with relatives: discord, misunderstandings or poor communication among parents, children and siblings. Not a disorder in itself, but it can cause real distress and deserves attention.",
         "preguntas": [
           "At home there are frequent arguments or a tense atmosphere.",
           "I feel my family doesn't listen to me or understand me.",
@@ -783,7 +783,7 @@
         ]
       },
       "duelo": {
-        "descripcion": "Grief is the process of adjusting to a loss: of a person, a relationship, a job, a stage or a life you used to know.",
+        "descripcion": "After the death of a loved one, the DSM-5-TR describes prolonged grief disorder: intense longing and emotional pain lasting over a year (six months in children) that limit your life. Other losses can hurt too.",
         "preguntas": [
           "I think about what I lost almost every day and find it hard to accept.",
           "I feel a sadness or longing that does not ease with time.",
@@ -794,7 +794,7 @@
         ]
       },
       "sentido": {
-        "descripcion": "The question of purpose appears when you feel you are on autopilot or that something essential is missing.",
+        "descripcion": "Not a DSM-5 disorder. It is an existential concern: feeling empty or without direction or purpose. It sometimes accompanies depression or a life transition, and talking it through with a professional helps give it direction.",
         "preguntas": [
           "I feel my days are all alike and lead nowhere.",
           "I'm not clear about what I want or what matters to me.",
@@ -805,7 +805,7 @@
         ]
       },
       "migracion": {
-        "descripcion": "Migration grief is the sadness and sense of mismatch that appear when you leave your country, your people and your way of life to start over somewhere else.",
+        "descripcion": "The DSM-5 recognizes acculturation problems (adapting to another culture), and distress after migrating can be an adjustment disorder: homesickness, loneliness and a sense of mismatch with your new life that affect daily life.",
         "preguntas": [
           "I miss my country, my family or my customs a lot, and being far away hurts.",
           "I feel lonely, even when there are people around me.",

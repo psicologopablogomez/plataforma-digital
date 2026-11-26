@@ -717,7 +717,7 @@
     },
     "items": {
       "ansiedad": {
-        "descripcion": "La ansiedad es la sensación de alerta o preocupación que no se apaga, aun cuando no hay un peligro real delante.",
+        "descripcion": "Preocupación excesiva y difícil de controlar, presente la mayor parte de los días durante al menos seis meses, junto con inquietud, cansancio, tensión muscular o problemas de concentración y de sueño que afectan tu vida diaria.",
         "preguntas": [
           "Me preocupo mucho, casi todos los días, y me cuesta frenar esos pensamientos.",
           "Siento el cuerpo en tensión: corazón acelerado, nudo en el estómago o falta de aire.",
@@ -728,7 +728,7 @@
         ]
       },
       "depresion": {
-        "descripcion": "La depresión es una tristeza profunda o un vacío que dura semanas y le quita energía y sentido a lo cotidiano.",
+        "descripcion": "Ánimo deprimido o pérdida de interés casi todo el día, durante al menos dos semanas, con cambios en el sueño o el apetito, cansancio, culpa o dificultad para concentrarte, que afectan de forma importante tu vida diaria.",
         "preguntas": [
           "Me siento triste, vacío o sin esperanza la mayor parte del día.",
           "Perdí el interés o el disfrute en cosas que antes me gustaban.",
@@ -739,7 +739,7 @@
         ]
       },
       "estres": {
-        "descripcion": "El agotamiento laboral aparece cuando la exigencia del trabajo supera tu energía durante mucho tiempo y ya no logras recuperarte.",
+        "descripcion": "No es un diagnóstico del DSM-5: describe un cansancio extremo, distancia hacia el trabajo y menor rendimiento por un estrés prolongado. Si el malestar surge ante un estresor concreto, puede corresponder a un trastorno de adaptación.",
         "preguntas": [
           "Termino el día agotado, aun después de dormir o descansar el fin de semana.",
           "Me cuesta desconectarme del trabajo, incluso fuera del horario.",
@@ -750,7 +750,7 @@
         ]
       },
       "pareja": {
-        "descripcion": "Los conflictos de pareja y las rupturas pueden dejar dudas, dolor y la sensación de haber perdido el rumbo.",
+        "descripcion": "El DSM-5 recoge los problemas de relación con la pareja: conflictos, distancia y mala comunicación. Una ruptura puede dar lugar a un trastorno de adaptación, un malestar desproporcionado que aparece en los tres meses siguientes al cambio.",
         "preguntas": [
           "Discutimos seguido y las peleas se repiten sin llegar a una solución.",
           "Siento que no puedo ser yo mismo o decir lo que pienso con mi pareja.",
@@ -761,7 +761,7 @@
         ]
       },
       "dependencia": {
-        "descripcion": "La dependencia emocional es necesitar tanto a otra persona que tu bienestar y tus decisiones terminan girando alrededor de ella.",
+        "descripcion": "No es un diagnóstico del DSM-5. Se describe como una necesidad excesiva de que cuiden de ti, que lleva a ceder decisiones, temer el abandono y tolerar el maltrato; se parece al trastorno de la personalidad por dependencia.",
         "preguntas": [
           "Me cuesta tomar decisiones sin consultar a esa persona o sin su aprobación.",
           "Dejo de lado mis planes, mis amigos o mis gustos para no perderla.",
@@ -772,7 +772,7 @@
         ]
       },
       "familia": {
-        "descripcion": "La convivencia familiar puede traer tensiones, malentendidos y heridas que cuesta resolver solo.",
+        "descripcion": "El DSM-5 incluye los problemas de relación con familiares: discordia, malentendidos o comunicación deficiente entre padres, hijos y hermanos. No son un trastorno en sí, pero pueden causar un malestar importante y merecen atención.",
         "preguntas": [
           "En casa hay discusiones frecuentes o un ambiente tenso.",
           "Siento que en mi familia no me escuchan o no me entienden.",
@@ -783,7 +783,7 @@
         ]
       },
       "duelo": {
-        "descripcion": "El duelo es el proceso de adaptarse a una pérdida: de una persona, una relación, un trabajo, una etapa o una vida que conocías.",
+        "descripcion": "Tras la muerte de un ser querido, el DSM-5-TR describe el trastorno de duelo prolongado: añoranza intensa y dolor emocional que persisten más de un año (seis meses en niños) y limitan tu vida. Otras pérdidas también pueden doler.",
         "preguntas": [
           "Pienso en lo que perdí casi todos los días y me cuesta aceptarlo.",
           "Siento una tristeza o una nostalgia que no cede con el tiempo.",
@@ -794,7 +794,7 @@
         ]
       },
       "sentido": {
-        "descripcion": "La pregunta por el sentido de vida aparece cuando sientes que vas en piloto automático o que algo esencial te falta.",
+        "descripcion": "No es un trastorno del DSM-5. Es una inquietud existencial: sentir vacío, falta de rumbo o de propósito. A veces acompaña a la depresión o a un cambio de etapa, y conversarlo con un profesional ayuda a darle dirección.",
         "preguntas": [
           "Siento que mis días se parecen unos a otros y no me llevan a ningún lado.",
           "No tengo claro qué quiero o qué es importante para mí.",
@@ -805,7 +805,7 @@
         ]
       },
       "migracion": {
-        "descripcion": "El duelo migratorio es la tristeza y el desajuste que aparecen al dejar tu país, tu gente y tu forma de vida para empezar en otro lugar.",
+        "descripcion": "El DSM-5 recoge el problema de aculturación (adaptarse a otra cultura), y el malestar al migrar puede ser un trastorno de adaptación: nostalgia, soledad y desajuste ante la nueva vida que afectan tu día a día.",
         "preguntas": [
           "Extraño mucho mi país, mi familia o mis costumbres, y me duele estar lejos.",
           "Me siento solo, aunque haya gente a mi alrededor.",
