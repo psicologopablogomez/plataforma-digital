@@ -74,11 +74,13 @@ export default async function PerfilProfesional({
           <h2 className="mb-3 text-lg font-bold text-oscuro">{p.temasTitulo}</h2>
           <ul className="flex flex-wrap gap-2">
             {profesional.especialidades.map((id) => (
-              <li
-                key={id}
-                className="rounded-full bg-turquesa/15 px-3 py-1 text-sm font-medium text-oscuro"
-              >
-                {t.especialidades[id]}
+              <li key={id}>
+                <Link
+                  href={`/${lang}/temas/${id}`}
+                  className="block rounded-full bg-turquesa/15 px-3 py-1 text-sm font-medium text-oscuro hover:bg-azul hover:text-white"
+                >
+                  {t.especialidades[id]}
+                </Link>
               </li>
             ))}
           </ul>

@@ -677,5 +677,144 @@
     "duelo": "Grief and loss",
     "sentido": "Sense of purpose",
     "migracion": "Migration grief and adapting to a new country"
+  },
+  "temas": {
+    "titulo": "Check-in",
+    "pista": "Tap a topic to see a short description and take a traffic-light check-in.",
+    "volver": "Back to home",
+    "verTemas": "See all topics",
+    "checkTitulo": "How are you doing with this topic?",
+    "checkIntro": "Tick the statements that sound like you over the last two weeks. There are no right or wrong answers.",
+    "boton": "See my traffic light",
+    "reiniciar": "Start over",
+    "marcadas": "ticked",
+    "de": "of",
+    "resultadoTitulo": "Your traffic light today",
+    "aviso": "This check-in is only a guide to help you know yourself better. It is not a diagnosis and does not replace seeing a professional. No data is saved or sent.",
+    "crisisTexto": "If you feel you might harm yourself or you are in danger, don't wait:",
+    "crisisBoton": "Crisis help",
+    "semaforo": {
+      "verde": {
+        "nombre": "Green",
+        "titulo": "For now, you are taking care of yourself",
+        "texto": "You ticked few signs. Keep an eye on how you feel and lean on your routines and the people close to you. If something changes later, you can come back and check in again."
+      },
+      "amarillo": {
+        "nombre": "Yellow",
+        "titulo": "Worth paying attention to",
+        "texto": "There are several signs worth looking at closely. Talking to someone you trust or to a professional can help keep them from growing. A first conversation is already a good step."
+      },
+      "rojo": {
+        "nombre": "Red",
+        "titulo": "A good moment to ask for support",
+        "texto": "You ticked many signs, or one that needs attention soon. You don't have to go through this alone: booking a session can help you sort out what you feel and find a way forward."
+      }
+    },
+    "cta": {
+      "titulo": "Take the next step",
+      "texto": "Whatever your color, you can talk with a professional. The first listening session is free.",
+      "boton": "Book your session"
+    },
+    "items": {
+      "ansiedad": {
+        "descripcion": "Anxiety is a feeling of alertness or worry that won't switch off, even when there is no real danger in front of you.",
+        "preguntas": [
+          "I worry a lot, almost every day, and find it hard to stop those thoughts.",
+          "My body feels tense: racing heart, a knot in my stomach or shortness of breath.",
+          "I have trouble sleeping because my mind won't stop.",
+          "I avoid places, people or tasks because they make me nervous.",
+          "I feel irritable or restless without knowing exactly why.",
+          "Anxiety is affecting my work, my studies or my relationships."
+        ]
+      },
+      "depresion": {
+        "descripcion": "Depression is a deep sadness or emptiness that lasts for weeks and drains energy and meaning from everyday life.",
+        "preguntas": [
+          "I feel sad, empty or hopeless most of the day.",
+          "I lost interest or enjoyment in things I used to like.",
+          "I feel constantly tired and find it hard to start anything.",
+          "My sleep or appetite has changed noticeably.",
+          "I feel guilty or worthless, or I criticize myself harshly.",
+          "I have thought it would be better not to be alive, or about hurting myself."
+        ]
+      },
+      "estres": {
+        "descripcion": "Work burnout appears when the demands of work outweigh your energy for a long time and you can no longer recover.",
+        "preguntas": [
+          "I end the day exhausted, even after sleeping or resting on the weekend.",
+          "I find it hard to switch off from work, even outside working hours.",
+          "I feel that nothing I do at work has meaning or value anymore.",
+          "I have become more irritable, cynical or distant with colleagues or clients.",
+          "I have headaches, back pain or stomach problems that seem linked to stress.",
+          "I often think about leaving everything, but I don't know how to stop."
+        ]
+      },
+      "pareja": {
+        "descripcion": "Conflicts in a relationship and breakups can leave doubts, pain and the feeling of having lost your way.",
+        "preguntas": [
+          "We argue often and the fights repeat without reaching a solution.",
+          "I feel I can't be myself or say what I think with my partner.",
+          "There is silence, distance or a lack of trust between us.",
+          "After a breakup, I find it hard to stop thinking about that person.",
+          "I'm afraid of being alone or of losing that relationship.",
+          "This is costing me sleep, concentration or the desire to do things."
+        ]
+      },
+      "dependencia": {
+        "descripcion": "Emotional dependence is needing another person so much that your well-being and decisions end up revolving around them.",
+        "preguntas": [
+          "I find it hard to make decisions without asking that person or without their approval.",
+          "I put aside my plans, my friends or my interests so as not to lose them.",
+          "I put up with things that hurt me for fear of being abandoned.",
+          "When I don't hear from that person, I feel very anxious or empty.",
+          "I feel my worth depends on being loved or needed.",
+          "I take care of other people's problems so much that I forget my own."
+        ]
+      },
+      "familia": {
+        "descripcion": "Living with family can bring tension, misunderstandings and wounds that are hard to resolve alone.",
+        "preguntas": [
+          "At home there are frequent arguments or a tense atmosphere.",
+          "I feel my family doesn't listen to me or understand me.",
+          "I avoid family gatherings or conversations to avoid fights.",
+          "There are important subjects nobody dares to talk about.",
+          "I feel I carry more responsibilities than the others.",
+          "Family conflicts affect my mood, my work or my relationship."
+        ]
+      },
+      "duelo": {
+        "descripcion": "Grief is the process of adjusting to a loss: of a person, a relationship, a job, a stage or a life you used to know.",
+        "preguntas": [
+          "I think about what I lost almost every day and find it hard to accept.",
+          "I feel a sadness or longing that does not ease with time.",
+          "I find it hard to talk about that loss or, on the contrary, I can't talk about anything else.",
+          "I have withdrawn from people or activities that used to do me good.",
+          "I feel guilt, anger or things left unsaid.",
+          "I have felt that I don't want to go on without what I lost."
+        ]
+      },
+      "sentido": {
+        "descripcion": "The question of purpose appears when you feel you are on autopilot or that something essential is missing.",
+        "preguntas": [
+          "I feel my days are all alike and lead nowhere.",
+          "I'm not clear about what I want or what matters to me.",
+          "What I do feels empty, even though everything looks fine from the outside.",
+          "I feel I live to meet other people's expectations.",
+          "I find it hard to imagine my future with hope.",
+          "I have felt that my life has no value or that I am a burden."
+        ]
+      },
+      "migracion": {
+        "descripcion": "Migration grief is the sadness and sense of mismatch that appear when you leave your country, your people and your way of life to start over somewhere else.",
+        "preguntas": [
+          "I miss my country, my family or my customs a lot, and being far away hurts.",
+          "I feel lonely, even when there are people around me.",
+          "I find it hard to adapt to the language, the culture or the way of working here.",
+          "I feel I lost my place, my status or who I was before migrating.",
+          "I doubt my decision to leave or feel guilty for leaving others behind.",
+          "Being far away has drained my mood, my sleep or my desire to do things."
+        ]
+      }
+    }
   }
 }

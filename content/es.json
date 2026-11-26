@@ -677,5 +677,144 @@
     "duelo": "Duelo y pérdidas",
     "sentido": "Sentido de vida",
     "migracion": "Duelo migratorio y adaptación a otro país"
+  },
+  "temas": {
+    "titulo": "Chequeo",
+    "pista": "Pulsa un tema para ver una descripción corta y hacer un chequeo con semáforo.",
+    "volver": "Volver al inicio",
+    "verTemas": "Ver todos los temas",
+    "checkTitulo": "¿Cómo estás con este tema?",
+    "checkIntro": "Marca las frases con las que te identificas en las últimas dos semanas. No hay respuestas buenas ni malas.",
+    "boton": "Ver mi semáforo",
+    "reiniciar": "Volver a empezar",
+    "marcadas": "marcadas",
+    "de": "de",
+    "resultadoTitulo": "Tu semáforo hoy",
+    "aviso": "Este chequeo es solo una guía para que te conozcas mejor. No es un diagnóstico ni reemplaza una consulta con un profesional. No se guarda ni se envía ningún dato.",
+    "crisisTexto": "Si sientes que puedes hacerte daño o estás en peligro, no esperes:",
+    "crisisBoton": "Ayuda en crisis",
+    "semaforo": {
+      "verde": {
+        "nombre": "Verde",
+        "titulo": "Por ahora te estás cuidando",
+        "texto": "Marcaste pocas señales. Sigue atento a cómo te sientes y apóyate en tus rutinas y en las personas cercanas. Si más adelante algo cambia, aquí puedes volver a chequear."
+      },
+      "amarillo": {
+        "nombre": "Amarillo",
+        "titulo": "Vale la pena prestarle atención",
+        "texto": "Hay varias señales que conviene mirar de cerca. Hablarlo con alguien de confianza o con un profesional puede ayudarte a que no avancen. Una primera conversación ya es un buen paso."
+      },
+      "rojo": {
+        "nombre": "Rojo",
+        "titulo": "Es un buen momento para pedir acompañamiento",
+        "texto": "Marcaste muchas señales o alguna que pide atención pronto. No tienes que pasar por esto solo: agendar una cita puede ayudarte a ordenar lo que sientes y a encontrar un camino."
+      }
+    },
+    "cta": {
+      "titulo": "Da el siguiente paso",
+      "texto": "Tengas el color que tengas, puedes conversar con un profesional. La primera escucha es gratuita.",
+      "boton": "Agenda tu cita"
+    },
+    "items": {
+      "ansiedad": {
+        "descripcion": "La ansiedad es la sensación de alerta o preocupación que no se apaga, aun cuando no hay un peligro real delante.",
+        "preguntas": [
+          "Me preocupo mucho, casi todos los días, y me cuesta frenar esos pensamientos.",
+          "Siento el cuerpo en tensión: corazón acelerado, nudo en el estómago o falta de aire.",
+          "Me cuesta dormir porque mi mente no se detiene.",
+          "Evito lugares, personas o tareas porque me generan nervios.",
+          "Me siento irritable o inquieto sin saber bien por qué.",
+          "La ansiedad me está afectando el trabajo, el estudio o mis relaciones."
+        ]
+      },
+      "depresion": {
+        "descripcion": "La depresión es una tristeza profunda o un vacío que dura semanas y le quita energía y sentido a lo cotidiano.",
+        "preguntas": [
+          "Me siento triste, vacío o sin esperanza la mayor parte del día.",
+          "Perdí el interés o el disfrute en cosas que antes me gustaban.",
+          "Siento cansancio constante y me cuesta empezar cualquier cosa.",
+          "Mi sueño o mi apetito cambiaron de forma notoria.",
+          "Me siento culpable o inútil, o me critico con dureza.",
+          "He pensado que sería mejor no estar vivo o en hacerme daño."
+        ]
+      },
+      "estres": {
+        "descripcion": "El agotamiento laboral aparece cuando la exigencia del trabajo supera tu energía durante mucho tiempo y ya no logras recuperarte.",
+        "preguntas": [
+          "Termino el día agotado, aun después de dormir o descansar el fin de semana.",
+          "Me cuesta desconectarme del trabajo, incluso fuera del horario.",
+          "Siento que ya nada de lo que hago en el trabajo tiene sentido o valor.",
+          "Me volví más irritable, cínico o distante con mis compañeros o clientes.",
+          "Tengo dolores de cabeza, de espalda o del estómago que parecen ligados al estrés.",
+          "Pienso con frecuencia en dejarlo todo, pero no sé cómo parar."
+        ]
+      },
+      "pareja": {
+        "descripcion": "Los conflictos de pareja y las rupturas pueden dejar dudas, dolor y la sensación de haber perdido el rumbo.",
+        "preguntas": [
+          "Discutimos seguido y las peleas se repiten sin llegar a una solución.",
+          "Siento que no puedo ser yo mismo o decir lo que pienso con mi pareja.",
+          "Hay silencios, distancia o falta de confianza entre nosotros.",
+          "Después de una ruptura, me cuesta dejar de pensar en esa persona.",
+          "Me da miedo estar solo o quedarme sin esa relación.",
+          "Este tema me quita el sueño, la concentración o las ganas de hacer cosas."
+        ]
+      },
+      "dependencia": {
+        "descripcion": "La dependencia emocional es necesitar tanto a otra persona que tu bienestar y tus decisiones terminan girando alrededor de ella.",
+        "preguntas": [
+          "Me cuesta tomar decisiones sin consultar a esa persona o sin su aprobación.",
+          "Dejo de lado mis planes, mis amigos o mis gustos para no perderla.",
+          "Aguanto cosas que me hacen daño por miedo a que me abandonen.",
+          "Cuando no sé de esa persona, me siento muy angustiado o vacío.",
+          "Siento que mi valor depende de que me quieran o me necesiten.",
+          "Me ocupo tanto de los problemas de los demás que olvido los míos."
+        ]
+      },
+      "familia": {
+        "descripcion": "La convivencia familiar puede traer tensiones, malentendidos y heridas que cuesta resolver solo.",
+        "preguntas": [
+          "En casa hay discusiones frecuentes o un ambiente tenso.",
+          "Siento que en mi familia no me escuchan o no me entienden.",
+          "Evito reuniones o conversaciones familiares para no pelear.",
+          "Hay temas importantes de los que nadie se atreve a hablar.",
+          "Me siento cargando con más responsabilidades que los demás.",
+          "Los conflictos familiares afectan mi ánimo, mi trabajo o mi pareja."
+        ]
+      },
+      "duelo": {
+        "descripcion": "El duelo es el proceso de adaptarse a una pérdida: de una persona, una relación, un trabajo, una etapa o una vida que conocías.",
+        "preguntas": [
+          "Pienso en lo que perdí casi todos los días y me cuesta aceptarlo.",
+          "Siento una tristeza o una nostalgia que no cede con el tiempo.",
+          "Me cuesta hablar de esa pérdida o, por el contrario, no puedo hablar de otra cosa.",
+          "Me aislé de las personas o de actividades que antes me hacían bien.",
+          "Siento culpa, rabia o cosas que dejé sin decir.",
+          "He sentido que no quiero seguir adelante sin eso que perdí."
+        ]
+      },
+      "sentido": {
+        "descripcion": "La pregunta por el sentido de vida aparece cuando sientes que vas en piloto automático o que algo esencial te falta.",
+        "preguntas": [
+          "Siento que mis días se parecen unos a otros y no me llevan a ningún lado.",
+          "No tengo claro qué quiero o qué es importante para mí.",
+          "Lo que hago me parece vacío, aunque por fuera todo parezca estar bien.",
+          "Siento que vivo para cumplir con lo que otros esperan de mí.",
+          "Me cuesta imaginar mi futuro con ilusión.",
+          "He sentido que mi vida no tiene valor o que sobro."
+        ]
+      },
+      "migracion": {
+        "descripcion": "El duelo migratorio es la tristeza y el desajuste que aparecen al dejar tu país, tu gente y tu forma de vida para empezar en otro lugar.",
+        "preguntas": [
+          "Extraño mucho mi país, mi familia o mis costumbres, y me duele estar lejos.",
+          "Me siento solo, aunque haya gente a mi alrededor.",
+          "Me cuesta adaptarme al idioma, la cultura o la forma de trabajar de aquí.",
+          "Siento que perdí mi lugar, mi estatus o quién era antes de migrar.",
+          "Dudo de mi decisión de haberme ido o siento culpa por haber dejado a otros.",
+          "Estar lejos me ha quitado el ánimo, el sueño o las ganas de hacer cosas."
+        ]
+      }
+    }
   }
 }

@@ -161,17 +161,20 @@ export default async function Home({
       </Seccion>
 
       {/* 5. Temas que trabajamos */}
-      <Seccion titulo={i.temas.titulo} fondo="suave">
+      <Seccion id="temas" titulo={i.temas.titulo} fondo="suave">
         <ul className="flex flex-wrap justify-center gap-3">
-          {profesionales[0].especialidades.map((id) => t.especialidades[id]).map((tema) => (
-            <li
-              key={tema}
-              className="rounded-full border border-azul/30 bg-white px-4 py-2 text-sm font-medium text-oscuro"
-            >
-              {tema}
+          {profesionales[0].especialidades.map((id) => (
+            <li key={id}>
+              <Link
+                href={`${base}/temas/${id}`}
+                className="block rounded-full border border-azul/30 bg-white px-4 py-2 text-sm font-medium text-oscuro hover:border-azul hover:bg-azul hover:text-white"
+              >
+                {t.especialidades[id]}
+              </Link>
             </li>
           ))}
         </ul>
+        <p className="mt-6 text-center text-sm text-texto/70">{t.temas.pista}</p>
       </Seccion>
 
       {/* 6. Quién te acompaña */}
