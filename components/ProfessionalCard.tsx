@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { Profesional } from "@/config/profesionales";
 import { fotoExiste } from "@/lib/fotos";
 import type { Dictionary, Locale } from "@/lib/i18n";
@@ -70,11 +71,13 @@ export default function ProfessionalCard({
 
       <ul className="flex flex-wrap justify-center gap-2">
         {profesional.etiquetasTarjeta.map((id) => (
-          <li
-            key={id}
-            className="rounded-full bg-turquesa/15 px-3 py-1 text-xs font-medium text-oscuro"
-          >
-            {t.etiquetas[id]}
+          <li key={id}>
+            <Link
+              href={`${base}/temas/${id}`}
+              className="block rounded-full bg-turquesa/15 px-3 py-1 text-xs font-medium text-oscuro hover:bg-azul hover:text-white"
+            >
+              {t.etiquetas[id]}
+            </Link>
           </li>
         ))}
       </ul>
