@@ -17,9 +17,18 @@ type Textos = {
   aviso: string;
   crisisTexto: string;
   crisisBoton: string;
-  semaforo: Record<Color, { nombre: string; titulo: string; texto: string }>;
-  cta: { titulo: string; texto: string; boton: string };
+  resumen: string;
+  resumenCritica: string;
+  indicacionesTitulo: string;
+  semaforo: Record<Color, { nombre: string; titulo: string }>;
+  indicaciones: Record<Color, string[]>;
+  cta: { titulo: string; textos: Record<Color, string>; boton: string };
 };
+
+// Los textos llevan marcas como {tema} y {n} que se reemplazan con los datos de cada persona.
+function llenar(texto: string, datos: Record<string, string | number>) {
+  return texto.replace(/\{(\w+)\}/g, (_, k) => String(datos[k] ?? ""));
+}
 
 // Colores del semáforo (se reconocen por el color y también por el nombre escrito).
 const luz: Record<Color, { fondo: string; apagado: string; borde: string }> = {
@@ -30,12 +39,16 @@ const luz: Record<Color, { fondo: string; apagado: string; borde: string }> = {
 const orden: Color[] = ["rojo", "amarillo", "verde"];
 
 export default function ChequeoTema({
+  tema,
   preguntas,
+  resultados,
   criticas,
   textos,
   hrefAgenda,
 }: {
+  tema: string;
   preguntas: string[];
+  resultados: Record<Color, string>;
   criticas: number[];
   textos: Textos;
   hrefAgenda: string;
@@ -59,6 +72,8 @@ export default function ChequeoTema({
   }
 
   const r = resultado ? textos.semaforo[resultado] : null;
+  // El tema va en minúscula dentro de las frases ("con ansiedad", "con duelo y pérdidas").
+  const datos = { tema: tema.toLowerCase(), n: total, total: preguntas.length };
 
   return (
     <div className="mx-auto max-w-2xl">
@@ -124,9 +139,24 @@ export default function ChequeoTema({
               <p className={`inline-block rounded-full border-2 px-3 py-0.5 text-sm font-bold text-oscuro ${luz[resultado].borde}`}>
                 {r.nombre}
               </p>
-              <h4 className="mt-2 font-editorial text-2xl text-oscuro">{r.titulo}</h4>
-              <p className="mt-2 text-texto/90">{r.texto}</p>
+              <h4 className="mt-2 font-editorial text-2xl text-oscuro">{llenar(r.titulo, datos)}</h4>
+              <p className="mt-2 text-sm font-semibold text-azul">
+                {llenar(textos.resumen, datos)} {critica && textos.resumenCritica}
+              </p>
+              <p className="mt-2 text-texto/90">{resultados[resultado]}</p>
             </div>
+          </div>
+
+          <div className="mt-6 rounded-xl border border-oscuro/10 p-5">
+            <p className="font-bold text-oscuro">{textos.indicacionesTitulo}</p>
+            <ul className="mt-3 flex flex-col gap-2">
+              {textos.indicaciones[resultado].map((i) => (
+                <li key={i} className="flex gap-3 text-texto/90">
+                  <span aria-hidden="true" className={`mt-2 h-2.5 w-2.5 shrink-0 rounded-full ${luz[resultado].fondo}`} />
+                  <span>{i}</span>
+                </li>
+              ))}
+            </ul>
           </div>
 
           {resultado === "rojo" && critica && (
@@ -144,7 +174,7 @@ export default function ChequeoTema({
 
           <div className="mt-8 rounded-xl bg-turquesa/10 p-5 text-center">
             <p className="font-bold text-oscuro">{textos.cta.titulo}</p>
-            <p className="mt-1 text-texto/80">{textos.cta.texto}</p>
+            <p className="mt-1 text-texto/80">{llenar(textos.cta.textos[resultado], datos)}</p>
             <Link href={hrefAgenda} className={estilosBoton("acento", "mt-4")}>
               {textos.cta.boton}
             </Link>

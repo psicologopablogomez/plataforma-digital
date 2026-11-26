@@ -696,23 +696,24 @@
     "semaforo": {
       "verde": {
         "nombre": "Verde",
-        "titulo": "Por ahora te estás cuidando",
-        "texto": "Marcaste pocas señales. Sigue atento a cómo te sientes y apóyate en tus rutinas y en las personas cercanas. Si más adelante algo cambia, aquí puedes volver a chequear."
+        "titulo": "Con {tema}, por ahora te estás cuidando"
       },
       "amarillo": {
         "nombre": "Amarillo",
-        "titulo": "Vale la pena prestarle atención",
-        "texto": "Hay varias señales que conviene mirar de cerca. Hablarlo con alguien de confianza o con un profesional puede ayudarte a que no avancen. Una primera conversación ya es un buen paso."
+        "titulo": "Con {tema}, vale la pena prestar atención"
       },
       "rojo": {
         "nombre": "Rojo",
-        "titulo": "Es un buen momento para pedir acompañamiento",
-        "texto": "Marcaste muchas señales o alguna que pide atención pronto. No tienes que pasar por esto solo: agendar una cita puede ayudarte a ordenar lo que sientes y a encontrar un camino."
+        "titulo": "Con {tema}, es un buen momento para pedir acompañamiento"
       }
     },
     "cta": {
       "titulo": "Da el siguiente paso",
-      "texto": "Tengas el color que tengas, puedes conversar con un profesional. La primera escucha es gratuita.",
+      "textos": {
+        "verde": "Si quieres seguir cuidándote, puedes conversar con un profesional sobre {tema}. La primera escucha es gratuita.",
+        "amarillo": "Trabajar {tema} a tiempo marca la diferencia. La primera escucha es gratuita.",
+        "rojo": "Podemos empezar a trabajar {tema} cuanto antes. La primera escucha es gratuita."
+      },
       "boton": "Agenda tu cita"
     },
     "items": {
@@ -725,7 +726,12 @@
           "Evito lugares, personas o tareas porque me generan nervios.",
           "Me siento irritable o inquieto sin saber bien por qué.",
           "La ansiedad me está afectando el trabajo, el estudio o mis relaciones."
-        ]
+        ],
+        "resultados": {
+          "verde": "Por ahora la ansiedad no parece dominar tu día a día. Aun así, cuidar tu descanso, moverte y hacer pausas conscientes ayuda a que no crezca.",
+          "amarillo": "Hay señales de ansiedad que ya empiezan a pesar: preocupación, tensión o un sueño inquieto. Es buen momento para aprender a regularla antes de que te limite más.",
+          "rojo": "Tu cuerpo y tu mente llevan tiempo en alerta, y la ansiedad ya está afectando tu vida. Con acompañamiento se aprenden herramientas concretas para bajar esa alerta."
+        }
       },
       "depresion": {
         "descripcion": "Ánimo deprimido o pérdida de interés casi todo el día, durante al menos dos semanas, con cambios en el sueño o el apetito, cansancio, culpa o dificultad para concentrarte, que afectan de forma importante tu vida diaria.",
@@ -736,7 +742,12 @@
           "Mi sueño o mi apetito cambiaron de forma notoria.",
           "Me siento culpable o inútil, o me critico con dureza.",
           "He pensado que sería mejor no estar vivo o en hacerme daño."
-        ]
+        ],
+        "resultados": {
+          "verde": "Por ahora tu ánimo parece sostenerte. Mantén tus rutinas, el contacto con otras personas y lo que te da disfrute; si notas cambios que duran, vuelve a chequear.",
+          "amarillo": "Hay señales de ánimo bajo que conviene mirar de cerca: cansancio, desinterés o cambios en el sueño. Hablarlo a tiempo suele evitar que se profundice.",
+          "rojo": "Lo que describes sugiere que el ánimo bajo ya pesa mucho en tu vida. Pedir ayuda profesional es una forma de cuidarte, y la depresión se puede tratar."
+        }
       },
       "estres": {
         "descripcion": "No es un diagnóstico del DSM-5: describe un cansancio extremo, distancia hacia el trabajo y menor rendimiento por un estrés prolongado. Si el malestar surge ante un estresor concreto, puede corresponder a un trastorno de adaptación.",
@@ -747,7 +758,12 @@
           "Me volví más irritable, cínico o distante con mis compañeros o clientes.",
           "Tengo dolores de cabeza, de espalda o del estómago que parecen ligados al estrés.",
           "Pienso con frecuencia en dejarlo todo, pero no sé cómo parar."
-        ]
+        ],
+        "resultados": {
+          "verde": "Hoy tu trabajo parece estar en un equilibrio manejable. Cuida tus pausas, tus horarios y tu descanso para que siga así.",
+          "amarillo": "El trabajo ya te está pasando factura: cansancio, desconexión o irritabilidad. Poner límites y recuperar energía ahora evita llegar al agotamiento.",
+          "rojo": "Estás llegando a un punto de agotamiento laboral que el descanso solo no resuelve. Un acompañamiento profesional puede ayudarte a recuperarte y a decidir qué cambiar."
+        }
       },
       "pareja": {
         "descripcion": "El DSM-5 recoge los problemas de relación con la pareja: conflictos, distancia y mala comunicación. Una ruptura puede dar lugar a un trastorno de adaptación, un malestar desproporcionado que aparece en los tres meses siguientes al cambio.",
@@ -758,7 +774,12 @@
           "Después de una ruptura, me cuesta dejar de pensar en esa persona.",
           "Me da miedo estar solo o quedarme sin esa relación.",
           "Este tema me quita el sueño, la concentración o las ganas de hacer cosas."
-        ]
+        ],
+        "resultados": {
+          "verde": "Tu relación, o tu proceso tras una ruptura, no muestra grandes señales de alerta. Conversar con honestidad y cuidar tus espacios propios ayuda a mantenerlo así.",
+          "amarillo": "Hay tensiones en tu relación, o en tu duelo por una ruptura, que merecen atención. Trabajarlas pronto evita que se vuelvan patrones difíciles de cambiar.",
+          "rojo": "El conflicto o el dolor en tu relación ya está afectando tu bienestar. Un espacio profesional, solo o en pareja, ayuda a ordenar lo que sientes y a decidir con claridad."
+        }
       },
       "dependencia": {
         "descripcion": "No es un diagnóstico del DSM-5. Se describe como una necesidad excesiva de que cuiden de ti, que lleva a ceder decisiones, temer el abandono y tolerar el maltrato; se parece al trastorno de la personalidad por dependencia.",
@@ -769,7 +790,12 @@
           "Cuando no sé de esa persona, me siento muy angustiado o vacío.",
           "Siento que mi valor depende de que me quieran o me necesiten.",
           "Me ocupo tanto de los problemas de los demás que olvido los míos."
-        ]
+        ],
+        "resultados": {
+          "verde": "Por ahora tus vínculos parecen dejarte espacio para ser tú. Sigue cuidando tus propias decisiones, tus amistades y tus gustos.",
+          "amarillo": "Hay señales de que tu bienestar empieza a depender mucho de otra persona. Reconocerlo a tiempo te ayuda a recuperar tu propio centro.",
+          "rojo": "Tu bienestar y tus decisiones dependen demasiado de otra persona, y eso duele. En terapia se trabajan la autoestima y los límites para que puedas vincularte sin perderte."
+        }
       },
       "familia": {
         "descripcion": "El DSM-5 incluye los problemas de relación con familiares: discordia, malentendidos o comunicación deficiente entre padres, hijos y hermanos. No son un trastorno en sí, pero pueden causar un malestar importante y merecen atención.",
@@ -780,7 +806,12 @@
           "Hay temas importantes de los que nadie se atreve a hablar.",
           "Me siento cargando con más responsabilidades que los demás.",
           "Los conflictos familiares afectan mi ánimo, mi trabajo o mi pareja."
-        ]
+        ],
+        "resultados": {
+          "verde": "La convivencia familiar parece manejable por ahora. Seguir hablando con claridad y respeto ayuda a prevenir conflictos.",
+          "amarillo": "Hay tensiones en casa que ya se sienten. Una conversación guiada puede ayudar a que todos se escuchen mejor.",
+          "rojo": "Los conflictos familiares ya afectan tu ánimo y tu vida diaria. Un espacio profesional te ayuda a poner límites, comunicarte mejor y cuidarte dentro de la familia."
+        }
       },
       "duelo": {
         "descripcion": "Tras la muerte de un ser querido, el DSM-5-TR describe el trastorno de duelo prolongado: añoranza intensa y dolor emocional que persisten más de un año (seis meses en niños) y limitan tu vida. Otras pérdidas también pueden doler.",
@@ -791,7 +822,12 @@
           "Me aislé de las personas o de actividades que antes me hacían bien.",
           "Siento culpa, rabia o cosas que dejé sin decir.",
           "He sentido que no quiero seguir adelante sin eso que perdí."
-        ]
+        ],
+        "resultados": {
+          "verde": "Estás atravesando tu pérdida con cierto equilibrio. Dale tiempo y espacio al dolor: no hay una forma correcta de vivir un duelo.",
+          "amarillo": "El dolor de tu pérdida sigue muy presente y empieza a limitar partes de tu vida. Compartirlo con alguien que te escuche puede aliviar la carga.",
+          "rojo": "La pérdida te está pesando mucho y quizá te cuesta sostenerte. No tienes que atravesar este duelo solo: acompañarte puede darle un lugar a lo que sientes."
+        }
       },
       "sentido": {
         "descripcion": "No es un trastorno del DSM-5. Es una inquietud existencial: sentir vacío, falta de rumbo o de propósito. A veces acompaña a la depresión o a un cambio de etapa, y conversarlo con un profesional ayuda a darle dirección.",
@@ -802,7 +838,12 @@
           "Siento que vivo para cumplir con lo que otros esperan de mí.",
           "Me cuesta imaginar mi futuro con ilusión.",
           "He sentido que mi vida no tiene valor o que sobro."
-        ]
+        ],
+        "resultados": {
+          "verde": "Por ahora sientes cierta dirección en tu vida. Reservar tiempo para lo que te importa ayuda a mantenerla.",
+          "amarillo": "Hay señales de vacío o falta de rumbo que vale la pena explorar. Preguntarte qué quieres es un buen punto de partida, y se hace mejor acompañado.",
+          "rojo": "Sientes un vacío o una falta de sentido que ya pesa mucho. Conversarlo con un profesional puede ayudarte a recuperar dirección y a cuidarte en el camino."
+        }
       },
       "migracion": {
         "descripcion": "El DSM-5 recoge el problema de aculturación (adaptarse a otra cultura), y el malestar al migrar puede ser un trastorno de adaptación: nostalgia, soledad y desajuste ante la nueva vida que afectan tu día a día.",
@@ -813,8 +854,33 @@
           "Siento que perdí mi lugar, mi estatus o quién era antes de migrar.",
           "Dudo de mi decisión de haberme ido o siento culpa por haber dejado a otros.",
           "Estar lejos me ha quitado el ánimo, el sueño o las ganas de hacer cosas."
-        ]
+        ],
+        "resultados": {
+          "verde": "Tu adaptación a otro país parece ir con cierto equilibrio. Mantener lazos con tu gente y construir otros nuevos ayuda a sostenerla.",
+          "amarillo": "Extrañar y sentirte fuera de lugar ya se nota en tu día a día. Es comprensible, y hablarlo ayuda a que el duelo migratorio no se instale.",
+          "rojo": "Estar lejos de tu país te está costando mucho ánimo y energía. Acompañarte con quien entiende la migración ayuda a darle un lugar a lo que dejaste y a lo que construyes."
+        }
       }
+    },
+    "resumen": "Marcaste {n} de {total} señales relacionadas con {tema}.",
+    "resumenCritica": "Una de ellas pide atención pronto.",
+    "indicacionesTitulo": "Qué puedes hacer ahora",
+    "indicaciones": {
+      "verde": [
+        "Repite este chequeo si notas cambios en las próximas semanas.",
+        "Sigue cuidando tu descanso, tu movimiento y el contacto con personas de confianza.",
+        "Si quieres prevenir o conocerte mejor, puedes agendar una escucha gratuita."
+      ],
+      "amarillo": [
+        "Habla de lo que sientes con alguien de confianza esta semana.",
+        "Elige una sola cosa pequeña que puedas cambiar ya: dormir mejor, poner un límite o hacer una pausa.",
+        "Considera agendar una primera cita para trabajarlo con acompañamiento."
+      ],
+      "rojo": [
+        "Agenda una cita pronto: no hace falta esperar a estar peor.",
+        "Cuéntale a una persona cercana cómo te sientes para no estar solo.",
+        "Si sientes que puedes hacerte daño, usa el botón Ayuda en crisis."
+      ]
     }
   }
 }

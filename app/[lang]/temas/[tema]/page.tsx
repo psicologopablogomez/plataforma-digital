@@ -54,7 +54,9 @@ export default async function Tema({
         <div className="px-4 py-12 sm:py-16">
           <ChequeoTema
             key={id}
+            tema={t.especialidades[id]}
             preguntas={contenido.preguntas}
+            resultados={contenido.resultados}
             criticas={frasesCriticas[id] ?? []}
             textos={c}
             hrefAgenda={`/${lang}/agenda`}

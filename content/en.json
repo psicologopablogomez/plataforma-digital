@@ -696,23 +696,24 @@
     "semaforo": {
       "verde": {
         "nombre": "Green",
-        "titulo": "For now, you are taking care of yourself",
-        "texto": "You ticked few signs. Keep an eye on how you feel and lean on your routines and the people close to you. If something changes later, you can come back and check in again."
+        "titulo": "With {tema}, for now you are taking care of yourself"
       },
       "amarillo": {
         "nombre": "Yellow",
-        "titulo": "Worth paying attention to",
-        "texto": "There are several signs worth looking at closely. Talking to someone you trust or to a professional can help keep them from growing. A first conversation is already a good step."
+        "titulo": "With {tema}, it is worth paying attention"
       },
       "rojo": {
         "nombre": "Red",
-        "titulo": "A good moment to ask for support",
-        "texto": "You ticked many signs, or one that needs attention soon. You don't have to go through this alone: booking a session can help you sort out what you feel and find a way forward."
+        "titulo": "With {tema}, it is a good moment to ask for support"
       }
     },
     "cta": {
       "titulo": "Take the next step",
-      "texto": "Whatever your color, you can talk with a professional. The first listening session is free.",
+      "textos": {
+        "verde": "If you want to keep looking after yourself, you can talk with a professional about {tema}. The first listening session is free.",
+        "amarillo": "Working on {tema} early makes a difference. The first listening session is free.",
+        "rojo": "We can start working on {tema} as soon as possible. The first listening session is free."
+      },
       "boton": "Book your session"
     },
     "items": {
@@ -725,7 +726,12 @@
           "I avoid places, people or tasks because they make me nervous.",
           "I feel irritable or restless without knowing exactly why.",
           "Anxiety is affecting my work, my studies or my relationships."
-        ]
+        ],
+        "resultados": {
+          "verde": "For now, anxiety doesn't seem to dominate your day-to-day. Even so, looking after your rest, moving and taking mindful breaks helps keep it from growing.",
+          "amarillo": "There are signs of anxiety that are starting to weigh on you: worry, tension or restless sleep. It is a good moment to learn to regulate it before it limits you further.",
+          "rojo": "Your body and mind have been on alert for a while, and anxiety is already affecting your life. With support you can learn concrete tools to lower that alert."
+        }
       },
       "depresion": {
         "descripcion": "Depressed mood or loss of interest nearly all day, for at least two weeks, with changes in sleep or appetite, tiredness, guilt or trouble concentrating, significantly affecting your daily life.",
@@ -736,7 +742,12 @@
           "My sleep or appetite has changed noticeably.",
           "I feel guilty or worthless, or I criticize myself harshly.",
           "I have thought it would be better not to be alive, or about hurting myself."
-        ]
+        ],
+        "resultados": {
+          "verde": "For now your mood seems to be holding you up. Keep your routines, your contact with others and what you enjoy; if you notice lasting changes, check in again.",
+          "amarillo": "There are signs of low mood worth looking at closely: tiredness, loss of interest or changes in sleep. Talking about it early often keeps it from deepening.",
+          "rojo": "What you describe suggests low mood is already weighing heavily on your life. Asking for professional help is a way of taking care of yourself, and depression can be treated."
+        }
       },
       "estres": {
         "descripcion": "Not a DSM-5 diagnosis: it describes extreme exhaustion, distance from work and lower performance after prolonged stress. If the distress follows a specific stressor, it may fit an adjustment disorder.",
@@ -747,7 +758,12 @@
           "I have become more irritable, cynical or distant with colleagues or clients.",
           "I have headaches, back pain or stomach problems that seem linked to stress.",
           "I often think about leaving everything, but I don't know how to stop."
-        ]
+        ],
+        "resultados": {
+          "verde": "Right now your work seems to be in a manageable balance. Look after your breaks, your schedule and your rest to keep it that way.",
+          "amarillo": "Work is already taking its toll: tiredness, disconnection or irritability. Setting limits and recovering energy now helps you avoid burnout.",
+          "rojo": "You are reaching a point of work burnout that rest alone won't fix. Professional support can help you recover and decide what to change."
+        }
       },
       "pareja": {
         "descripcion": "The DSM-5 recognizes relationship problems with a partner: conflict, distance and poor communication. A breakup can lead to an adjustment disorder, distress out of proportion that appears within three months of the change.",
@@ -758,7 +774,12 @@
           "After a breakup, I find it hard to stop thinking about that person.",
           "I'm afraid of being alone or of losing that relationship.",
           "This is costing me sleep, concentration or the desire to do things."
-        ]
+        ],
+        "resultados": {
+          "verde": "Your relationship, or your process after a breakup, shows no major warning signs. Talking honestly and caring for your own space helps keep it that way.",
+          "amarillo": "There is tension in your relationship, or in your grief after a breakup, that deserves attention. Working on it early keeps it from becoming patterns that are hard to change.",
+          "rojo": "The conflict or pain in your relationship is already affecting your well-being. A professional space, alone or as a couple, helps you sort out what you feel and decide with clarity."
+        }
       },
       "dependencia": {
         "descripcion": "Not a DSM-5 diagnosis. It is described as an excessive need to be taken care of, leading to giving up decisions, fearing abandonment and tolerating mistreatment; it resembles dependent personality disorder.",
@@ -769,7 +790,12 @@
           "When I don't hear from that person, I feel very anxious or empty.",
           "I feel my worth depends on being loved or needed.",
           "I take care of other people's problems so much that I forget my own."
-        ]
+        ],
+        "resultados": {
+          "verde": "For now your relationships seem to leave you room to be yourself. Keep looking after your own decisions, friendships and interests.",
+          "amarillo": "There are signs your well-being is starting to depend a lot on another person. Recognizing it early helps you regain your own center.",
+          "rojo": "Your well-being and decisions depend too much on another person, and that hurts. In therapy you work on self-esteem and boundaries so you can connect without losing yourself."
+        }
       },
       "familia": {
         "descripcion": "The DSM-5 includes problems in relationships with relatives: discord, misunderstandings or poor communication among parents, children and siblings. Not a disorder in itself, but it can cause real distress and deserves attention.",
@@ -780,7 +806,12 @@
           "There are important subjects nobody dares to talk about.",
           "I feel I carry more responsibilities than the others.",
           "Family conflicts affect my mood, my work or my relationship."
-        ]
+        ],
+        "resultados": {
+          "verde": "Family life seems manageable for now. Continuing to talk with clarity and respect helps prevent conflict.",
+          "amarillo": "There is tension at home that you already feel. A guided conversation can help everyone listen to each other better.",
+          "rojo": "Family conflicts are already affecting your mood and daily life. A professional space helps you set limits, communicate better and look after yourself within the family."
+        }
       },
       "duelo": {
         "descripcion": "After the death of a loved one, the DSM-5-TR describes prolonged grief disorder: intense longing and emotional pain lasting over a year (six months in children) that limit your life. Other losses can hurt too.",
@@ -791,7 +822,12 @@
           "I have withdrawn from people or activities that used to do me good.",
           "I feel guilt, anger or things left unsaid.",
           "I have felt that I don't want to go on without what I lost."
-        ]
+        ],
+        "resultados": {
+          "verde": "You are going through your loss with a certain balance. Give the pain time and room: there is no right way to grieve.",
+          "amarillo": "The pain of your loss is still very present and is starting to limit parts of your life. Sharing it with someone who listens can ease the load.",
+          "rojo": "The loss is weighing heavily on you and it may be hard to hold yourself up. You don't have to go through this grief alone: being accompanied can give a place to what you feel."
+        }
       },
       "sentido": {
         "descripcion": "Not a DSM-5 disorder. It is an existential concern: feeling empty or without direction or purpose. It sometimes accompanies depression or a life transition, and talking it through with a professional helps give it direction.",
@@ -802,7 +838,12 @@
           "I feel I live to meet other people's expectations.",
           "I find it hard to imagine my future with hope.",
           "I have felt that my life has no value or that I am a burden."
-        ]
+        ],
+        "resultados": {
+          "verde": "For now you feel some direction in your life. Setting aside time for what matters to you helps keep it.",
+          "amarillo": "There are signs of emptiness or lack of direction worth exploring. Asking yourself what you want is a good starting point, and it is easier with company.",
+          "rojo": "You feel an emptiness or lack of purpose that already weighs heavily. Talking it through with a professional can help you regain direction and look after yourself along the way."
+        }
       },
       "migracion": {
         "descripcion": "The DSM-5 recognizes acculturation problems (adapting to another culture), and distress after migrating can be an adjustment disorder: homesickness, loneliness and a sense of mismatch with your new life that affect daily life.",
@@ -813,8 +854,33 @@
           "I feel I lost my place, my status or who I was before migrating.",
           "I doubt my decision to leave or feel guilty for leaving others behind.",
           "Being far away has drained my mood, my sleep or my desire to do things."
-        ]
+        ],
+        "resultados": {
+          "verde": "Your adjustment to another country seems to be going with some balance. Keeping ties with your people and building new ones helps sustain it.",
+          "amarillo": "Missing home and feeling out of place already show in your day-to-day. It is understandable, and talking about it keeps migration grief from settling in.",
+          "rojo": "Being far from your country is costing you a lot of mood and energy. Being accompanied by someone who understands migration helps give a place to what you left and what you are building."
+        }
       }
+    },
+    "resumen": "You ticked {n} of {total} signs related to {tema}.",
+    "resumenCritica": "One of them needs attention soon.",
+    "indicacionesTitulo": "What you can do now",
+    "indicaciones": {
+      "verde": [
+        "Repeat this check-in if you notice changes over the coming weeks.",
+        "Keep looking after your rest, your movement and your contact with people you trust.",
+        "If you want to prevent problems or know yourself better, you can book a free listening session."
+      ],
+      "amarillo": [
+        "Talk about what you feel with someone you trust this week.",
+        "Pick one small thing you can change right now: sleeping better, setting a limit or taking a break.",
+        "Consider booking a first session to work on it with support."
+      ],
+      "rojo": [
+        "Book a session soon: there is no need to wait until you feel worse.",
+        "Tell someone close to you how you feel so you are not alone.",
+        "If you feel you might harm yourself, use the Crisis help button."
+      ]
     }
   }
 }
