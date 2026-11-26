@@ -160,15 +160,77 @@
   "perfil": {
     "volver": "About us",
     "estudiosTitulo": "Education",
-    "estudios": "Master's degree in Family Educational Counseling · [[POR DEFINIR: títulos completos, universidades e iniciales para la tarjeta]]",
+    "estudios": [
+      {
+        "titulo": "Psychologist",
+        "lugar": "Fundación Universitaria Cervantes San Agustín, Bogotá",
+        "anio": "2019"
+      },
+      {
+        "titulo": "University master's degree in Family Educational Counseling",
+        "lugar": "Universidad Internacional de la Rioja (UNIR)",
+        "anio": "2021"
+      },
+      {
+        "titulo": "Professional degree in Theology",
+        "lugar": "Fundación Universitaria Cervantes San Agustín, Bogotá",
+        "anio": "2012"
+      }
+    ],
     "sobreTitulo": "About me",
-    "sobre": "I'm Pablo Gómez, a Colombian psychologist with a master's degree in family educational counseling. Before psychology I studied philosophy and theology, and that taught me to look at human beings in an integral way. I have worked in teaching, rehabilitation and public health, and I designed an intervention protocol for families that continues today at the Fundación Génesis. I live in Australia, so I know what it's like to start from scratch far from home. My way of working is close and direct: I listen to you without judging, I tell you things straight and I give you clear tools. You decide, you act and you transform. I walk with you.",
+    "sobre": "I'm Pablo Gómez, a Colombian psychologist with a master's degree in family educational counseling. For more than ten years I have accompanied individuals and families: first in teaching and personal formation, and since 2019 in clinical work, where I worked in addiction rehabilitation and mental health, with workshops for parents and guidance on school dynamics. I now live in Australia, so I know what it is to start from scratch far from home. My way of working is close and direct: I listen without judging, I tell you things straight and I give you clear tools. You decide, you act and you transform. I walk beside you.",
     "temasTitulo": "Topics I work on",
     "idiomasTitulo": "Languages",
     "idiomas": "Spanish [[POR CONFIRMAR: inglés]]",
     "registroTitulo": "Professional registration",
     "registro": "Psychologist registered in Colombia (COLPSIC).",
-    "agendar": "Book your first session"
+    "agendar": "Book your first session",
+    "cursosTitulo": "Further training",
+    "cursos": [
+      {
+        "titulo": "Online course on approaching mental health",
+        "lugar": "Bogotá Health Secretariat",
+        "anio": "2021"
+      },
+      {
+        "titulo": "Diploma in leadership",
+        "lugar": "Universidad Internacional de la Rioja (UNIR)",
+        "anio": "2020"
+      },
+      {
+        "titulo": "Course on motivation for change",
+        "lugar": "La Academia",
+        "anio": "2020"
+      },
+      {
+        "titulo": "XXI Mental Health Meeting: primary care in mental health",
+        "lugar": "Universidad Nacional",
+        "anio": "2018"
+      },
+      {
+        "titulo": "International seminar on psychological and neurological disorders in childhood and adolescence",
+        "lugar": "Universidad San Buenaventura",
+        "anio": "2018"
+      },
+      {
+        "titulo": "Speaker at Psicosabana",
+        "lugar": "Universidad de La Sabana",
+        "anio": "2018"
+      }
+    ],
+    "experienciaTitulo": "Experience",
+    "experiencia": [
+      {
+        "titulo": "Clinical psychologist in addiction rehabilitation and mental health",
+        "lugar": "Fundación Génesis de Colombia, Chía",
+        "anio": "Since 2019"
+      },
+      {
+        "titulo": "Teaching, personal formation and work with young people and families",
+        "lugar": "Educational institutions in Bogotá",
+        "anio": "2012 – 2019"
+      }
+    ]
   },
   "servicios": {
     "intro": {

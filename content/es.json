@@ -160,15 +160,77 @@
   "perfil": {
     "volver": "Nosotros",
     "estudiosTitulo": "Estudios",
-    "estudios": "Maestría en Orientación Educativa Familiar · [[POR DEFINIR: títulos completos, universidades e iniciales para la tarjeta]]",
+    "estudios": [
+      {
+        "titulo": "Psicólogo",
+        "lugar": "Fundación Universitaria Cervantes San Agustín, Bogotá",
+        "anio": "2019"
+      },
+      {
+        "titulo": "Máster universitario en Orientación Educativa Familiar",
+        "lugar": "Universidad Internacional de la Rioja (UNIR)",
+        "anio": "2021"
+      },
+      {
+        "titulo": "Profesional en Teología",
+        "lugar": "Fundación Universitaria Cervantes San Agustín, Bogotá",
+        "anio": "2012"
+      }
+    ],
     "sobreTitulo": "Sobre mí",
-    "sobre": "Soy Pablo Gómez, psicólogo colombiano con maestría en orientación educativa familiar. Antes de la psicología estudié filosofía y teología, y eso me enseñó a mirar al ser humano de forma integral. He trabajado en docencia, rehabilitación y salud pública, y diseñé un protocolo de intervención para familias que hoy continúa en la Fundación Génesis. Vivo en Australia, así que sé lo que es empezar de cero lejos de casa. Mi forma de trabajar es cercana y directa: te escucho sin juzgarte, te digo las cosas de frente y te doy herramientas claras. Tú decides, actúas y te transformas. Yo te acompaño.",
+    "sobre": "Soy Pablo Gómez, psicólogo colombiano con maestría en orientación educativa familiar. Llevo más de diez años acompañando a personas y familias: primero en la docencia y la formación humana, y desde 2019 en la clínica, donde trabajé en rehabilitación de adicciones y salud mental, con talleres para padres y orientación en dinámicas escolares. Hoy vivo en Australia, así que sé lo que es empezar de cero lejos de casa. Mi forma de trabajar es cercana y directa: te escucho sin juzgarte, te digo las cosas de frente y te doy herramientas claras. Tú decides, actúas y te transformas. Yo te acompaño.",
     "temasTitulo": "Temas que atiendo",
     "idiomasTitulo": "Idiomas",
     "idiomas": "Español [[POR CONFIRMAR: inglés]]",
     "registroTitulo": "Registro profesional",
     "registro": "Psicólogo registrado en Colombia (COLPSIC).",
-    "agendar": "Agenda tu primera cita"
+    "agendar": "Agenda tu primera cita",
+    "cursosTitulo": "Formación complementaria",
+    "cursos": [
+      {
+        "titulo": "Curso virtual de abordaje en salud mental",
+        "lugar": "Secretaría de Salud de Bogotá",
+        "anio": "2021"
+      },
+      {
+        "titulo": "Diplomado de liderazgo",
+        "lugar": "Universidad Internacional de la Rioja (UNIR)",
+        "anio": "2020"
+      },
+      {
+        "titulo": "Curso de motivación al cambio",
+        "lugar": "La Academia",
+        "anio": "2020"
+      },
+      {
+        "titulo": "XXI Encuentro de salud mental: atención primaria en salud mental",
+        "lugar": "Universidad Nacional",
+        "anio": "2018"
+      },
+      {
+        "titulo": "Seminario internacional sobre trastornos psicológicos y neurológicos en la infancia y la adolescencia",
+        "lugar": "Universidad San Buenaventura",
+        "anio": "2018"
+      },
+      {
+        "titulo": "Ponente en Psicosabana",
+        "lugar": "Universidad de La Sabana",
+        "anio": "2018"
+      }
+    ],
+    "experienciaTitulo": "Experiencia",
+    "experiencia": [
+      {
+        "titulo": "Psicólogo clínico en rehabilitación de adicciones y salud mental",
+        "lugar": "Fundación Génesis de Colombia, Chía",
+        "anio": "Desde 2019"
+      },
+      {
+        "titulo": "Docencia, formación humana y trabajo con jóvenes y familias",
+        "lugar": "Instituciones educativas en Bogotá",
+        "anio": "2012 – 2019"
+      }
+    ]
   },
   "servicios": {
     "intro": {

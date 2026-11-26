@@ -26,6 +26,39 @@ export async function generateMetadata({
   return { title: getDictionary(lang).profesionales[p.id].nombre };
 }
 
+type Fila = { titulo: string; lugar: string; anio: string };
+
+// Lista de estudios, experiencia o cursos: título, lugar y año.
+function Lista({
+  titulo,
+  items,
+  destacar = false,
+  pequena = false,
+}: {
+  titulo: string;
+  items: Fila[];
+  destacar?: boolean;
+  pequena?: boolean;
+}) {
+  return (
+    <div>
+      <h2 className="mb-3 text-lg font-bold text-oscuro">{titulo}</h2>
+      <ul className="flex flex-col gap-3 border-l-2 border-turquesa/50 pl-4">
+        {items.map((it) => (
+          <li key={it.titulo}>
+            <p className={`${destacar ? "font-bold text-oscuro" : "font-semibold text-oscuro"} ${pequena ? "text-sm" : ""}`}>
+              {it.titulo}
+            </p>
+            <p className={`text-texto/80 ${pequena ? "text-sm" : ""}`}>
+              {it.lugar} · {it.anio}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 // Perfil del profesional (esquema 6.2): voz en "yo".
 export default async function PerfilProfesional({
   params,
@@ -59,16 +92,13 @@ export default async function PerfilProfesional({
 
       <section className="mt-10 flex flex-col gap-8">
         <div>
-          <h2 className="mb-2 text-lg font-bold text-oscuro">{p.estudiosTitulo}</h2>
-          <p className="text-texto/80">
-            <Relleno texto={p.estudios} />
-          </p>
-        </div>
-
-        <div>
           <h2 className="mb-2 text-lg font-bold text-oscuro">{p.sobreTitulo}</h2>
           <p className="text-lg leading-relaxed text-texto/90">{p.sobre}</p>
         </div>
+
+        <Lista titulo={p.estudiosTitulo} items={p.estudios} destacar />
+        <Lista titulo={p.experienciaTitulo} items={p.experiencia} />
+        <Lista titulo={p.cursosTitulo} items={p.cursos} pequena />
 
         <div>
           <h2 className="mb-3 text-lg font-bold text-oscuro">{p.temasTitulo}</h2>
