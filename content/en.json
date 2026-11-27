@@ -504,7 +504,7 @@
       },
       {
         "p": "Can I reschedule or cancel?",
-        "r": "Yes. [[POR DEFINIR: política de cancelación]]"
+        "r": "Yes. You can reschedule at no cost with at least 24 hours' notice. With less notice, or if you don't attend, the session is charged. Details are in the Cancellation policy."
       },
       {
         "p": "Is my data protected?",
@@ -943,6 +943,319 @@
         "Tell someone close to you how you feel so you are not alone.",
         "If you feel you might harm yourself, use the Crisis help button."
       ]
+    }
+  },
+  "textosLegales": {
+    "borrador": "Draft under legal review. It may change before the final version.",
+    "actualizado": "Last updated: 28 November 2026",
+    "relacionados": "Related documents",
+    "documentos": {
+      "aviso-de-privacidad": {
+        "intro": "This notice explains what personal data Senderomente handles, what we use it for and what your rights are. It is based on Colombia's Law 1581 of 2012 and Decree 1377 of 2013, and on any other data protection rules that apply.",
+        "secciones": [
+          {
+            "titulo": "1. Who is responsible for your data",
+            "texto": [
+              "Ps. Pablo Gómez (Senderomente), located in Australia.",
+              "Email: contacto@senderomente.com. You can also write to us on the WhatsApp number shown on the Contact page."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "2. What data we handle",
+            "texto": [
+              "Depending on how you use the service, we may handle:"
+            ],
+            "lista": [
+              "Identification and contact data: name, email, WhatsApp, country, language and age.",
+              "Details of the parent or legal guardian when the person receiving care is under 18.",
+              "Whatever you choose to tell us about your reason for seeking help (optional).",
+              "Data about your appointments and payments. Stripe processes payments: we never see or store your card details.",
+              "Data about your psychological process (clinical record), kept outside this website.",
+              "Basic technical data logged by the website host, and two cookies: one remembers your language and the other avoids showing you the quiz again for 24 hours."
+            ],
+            "cierre": []
+          },
+          {
+            "titulo": "3. What we don't keep",
+            "texto": [
+              "Your answers to the orientation quiz and the traffic-light check-ins are not saved or sent. In this version, the website forms do not store what you type; your data is handled when you book, pay, write to us or sign the consent form."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "4. Sensitive data",
+            "texto": [
+              "Information about your health, including mental health, is sensitive data. You are not obliged to provide it. We handle it only with your express authorization and to provide psychological care, under professional confidentiality."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "5. What we use your data for",
+            "texto": [],
+            "lista": [
+              "Booking, confirming, rescheduling and holding your sessions.",
+              "Managing payments and membership.",
+              "Providing psychological care and keeping the clinical record.",
+              "Answering your questions and registering you for workshops when you ask.",
+              "Meeting legal obligations and acting when there is a risk to your life or someone else's."
+            ],
+            "cierre": [
+              "We don't sell your data or use it for third-party advertising."
+            ]
+          },
+          {
+            "titulo": "6. Children and teenagers",
+            "texto": [
+              "Data about minors is handled with the authorization of a parent or legal guardian, listening to the minor's view according to age and maturity, and respecting their best interests and rights."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "7. Providers and transfers to other countries",
+            "texto": [
+              "To operate we use third-party services that may store data outside Colombia and your country:"
+            ],
+            "lista": [
+              "Vercel (website hosting).",
+              "Cal.com (appointment booking).",
+              "Stripe (payments).",
+              "Google (email, calendar, video calls and consent form).",
+              "WhatsApp, by Meta (messages, if you choose to write to us)."
+            ],
+            "cierre": [
+              "Each provider also applies its own privacy policy. By accepting this notice you authorize these transfers as far as needed to provide the service."
+            ]
+          },
+          {
+            "titulo": "8. How long we keep it",
+            "texto": [
+              "Contact and appointment data are kept as long as needed for the service or required by law. The clinical record is kept for at least 15 years after the last session, under Colombian rules (Resolution 839 of 2017)."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "9. Your rights",
+            "texto": [
+              "You can:"
+            ],
+            "lista": [
+              "See, update and correct your data.",
+              "Ask for proof of the authorization you gave and how your data has been used.",
+              "Withdraw your authorization or ask for deletion, when there is no legal duty to keep the data.",
+              "Access your data free of charge.",
+              "Complain to Colombia's Superintendence of Industry and Commerce, or to the authority in your country."
+            ],
+            "cierre": []
+          },
+          {
+            "titulo": "10. How to exercise your rights",
+            "texto": [
+              "Write to contacto@senderomente.com with your name, your request and a way to reply. Queries are answered within 10 business days, extendable by 5. Claims are answered within 15 business days, extendable by 8. If we need longer, we will tell you."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "11. Security and changes",
+            "texto": [
+              "We apply reasonable measures to protect your data, although no system is completely foolproof. If we change this notice, we will publish the new version on this page with its date; if the change affects the purposes, we will ask for a new authorization."
+            ],
+            "lista": [],
+            "cierre": []
+          }
+        ]
+      },
+      "consentimiento-informado": {
+        "intro": "Before starting a psychological process we want you to know how it works, what to expect and what its limits are. You accept it on the website when booking and sign it on our form before your first session.",
+        "secciones": [
+          {
+            "titulo": "1. Who you will see",
+            "texto": [
+              "Ps. Pablo Gómez, a psychologist registered in Colombia (COLPSIC). He is not registered in Australia (AHPRA) and, for now, we do not see people who are located in Australia."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "2. What the service is",
+            "texto": [
+              "Online psychological support by video call, in 50-minute sessions. We also offer a free 10-minute listening session to guide you, which is not a therapy session.",
+              "The process is voluntary and needs your active participation. No specific results are guaranteed, because they depend on many personal and contextual factors."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "3. Benefits and possible discomfort",
+            "texto": [
+              "Therapy can help you understand what you are going through, build tools and make decisions. Along the way uncomfortable emotions or difficult memories may come up; you can talk about it at any time."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "4. Online care",
+            "texto": [
+              "By accepting remote care you understand that there may be connection or device failures and that privacy also depends on where you are. We ask you to:"
+            ],
+            "lista": [
+              "Connect from a private place with a good connection, and never while driving.",
+              "Tell us which city and country you are in at the start of each session.",
+              "Give us a trusted emergency contact.",
+              "If the call drops, rejoin with the same link or message us on WhatsApp."
+            ],
+            "cierre": [
+              "If we consider online care unsuitable for your case, we will point you to in-person care or another service."
+            ]
+          },
+          {
+            "titulo": "5. This is not an emergency service",
+            "texto": [
+              "If you are in danger or thinking about hurting yourself, don't wait for your appointment: use the “Crisis help” button or call your country's emergency line."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "6. Confidentiality and its limits",
+            "texto": [
+              "What you share in sessions is confidential and protected by professional secrecy (Colombian Law 1090 of 2006). It may only be limited in these cases, sharing only what is strictly necessary:"
+            ],
+            "lista": [
+              "Risk to you or to others.",
+              "Legal obligations or an order from a competent authority.",
+              "Situations related to the protection of children and teenagers."
+            ],
+            "cierre": []
+          },
+          {
+            "titulo": "7. Recordings and records",
+            "texto": [
+              "Sessions are not recorded. Please don't record or share them without written permission. Clinical notes are kept outside this website, in a protected system, for the period required by law (at least 15 years after the last session)."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "8. Children and teenagers",
+            "texto": [
+              "We see minors of any age, always with the authorization of a parent or legal guardian. The process is explained to the minor in age-appropriate words and their agreement is taken into account.",
+              "The family receives general information about the process and is told if there is any risk. Details the minor shares are handled confidentially, according to their age and well-being. With teenagers, family participation is part of the process."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "9. The psychologist's commitments",
+            "texto": [],
+            "lista": [
+              "To offer an ethical, respectful, confidential, safe and non-judgmental space.",
+              "To act according to professional principles.",
+              "To explain clearly the scope and limits of the process.",
+              "To refer you to another professional or service when needed."
+            ],
+            "cierre": []
+          },
+          {
+            "titulo": "10. Your rights",
+            "texto": [
+              "You can ask anything you need, decline to answer, request a referral and end the process whenever you decide. Withdrawing your consent does not affect what was done before."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "11. Payments, changes and cancellations",
+            "texto": [
+              "Sessions are paid in advance through the platform. The rules for rescheduling and cancelling are in the Cancellation policy, which is part of this consent."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "12. Declaration",
+            "texto": [
+              "By accepting and signing you declare that you have read and understood this information, that you could ask questions and that you freely consent to receive online psychological care. If it concerns a minor, you declare this as their parent or legal guardian.",
+              "Authorization to handle your personal data is explained and accepted separately in the Privacy notice."
+            ],
+            "lista": [],
+            "cierre": []
+          }
+        ]
+      },
+      "politica-de-cancelacion": {
+        "intro": "We know unexpected things happen. These rules protect your time, other people's and the professional's.",
+        "secciones": [
+          {
+            "titulo": "1. Rescheduling a session",
+            "texto": [],
+            "lista": [
+              "You can reschedule with at least 24 hours' notice, at no cost.",
+              "Use the link in your confirmation email, or write to contacto@senderomente.com or on WhatsApp.",
+              "Your payment carries over to the new date. No refunds are given for cancellations by the client."
+            ],
+            "cierre": []
+          },
+          {
+            "titulo": "2. Less than 24 hours or no-show",
+            "texto": [
+              "If you give less than 24 hours' notice or don't attend, the session is charged in full and counts as held."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "3. Arriving late",
+            "texto": [
+              "If you are late, the session ends at the scheduled time. If you are more than 15 minutes late, it may be treated as cancelled and charged in full."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "4. If the professional cancels",
+            "texto": [
+              "If we have to cancel, we will offer you a new date at no cost. If none works for you, we refund that session. If a session is interrupted by a failure on our side, we will make up the time."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "5. Membership of 4 or 8 sessions a month",
+            "texto": [],
+            "lista": [
+              "It renews every month until you cancel.",
+              "Unused sessions roll over to the following month. If still unused that month, they expire.",
+              "You can cancel at any time before the renewal date; the next charge will not be made.",
+              "A month already paid is not refunded. If you cancel, you can use pending sessions until the end of the following month."
+            ],
+            "cierre": []
+          },
+          {
+            "titulo": "6. Brief listening sessions",
+            "texto": [],
+            "lista": [
+              "The free listening session for new people costs nothing. If you can't attend, cancel it so someone else can use the slot.",
+              "Members' 2 weekly slots are counted when booked and don't carry over to another week. If you cancel with 24 hours' notice, you get the slot back."
+            ],
+            "cierre": []
+          },
+          {
+            "titulo": "7. Your consumer rights",
+            "texto": [
+              "Nothing in this policy limits the rights given to you by applicable law, including the right of withdrawal where it applies and refunds for services not provided. For any complaint write to contacto@senderomente.com."
+            ],
+            "lista": [],
+            "cierre": []
+          }
+        ]
+      }
     }
   }
 }

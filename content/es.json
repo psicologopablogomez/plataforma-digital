@@ -504,7 +504,7 @@
       },
       {
         "p": "¿Puedo reprogramar o cancelar?",
-        "r": "Sí. [[POR DEFINIR: política de cancelación]]"
+        "r": "Sí. Puedes reprogramar sin costo con al menos 24 horas de anticipación. Con menos tiempo o si no asistes, la sesión se cobra. Los detalles están en la Política de cancelación."
       },
       {
         "p": "¿Mis datos están protegidos?",
@@ -943,6 +943,319 @@
         "Cuéntale a una persona cercana cómo te sientes para no estar solo.",
         "Si sientes que puedes hacerte daño, usa el botón Ayuda en crisis."
       ]
+    }
+  },
+  "textosLegales": {
+    "borrador": "Borrador en revisión legal. Puede cambiar antes de su versión definitiva.",
+    "actualizado": "Última actualización: 28 de noviembre de 2026",
+    "relacionados": "Documentos relacionados",
+    "documentos": {
+      "aviso-de-privacidad": {
+        "intro": "Este aviso explica qué datos personales tratamos en Senderomente, para qué los usamos y qué derechos tienes. Se basa en la Ley 1581 de 2012 y el Decreto 1377 de 2013 de Colombia, y en las demás normas de protección de datos que resulten aplicables.",
+        "secciones": [
+          {
+            "titulo": "1. Responsable del tratamiento",
+            "texto": [
+              "Ps. Pablo Gómez (Senderomente), ubicado en Australia.",
+              "Correo: contacto@senderomente.com. También puedes escribirnos por el WhatsApp publicado en la página de Contacto."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "2. Qué datos tratamos",
+            "texto": [
+              "Según cómo uses el servicio, podemos tratar:"
+            ],
+            "lista": [
+              "Datos de identificación y contacto: nombre, correo, WhatsApp, país, idioma y edad.",
+              "Datos de la madre, padre o representante legal, cuando quien recibe la atención es menor de edad.",
+              "Lo que quieras contarnos sobre tu motivo de consulta (es opcional).",
+              "Datos de tus citas y pagos. Los pagos los procesa Stripe: nosotros no vemos ni guardamos los datos de tu tarjeta.",
+              "Datos de tu proceso psicológico (historia clínica), que se guardan fuera de este sitio web.",
+              "Datos técnicos básicos que registra el alojamiento del sitio, y dos cookies: una recuerda tu idioma y otra evita mostrarte de nuevo el test durante 24 horas."
+            ],
+            "cierre": []
+          },
+          {
+            "titulo": "3. Qué no guardamos",
+            "texto": [
+              "Las respuestas del test de orientación y de los chequeos con semáforo no se guardan ni se envían. En esta versión, los formularios del sitio no almacenan lo que escribes; tus datos se tratan cuando agendas, pagas, nos escribes o firmas el consentimiento."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "4. Datos sensibles",
+            "texto": [
+              "La información sobre tu salud, incluida la salud mental, es un dato sensible. No estás obligado a entregarla. La tratamos solo con tu autorización expresa y para prestarte la atención psicológica, con reserva profesional."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "5. Para qué usamos tus datos",
+            "texto": [],
+            "lista": [
+              "Agendar, confirmar, reprogramar y realizar tus sesiones.",
+              "Gestionar los pagos y la membresía.",
+              "Prestar la atención psicológica y llevar la historia clínica.",
+              "Responder tus preguntas e inscribirte en talleres cuando lo pidas.",
+              "Cumplir obligaciones legales y actuar ante un riesgo para tu vida o la de otras personas."
+            ],
+            "cierre": [
+              "No vendemos tus datos ni los usamos para publicidad de terceros."
+            ]
+          },
+          {
+            "titulo": "6. Niños, niñas y adolescentes",
+            "texto": [
+              "Los datos de menores se tratan con la autorización de su madre, padre o representante legal, escuchando la opinión del menor según su edad y madurez, y respetando su interés superior y sus derechos."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "7. Proveedores y transferencia a otros países",
+            "texto": [
+              "Para funcionar usamos servicios de terceros que pueden guardar datos fuera de Colombia y de tu país:"
+            ],
+            "lista": [
+              "Vercel (alojamiento del sitio).",
+              "Cal.com (agenda de citas).",
+              "Stripe (pagos).",
+              "Google (correo, calendario, videollamadas y formulario de consentimiento).",
+              "WhatsApp, de Meta (mensajes, si decides escribirnos)."
+            ],
+            "cierre": [
+              "Cada proveedor aplica además su propia política de privacidad. Al aceptar este aviso autorizas estas transferencias en la medida necesaria para prestarte el servicio."
+            ]
+          },
+          {
+            "titulo": "8. Cuánto tiempo los conservamos",
+            "texto": [
+              "Los datos de contacto y de citas se conservan mientras sean necesarios para el servicio o lo exija la ley. La historia clínica se conserva como mínimo 15 años desde la última atención, según la norma colombiana (Resolución 839 de 2017)."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "9. Tus derechos",
+            "texto": [
+              "Puedes:"
+            ],
+            "lista": [
+              "Conocer, actualizar y rectificar tus datos.",
+              "Pedir prueba de la autorización que diste y saber cómo se han usado tus datos.",
+              "Revocar la autorización o pedir que se supriman, cuando no exista un deber legal de conservarlos.",
+              "Acceder gratuitamente a tus datos.",
+              "Presentar una queja ante la Superintendencia de Industria y Comercio de Colombia, o ante la autoridad de tu país."
+            ],
+            "cierre": []
+          },
+          {
+            "titulo": "10. Cómo ejercer tus derechos",
+            "texto": [
+              "Escribe a contacto@senderomente.com con tu nombre, lo que solicitas y un medio para responderte. Las consultas se responden en máximo 10 días hábiles, prorrogables por 5 más. Los reclamos se responden en máximo 15 días hábiles, prorrogables por 8 más. Si hace falta más tiempo, te avisaremos."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "11. Seguridad y cambios",
+            "texto": [
+              "Aplicamos medidas razonables para proteger tus datos, aunque ningún sistema es totalmente infalible. Si cambiamos este aviso, publicaremos la nueva versión en esta página con su fecha; si el cambio afecta las finalidades, te pediremos una nueva autorización."
+            ],
+            "lista": [],
+            "cierre": []
+          }
+        ]
+      },
+      "consentimiento-informado": {
+        "intro": "Antes de iniciar un proceso psicológico queremos que sepas cómo funciona, qué puedes esperar y cuáles son sus límites. Lo aceptas en el sitio al agendar y lo firmas en nuestro formulario antes de tu primera sesión.",
+        "secciones": [
+          {
+            "titulo": "1. Quién te atiende",
+            "texto": [
+              "Ps. Pablo Gómez, psicólogo registrado en Colombia (COLPSIC). No tiene registro en Australia (AHPRA) y, por ahora, no se atiende a personas que se encuentren en Australia."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "2. En qué consiste el servicio",
+            "texto": [
+              "Acompañamiento psicológico en línea, por videollamada, en sesiones de 50 minutos. También ofrecemos una escucha gratuita de 10 minutos para orientarte, que no es una sesión de terapia.",
+              "El proceso es voluntario y requiere tu participación activa. No se garantizan resultados específicos, porque dependen de muchos factores personales y de contexto."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "3. Beneficios y posibles molestias",
+            "texto": [
+              "La terapia puede ayudarte a comprender lo que vives, desarrollar herramientas y tomar decisiones. En el camino pueden aparecer emociones incómodas o recuerdos difíciles; puedes hablarlo en cualquier momento."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "4. Atención en línea",
+            "texto": [
+              "Al aceptar la atención a distancia entiendes que puede haber fallas de conexión o de equipo y que la privacidad depende también del lugar donde estés. Te pedimos:"
+            ],
+            "lista": [
+              "Conectarte desde un lugar privado, con buena conexión y sin estar conduciendo.",
+              "Decir en qué ciudad y país estás al empezar cada sesión.",
+              "Entregar un contacto de emergencia de confianza.",
+              "Si se corta la llamada, volver a entrar con el mismo enlace o escribirnos por WhatsApp."
+            ],
+            "cierre": [
+              "Si consideramos que la atención en línea no es adecuada para tu caso, te orientaremos hacia atención presencial u otro servicio."
+            ]
+          },
+          {
+            "titulo": "5. No es un servicio de emergencias",
+            "texto": [
+              "Si estás en peligro o piensas en hacerte daño, no esperes a tu cita: usa el botón “Ayuda en crisis” o llama a la línea de emergencias de tu país."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "6. Confidencialidad y sus límites",
+            "texto": [
+              "Lo que compartas en las sesiones es confidencial y está protegido por el secreto profesional (Ley 1090 de 2006). Solo podrá limitarse en estos casos, y compartiendo lo estrictamente necesario:"
+            ],
+            "lista": [
+              "Riesgo para ti o para otras personas.",
+              "Obligaciones legales u orden de una autoridad competente.",
+              "Situaciones relacionadas con la protección de niños, niñas y adolescentes."
+            ],
+            "cierre": []
+          },
+          {
+            "titulo": "7. Grabaciones y registros",
+            "texto": [
+              "Las sesiones no se graban. Te pedimos no grabarlas ni compartirlas sin autorización escrita. Las notas clínicas se guardan fuera de este sitio web, en un sistema protegido, y se conservan por el plazo que exige la norma (mínimo 15 años desde la última atención)."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "8. Niños, niñas y adolescentes",
+            "texto": [
+              "Se atiende a menores de cualquier edad, siempre con autorización de su madre, padre o representante legal. Al menor se le explica el proceso con palabras acordes a su edad y se tiene en cuenta su acuerdo.",
+              "La familia recibirá información general sobre el proceso y será avisada si hay riesgo. Los detalles que el menor comparta se manejan con reserva, según su edad y su bienestar. Con adolescentes, la participación de la familia es parte del proceso."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "9. Compromisos del psicólogo",
+            "texto": [],
+            "lista": [
+              "Brindar un espacio ético, respetuoso, confidencial, seguro y libre de juicios.",
+              "Actuar conforme a los principios profesionales.",
+              "Explicar con claridad los alcances y límites del proceso.",
+              "Remitirte a otro profesional o servicio cuando sea necesario."
+            ],
+            "cierre": []
+          },
+          {
+            "titulo": "10. Tus derechos",
+            "texto": [
+              "Puedes preguntar todo lo que necesites, no responder algo que no quieras, pedir una remisión y terminar el proceso cuando lo decidas. Retirar tu consentimiento no afecta lo realizado antes."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "11. Pagos, cambios y cancelaciones",
+            "texto": [
+              "Las sesiones se pagan por adelantado a través de la plataforma. Las reglas para reprogramar y cancelar están en la Política de cancelación, que hace parte de este consentimiento."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "12. Declaración",
+            "texto": [
+              "Al aceptar y firmar declaras que leíste y comprendiste esta información, que pudiste hacer preguntas y que das tu consentimiento voluntario para recibir atención psicológica en línea. Si se trata de un menor, lo declaras como su madre, padre o representante legal.",
+              "La autorización para el tratamiento de tus datos personales se explica y se acepta por separado en el Aviso de privacidad."
+            ],
+            "lista": [],
+            "cierre": []
+          }
+        ]
+      },
+      "politica-de-cancelacion": {
+        "intro": "Sabemos que pueden surgir imprevistos. Estas reglas protegen tu tiempo, el de otras personas y el del profesional.",
+        "secciones": [
+          {
+            "titulo": "1. Reprogramar una sesión",
+            "texto": [],
+            "lista": [
+              "Puedes reprogramar con al menos 24 horas de anticipación, sin costo.",
+              "Usa el enlace del correo de confirmación, o escríbenos a contacto@senderomente.com o por WhatsApp.",
+              "El pago se mantiene para la nueva fecha. No se hacen reembolsos por cancelaciones del paciente."
+            ],
+            "cierre": []
+          },
+          {
+            "titulo": "2. Menos de 24 horas o inasistencia",
+            "texto": [
+              "Si avisas con menos de 24 horas o no asistes, la sesión se cobra completa y se da por realizada."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "3. Llegada tarde",
+            "texto": [
+              "Si llegas tarde, la sesión termina a la hora prevista. Con más de 15 minutos de retraso, puede considerarse cancelada y cobrarse completa."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "4. Si cancela el profesional",
+            "texto": [
+              "Si tenemos que cancelar, te ofreceremos una nueva fecha sin costo. Si ninguna te sirve, te devolvemos el dinero de esa sesión. Si la sesión se interrumpe por una falla de nuestra parte, repondremos el tiempo."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "5. Membresía de 4 u 8 sesiones al mes",
+            "texto": [],
+            "lista": [
+              "Se renueva cada mes mientras no la canceles.",
+              "Las sesiones que no uses pasan al mes siguiente. Si tampoco se usan ese mes, vencen.",
+              "Puedes cancelar cuando quieras antes de la fecha de renovación; no se hará el siguiente cobro.",
+              "El mes ya pagado no se reembolsa. Si cancelas, puedes usar las sesiones pendientes hasta el final del mes siguiente."
+            ],
+            "cierre": []
+          },
+          {
+            "titulo": "6. Espacios de escucha breve",
+            "texto": [],
+            "lista": [
+              "La escucha gratuita para personas nuevas no tiene costo. Si no puedes asistir, cancélala para que otra persona use el cupo.",
+              "Los 2 espacios semanales de miembros se descuentan al agendar y no se acumulan para otra semana. Si cancelas con 24 horas, recuperas el espacio."
+            ],
+            "cierre": []
+          },
+          {
+            "titulo": "7. Tus derechos como consumidor",
+            "texto": [
+              "Nada en esta política limita los derechos que te reconoce la ley aplicable, incluido el derecho de retracto cuando corresponda ni las devoluciones por un servicio no prestado. Para cualquier reclamo escribe a contacto@senderomente.com."
+            ],
+            "lista": [],
+            "cierre": []
+          }
+        ]
+      }
     }
   }
 }
