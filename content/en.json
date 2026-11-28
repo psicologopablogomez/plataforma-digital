@@ -1255,6 +1255,124 @@
             "cierre": []
           }
         ]
+      },
+      "terminos-y-condiciones": {
+        "intro": "These are the rules for using senderomente.com and its services. By using the site or booking a session, you accept these terms.",
+        "secciones": [
+          {
+            "titulo": "1. Who we are",
+            "texto": [
+              "Senderomente is the online psychological care service of Ps. Pablo Gómez, a psychologist registered in Colombia (COLPSIC), located in Australia. He is not registered in Australia (AHPRA). Contact: contacto@senderomente.com."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "2. What we offer",
+            "texto": [],
+            "lista": [
+              "Psychological support sessions by video call, 50 minutes long.",
+              "A free 10-minute listening session to guide you, which is not a therapy session.",
+              "Memberships of 4 or 8 sessions a month, with brief listening slots.",
+              "Resources, check-ins, workshops and events."
+            ],
+            "cierre": [
+              "The conditions of psychological care are explained in the Informed consent."
+            ]
+          },
+          {
+            "titulo": "3. This is not an emergency service",
+            "texto": [
+              "This site does not handle emergencies. If you are in danger or thinking about hurting yourself, use the “Crisis help” button or call your country's emergency line."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "4. Informational content",
+            "texto": [
+              "The orientation quiz, the traffic-light check-ins, the guides and other content are for information and guidance only. They are not a diagnosis and do not replace a professional assessment."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "5. Who can use the service",
+            "texto": [
+              "If you are 18 or over, you can book on your own. Minors need the authorization of a parent or legal guardian."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "6. Your commitments",
+            "texto": [],
+            "lista": [
+              "To give true and up-to-date details.",
+              "To keep your session link safe and not share it.",
+              "Not to record or share sessions without written permission.",
+              "To treat the people in the service with respect.",
+              "Not to use the site for illegal activities or try to affect how it works or its security."
+            ],
+            "cierre": []
+          },
+          {
+            "titulo": "7. Appointments and payments",
+            "texto": [
+              "The price depends on your country and is shown before you pay. Payments are made in advance through Stripe, and appointments are booked with Cal.com. Changes, cancellations, refunds and memberships follow the Cancellation policy."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "8. My space",
+            "texto": [
+              "The “My space” area is a test version: it shows sample data and does not save changes."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "9. Ownership of content",
+            "texto": [
+              "The texts, brand and materials on the site belong to Senderomente or their respective authors. You may share links and use the materials for personal use, but not copy or sell them without permission."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "10. Third-party services",
+            "texto": [
+              "The site links to or uses other companies' services, such as Cal.com, Stripe, Google, WhatsApp and social networks. Each has its own terms."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "11. Availability and liability",
+            "texto": [
+              "We try to keep the site working well, but it may have interruptions or errors. No specific therapeutic results are guaranteed. Nothing in these terms excludes or limits any liability or guarantee that the law does not allow to be excluded."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "12. Personal data",
+            "texto": [
+              "How your data is handled is explained in the Privacy notice."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "13. Changes and applicable law",
+            "texto": [
+              "We may update these terms and will publish the new version with its date; changes do not affect what you have already paid. These terms are governed by the laws of Colombia, without affecting rights given to you by the law of your country of residence that cannot be waived."
+            ],
+            "lista": [],
+            "cierre": []
+          }
+        ]
       }
     }
   }

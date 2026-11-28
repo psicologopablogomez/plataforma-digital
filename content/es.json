@@ -1255,6 +1255,124 @@
             "cierre": []
           }
         ]
+      },
+      "terminos-y-condiciones": {
+        "intro": "Estas son las reglas para usar el sitio senderomente.com y sus servicios. Al usar el sitio o agendar una sesión, aceptas estos términos.",
+        "secciones": [
+          {
+            "titulo": "1. Quiénes somos",
+            "texto": [
+              "Senderomente es el servicio de atención psicológica en línea del Ps. Pablo Gómez, psicólogo registrado en Colombia (COLPSIC), ubicado en Australia. No tiene registro en Australia (AHPRA). Contacto: contacto@senderomente.com."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "2. Qué ofrecemos",
+            "texto": [],
+            "lista": [
+              "Sesiones de acompañamiento psicológico por videollamada, de 50 minutos.",
+              "Una escucha gratuita de 10 minutos para orientarte, que no es una sesión de terapia.",
+              "Membresías de 4 u 8 sesiones al mes, con espacios de escucha breve.",
+              "Recursos, chequeos, talleres y eventos."
+            ],
+            "cierre": [
+              "Las condiciones de la atención psicológica se explican en el Consentimiento informado."
+            ]
+          },
+          {
+            "titulo": "3. No es un servicio de emergencias",
+            "texto": [
+              "Este sitio no atiende urgencias. Si estás en peligro o piensas en hacerte daño, usa el botón “Ayuda en crisis” o llama a la línea de emergencias de tu país."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "4. Contenido informativo",
+            "texto": [
+              "El test de orientación, los chequeos con semáforo, las guías y demás contenidos son informativos y orientativos. No son un diagnóstico ni reemplazan una valoración profesional."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "5. Quién puede usar el servicio",
+            "texto": [
+              "Si tienes 18 años o más, puedes agendar por tu cuenta. Los menores de edad necesitan la autorización de su madre, padre o representante legal."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "6. Tus compromisos",
+            "texto": [],
+            "lista": [
+              "Entregar datos reales y actualizados.",
+              "Cuidar el enlace de tu sesión y no compartirlo.",
+              "No grabar ni difundir las sesiones sin autorización escrita.",
+              "Tratar con respeto a las personas del servicio.",
+              "No usar el sitio para actividades ilegales ni intentar afectar su funcionamiento o seguridad."
+            ],
+            "cierre": []
+          },
+          {
+            "titulo": "7. Citas y pagos",
+            "texto": [
+              "El precio depende de tu país y se muestra antes de pagar. Los pagos se hacen por adelantado a través de Stripe, y las citas se agendan con Cal.com. Los cambios, cancelaciones, reembolsos y membresías se rigen por la Política de cancelación."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "8. Mi espacio",
+            "texto": [
+              "El área “Mi espacio” se encuentra en versión de prueba: muestra datos de ejemplo y no guarda cambios."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "9. Propiedad del contenido",
+            "texto": [
+              "Los textos, la marca y los materiales del sitio pertenecen a Senderomente o a sus respectivos autores. Puedes compartir enlaces y usar los materiales para tu uso personal, pero no copiarlos ni venderlos sin autorización."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "10. Servicios de terceros",
+            "texto": [
+              "El sitio enlaza o usa servicios de otras empresas, como Cal.com, Stripe, Google, WhatsApp y redes sociales. Cada una tiene sus propios términos."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "11. Disponibilidad y responsabilidad",
+            "texto": [
+              "Procuramos que el sitio funcione bien, pero puede tener interrupciones o errores. No se garantizan resultados terapéuticos específicos. Nada en estos términos excluye ni limita responsabilidades o garantías que la ley no permita excluir."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "12. Datos personales",
+            "texto": [
+              "El tratamiento de tus datos se explica en el Aviso de privacidad."
+            ],
+            "lista": [],
+            "cierre": []
+          },
+          {
+            "titulo": "13. Cambios y ley aplicable",
+            "texto": [
+              "Podemos actualizar estos términos y publicaremos la nueva versión con su fecha; los cambios no afectan lo que ya pagaste. Estos términos se rigen por las leyes de Colombia, sin perjuicio de los derechos que la ley de tu país de residencia te reconozca y no puedan renunciarse."
+            ],
+            "lista": [],
+            "cierre": []
+          }
+        ]
       }
     }
   }
