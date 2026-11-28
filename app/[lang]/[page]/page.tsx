@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import BotonRegresar from "@/components/BotonRegresar";
 import { getDictionary, isLocale, locales, pageSlugs } from "@/lib/i18n";
 
 export const dynamicParams = false;
@@ -51,7 +52,8 @@ export default async function PaginaTexto({
   const doc = documentos[page];
 
   return (
-    <main className="mx-auto flex min-h-[50vh] max-w-3xl flex-col gap-4 px-4 py-16">
+    <main className="mx-auto flex min-h-[50vh] max-w-3xl flex-col gap-4 px-4 pb-28 pt-16">
+      <BotonRegresar texto={t.textosLegales.regresar} hrefInicio={`/${lang}`} />
       <h1 className="font-editorial text-3xl text-oscuro sm:text-4xl">{titulo}</h1>
 
       {!doc ? (
